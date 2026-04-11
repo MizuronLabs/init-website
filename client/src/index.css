@@ -5,7 +5,7 @@
 
 /* ============================================================
    MIZURON GLOBAL — DESIGN SYSTEM
-   Eco-Luxury meets Industrial Precision
+   Light & Fresh with Brand-Aligned Dark Sections
    ============================================================ */
 
 @theme inline {
@@ -54,36 +54,36 @@
 }
 
 /* ============================================================
-   ROOT — DARK THEME (Primary for Mizuron)
+   ROOT — LIGHT THEME (Primary Experience)
    ============================================================ */
 :root {
   /* Mizuron Brand Colors */
-  --mz-green:       oklch(35.5% 0.088 153);   /* #29573B Hunter Green */
-  --mz-green-dark:  oklch(27% 0.075 153);     /* deeper green */
-  --mz-green-light: oklch(50% 0.10 153);      /* accent green */
-  --mz-iron:        oklch(37.5% 0.012 190);   /* #485251 Iron Grey */
-  --mz-smoke:       oklch(95.5% 0.003 200);   /* #F3F3F2 White Smoke */
-  --mz-muted:       oklch(77% 0.006 190);     /* #BDC0BD muted grey */
+  --mz-green:       oklch(35.5% 0.088 153);   /* Hunter Green */
+  --mz-green-dark:  oklch(27% 0.075 153);     /* Deep green */
+  --mz-green-light: oklch(50% 0.10 153);      /* Accent green */
+  --mz-iron:        oklch(37.5% 0.012 190);   /* Iron Grey */
+  --mz-smoke:       oklch(95.5% 0.003 200);   /* White Smoke */
+  --mz-muted:       oklch(77% 0.006 190);     /* Muted grey */
 
-  /* Semantic tokens — DARK (primary experience) */
-  --background:             oklch(12% 0.008 200);
-  --foreground:             oklch(95% 0.003 200);
-  --card:                   oklch(17% 0.009 200);
-  --card-foreground:        oklch(95% 0.003 200);
-  --popover:                oklch(17% 0.009 200);
-  --popover-foreground:     oklch(95% 0.003 200);
+  /* Semantic tokens — LIGHT */
+  --background:             oklch(97.5% 0.006 140);  /* Light sage */
+  --foreground:             oklch(18% 0.030 153);    /* Deep forest */
+  --card:                   oklch(100% 0 0);          /* White */
+  --card-foreground:        oklch(18% 0.030 153);
+  --popover:                oklch(100% 0 0);
+  --popover-foreground:     oklch(18% 0.030 153);
   --primary:                oklch(35.5% 0.088 153);
-  --primary-foreground:     oklch(95% 0.003 200);
-  --secondary:              oklch(37.5% 0.012 190);
-  --secondary-foreground:   oklch(95% 0.003 200);
-  --muted:                  oklch(22% 0.009 200);
-  --muted-foreground:       oklch(65% 0.006 200);
+  --primary-foreground:     oklch(97% 0.003 200);
+  --secondary:              oklch(93% 0.012 140);
+  --secondary-foreground:   oklch(18% 0.030 153);
+  --muted:                  oklch(93% 0.010 140);
+  --muted-foreground:       oklch(48% 0.018 153);
   --accent:                 oklch(50% 0.10 153);
-  --accent-foreground:      oklch(95% 0.003 200);
+  --accent-foreground:      oklch(97% 0.003 200);
   --destructive:            oklch(55% 0.18 25);
-  --destructive-foreground: oklch(95% 0.003 200);
-  --border:                 oklch(26% 0.009 200);
-  --input:                  oklch(22% 0.009 200);
+  --destructive-foreground: oklch(97% 0.003 200);
+  --border:                 oklch(87% 0.012 140);
+  --input:                  oklch(93% 0.010 140);
   --ring:                   oklch(35.5% 0.088 153);
 
   /* Charts */
@@ -94,13 +94,13 @@
   --chart-5: oklch(77% 0.006 190);
 
   /* Sidebar */
-  --sidebar:                    oklch(15% 0.009 200);
-  --sidebar-foreground:         oklch(95% 0.003 200);
+  --sidebar:                    oklch(97% 0.006 140);
+  --sidebar-foreground:         oklch(18% 0.030 153);
   --sidebar-primary:            oklch(35.5% 0.088 153);
-  --sidebar-primary-foreground: oklch(95% 0.003 200);
-  --sidebar-accent:             oklch(22% 0.009 200);
-  --sidebar-accent-foreground:  oklch(95% 0.003 200);
-  --sidebar-border:             oklch(26% 0.009 200);
+  --sidebar-primary-foreground: oklch(97% 0.003 200);
+  --sidebar-accent:             oklch(93% 0.010 140);
+  --sidebar-accent-foreground:  oklch(18% 0.030 153);
+  --sidebar-border:             oklch(87% 0.012 140);
   --sidebar-ring:               oklch(35.5% 0.088 153);
 
   --radius: 0.25rem;
@@ -134,12 +134,12 @@
     font-weight: 600;
     line-height: 1.2;
     letter-spacing: -0.02em;
-    color: oklch(95% 0.003 200);
+    color: oklch(18% 0.030 153);
   }
 
   p {
     line-height: 1.75;
-    color: oklch(72% 0.006 200);
+    color: oklch(42% 0.018 153);
   }
 
   a { color: inherit; text-decoration: none; }
@@ -155,7 +155,7 @@
 
   /* Scrollbar */
   ::-webkit-scrollbar { width: 5px; }
-  ::-webkit-scrollbar-track { background: oklch(12% 0.008 200); }
+  ::-webkit-scrollbar-track { background: oklch(93% 0.010 140); }
   ::-webkit-scrollbar-thumb { background: oklch(35.5% 0.088 153); border-radius: 3px; }
   ::-webkit-scrollbar-thumb:hover { background: oklch(50% 0.10 153); }
 }
@@ -190,7 +190,7 @@
     gap: 0.5rem;
     padding: 0.75rem 1.75rem;
     background: oklch(35.5% 0.088 153);
-    color: oklch(95% 0.003 200);
+    color: oklch(97% 0.003 200);
     border: 1px solid oklch(35.5% 0.088 153);
     font-weight: 600;
     font-size: 0.875rem;
@@ -212,19 +212,43 @@
     gap: 0.5rem;
     padding: 0.75rem 1.75rem;
     background: transparent;
-    color: oklch(95% 0.003 200);
-    border: 1px solid oklch(55% 0.012 190);
+    color: oklch(35.5% 0.088 153);
+    border: 1px solid oklch(35.5% 0.088 153 / 0.55);
     font-weight: 600;
     font-size: 0.875rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     border-radius: 2px;
-    transition: border-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
+    transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease, transform 0.15s ease;
     cursor: pointer;
   }
   .btn-outline:hover {
-    border-color: oklch(50% 0.10 153);
-    color: oklch(65% 0.12 153);
+    border-color: oklch(35.5% 0.088 153);
+    background: oklch(35.5% 0.088 153 / 0.07);
+    color: oklch(27% 0.075 153);
+    transform: translateY(-1px);
+  }
+
+  /* Outline button for use on dark/green backgrounds */
+  .btn-outline-light {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.75rem;
+    background: transparent;
+    color: oklch(95% 0.003 200);
+    border: 1px solid oklch(95% 0.003 200 / 0.45);
+    font-weight: 600;
+    font-size: 0.875rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: border-color 0.2s ease, background 0.2s ease, transform 0.15s ease;
+    cursor: pointer;
+  }
+  .btn-outline-light:hover {
+    border-color: oklch(95% 0.003 200 / 0.85);
+    background: oklch(100% 0 0 / 0.10);
     transform: translateY(-1px);
   }
 
@@ -234,7 +258,7 @@
     gap: 0.5rem;
     padding: 0.625rem 1.25rem;
     background: transparent;
-    color: oklch(65% 0.12 153);
+    color: oklch(35.5% 0.088 153);
     font-weight: 600;
     font-size: 0.875rem;
     letter-spacing: 0.04em;
@@ -243,7 +267,7 @@
     transition: color 0.2s ease;
     cursor: pointer;
   }
-  .btn-ghost:hover { color: oklch(75% 0.14 153); }
+  .btn-ghost:hover { color: oklch(27% 0.075 153); }
 
   /* ---- Section Utilities ---- */
   .section-py   { padding-block: 5rem; }
@@ -254,14 +278,29 @@
     .section-py-lg { padding-block: 4.5rem; }
   }
 
-  /* ---- Tag / Badge ---- */
+  /* ---- Tag / Badge (Light) ---- */
   .tag-green {
     display: inline-flex;
     align-items: center;
     padding: 0.2rem 0.7rem;
+    background: oklch(35.5% 0.088 153 / 0.10);
+    color: oklch(35.5% 0.088 153);
+    border: 1px solid oklch(35.5% 0.088 153 / 0.28);
+    border-radius: 2px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* Tag for use on dark sections */
+  .tag-green-dark {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.2rem 0.7rem;
     background: oklch(35.5% 0.088 153 / 0.15);
-    color: oklch(65% 0.12 153);
-    border: 1px solid oklch(35.5% 0.088 153 / 0.35);
+    color: oklch(70% 0.12 153);
+    border: 1px solid oklch(35.5% 0.088 153 / 0.40);
     border-radius: 2px;
     font-size: 0.7rem;
     font-weight: 700;
@@ -273,9 +312,9 @@
     display: inline-flex;
     align-items: center;
     padding: 0.2rem 0.7rem;
-    background: oklch(37.5% 0.012 190 / 0.2);
-    color: oklch(72% 0.006 200);
-    border: 1px solid oklch(37.5% 0.012 190 / 0.4);
+    background: oklch(37.5% 0.012 190 / 0.08);
+    color: oklch(42% 0.015 153);
+    border: 1px solid oklch(37.5% 0.012 190 / 0.22);
     border-radius: 2px;
     font-size: 0.7rem;
     font-weight: 700;
@@ -291,14 +330,27 @@
     margin-bottom: 1.25rem;
   }
 
-  /* ---- Card Styles ---- */
+  /* ---- Card Styles (Light) ---- */
   .mz-card {
+    background: #ffffff;
+    border: 1px solid oklch(87% 0.012 140);
+    border-radius: 3px;
+    transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .mz-card:hover {
+    border-color: oklch(35.5% 0.088 153 / 0.40);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px oklch(35.5% 0.088 153 / 0.10);
+  }
+
+  /* Card for use on dark sections */
+  .mz-card-dark {
     background: oklch(17% 0.009 200);
     border: 1px solid oklch(26% 0.009 200);
     border-radius: 3px;
     transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
   }
-  .mz-card:hover {
+  .mz-card-dark:hover {
     border-color: oklch(35.5% 0.088 153 / 0.5);
     transform: translateY(-2px);
     box-shadow: 0 8px 32px oklch(0% 0 0 / 0.4);
@@ -309,13 +361,22 @@
     font-family: "DM Sans", system-ui, sans-serif;
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
-    color: oklch(65% 0.12 153);
+    color: oklch(35.5% 0.088 153);
     letter-spacing: -0.03em;
     line-height: 1;
   }
 
-  /* ---- Grid Background ---- */
+  /* ---- Grid Backgrounds ---- */
   .grid-bg {
+    /* For use on dark sections */
+    background-image:
+      linear-gradient(oklch(65% 0.12 153 / 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, oklch(65% 0.12 153 / 0.08) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .grid-bg-light {
+    /* For use on light sections */
     background-image:
       linear-gradient(oklch(35.5% 0.088 153 / 0.05) 1px, transparent 1px),
       linear-gradient(90deg, oklch(35.5% 0.088 153 / 0.05) 1px, transparent 1px);
@@ -329,9 +390,11 @@
   }
 
   /* ---- Text Utilities ---- */
-  .text-green-brand  { color: oklch(65% 0.12 153); }
-  .text-muted-brand  { color: oklch(65% 0.006 200); }
+  .text-green-brand  { color: oklch(35.5% 0.088 153); }
+  .text-green-light  { color: oklch(65% 0.12 153); }
+  .text-muted-brand  { color: oklch(48% 0.018 153); }
   .text-smoke        { color: oklch(95% 0.003 200); }
+  .text-heading      { color: oklch(18% 0.030 153); }
 }
 
 /* ============================================================

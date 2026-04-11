@@ -154,24 +154,24 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
 
-      {/* ========== HERO ========== */}
+      {/* ========== HERO — stays dark, warm forest green ========== */}
       <section className="relative min-h-screen flex items-center overflow-hidden grid-bg">
-        <div className="absolute inset-0 bg-gradient-to-br from-[oklch(12%_0.008_200)] via-[oklch(14%_0.018_153)] to-[oklch(12%_0.008_200)]" />
-        <div className="absolute top-1/3 right-1/4 w-[480px] h-[480px] rounded-full bg-[oklch(35.5%_0.088_153/0.05)] blur-3xl pointer-events-none" />
-        <div className="absolute bottom-1/4 left-1/4 w-72 h-72 rounded-full bg-[oklch(35.5%_0.088_153/0.03)] blur-3xl pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[oklch(18%_0.045_153)] via-[oklch(22%_0.060_153)] to-[oklch(17%_0.040_153)]" />
+        <div className="absolute top-1/3 right-1/4 w-[480px] h-[480px] rounded-full bg-[oklch(35.5%_0.088_153/0.12)] blur-3xl pointer-events-none" />
+        <div className="absolute bottom-1/4 left-1/4 w-72 h-72 rounded-full bg-[oklch(50%_0.10_153/0.08)] blur-3xl pointer-events-none" />
 
         <div className="container relative z-10 pt-32 pb-20">
           <div className="max-w-4xl">
             <div className="animate-fade-in-up mb-6">
-              <span className="tag-green">Soil Nutrition · Vermicompost Exporter · India</span>
+              <span className="tag-green-dark">Soil Nutrition · Vermicompost Exporter · India</span>
             </div>
 
             <h1 className="animate-fade-in-up delay-100 text-[oklch(95%_0.003_200)] font-display mb-6 leading-tight">
               Soil Nutrition You Can{" "}
-              <span className="text-green-brand">Verify.</span>
+              <span className="text-[oklch(65%_0.12_153)]">Verify.</span>
             </h1>
 
-            <p className="animate-fade-in-up delay-200 text-lg text-[oklch(68%_0.006_200)] max-w-2xl mb-10 leading-relaxed">
+            <p className="animate-fade-in-up delay-200 text-lg text-[oklch(72%_0.012_153)] max-w-2xl mb-10 leading-relaxed">
               Mizuron supplies export-grade vermicompost — lab-tested, double-sifted, batch-traced — to international buyers, resort groups, and professional distributors who require more than a product claim.
             </p>
 
@@ -179,44 +179,45 @@ export default function Home() {
               <Link href="/contact" className="btn-primary">
                 Request a Product Inquiry <ArrowRight size={16} />
               </Link>
-              <Link href="/products/vermicompost" className="btn-outline">
+              <Link href="/products/vermicompost" className="btn-outline-light">
                 View Vermicompost
               </Link>
-              <Link href="/contact#datasheet" className="btn-ghost">
-                Technical Datasheet <ChevronRight size={16} />
+              <Link href="/contact#datasheet" className="flex items-center gap-1.5 text-sm font-medium text-[oklch(65%_0.10_153)] hover:text-[oklch(75%_0.10_153)] transition-colors">
+                Technical Datasheet <ChevronRight size={15} />
               </Link>
             </div>
 
             {/* Hero Metrics */}
-            <div className="animate-fade-in-up delay-500 grid grid-cols-2 sm:grid-cols-4 gap-6 mt-14 pt-10 border-t border-[oklch(26%_0.009_200)]">
+            <div className="animate-fade-in-up delay-500 grid grid-cols-2 sm:grid-cols-4 gap-6 mt-14 pt-10 border-t border-[oklch(30%_0.020_153)]">
               {heroMetrics.map((m) => (
                 <div key={m.label}>
                   <div className="text-2xl font-bold text-[oklch(65%_0.12_153)] font-display">{m.value}</div>
-                  <div className="text-xs text-[oklch(55%_0.006_200)] uppercase tracking-wider mt-0.5">{m.label}</div>
+                  <div className="text-xs text-[oklch(58%_0.015_153)] uppercase tracking-wider mt-0.5">{m.label}</div>
                 </div>
               ))}
             </div>
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent" />
+        {/* Fade to light body */}
+        <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-[oklch(97.5%_0.006_140)] to-transparent" />
       </section>
 
-      {/* ========== PRODUCT FOCUS — VERMICOMPOST ========== */}
-      <section className="section-py-lg bg-[oklch(15%_0.009_200)] border-y border-[oklch(22%_0.009_200)]">
+      {/* ========== PRODUCT FOCUS — VERMICOMPOST (light-sage bg) ========== */}
+      <section className="section-py-lg bg-[oklch(93.5%_0.012_140)] border-y border-[oklch(87%_0.010_140)]">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Left */}
             <div>
               <div className="section-divider" />
               <span className="tag-green mb-4 inline-block">Our Hero Product</span>
-              <h2 className="text-[oklch(95%_0.003_200)] mb-5">
+              <h2 className="text-[oklch(18%_0.030_153)] mb-5">
                 Export-Grade Vermicompost. No Compromises.
               </h2>
-              <p className="text-[oklch(65%_0.006_200)] leading-relaxed mb-4">
+              <p className="text-[oklch(42%_0.018_153)] leading-relaxed mb-4">
                 Mizuron's vermicompost is processed to a professional standard — mature, dark, fine-textured, and low-odor. Designed for buyers who cannot afford inconsistency: island resorts, premium horticultural operations, and commercial farms with defined input specifications.
               </p>
-              <p className="text-[oklch(65%_0.006_200)] leading-relaxed mb-8">
+              <p className="text-[oklch(42%_0.018_153)] leading-relaxed mb-8">
                 Every batch carries full documentation — lab results, batch reference, packaging records, and export certificates — so you know exactly what you are receiving before the shipment arrives.
               </p>
               <div className="flex flex-wrap gap-3">
@@ -240,9 +241,9 @@ export default function Home() {
                 { label: "Maturity", value: "Fully Cured", note: "No active decomposition" },
               ].map((spec) => (
                 <div key={spec.label} className="mz-card p-5">
-                  <div className="text-[oklch(65%_0.12_153)] font-bold font-display text-lg mb-1">{spec.value}</div>
-                  <div className="text-[oklch(88%_0.003_200)] font-semibold text-xs mb-1">{spec.label}</div>
-                  <div className="text-[oklch(52%_0.006_200)] text-[0.65rem] leading-snug">{spec.note}</div>
+                  <div className="text-[oklch(35.5%_0.088_153)] font-bold font-display text-lg mb-1">{spec.value}</div>
+                  <div className="text-[oklch(22%_0.025_153)] font-semibold text-xs mb-1">{spec.label}</div>
+                  <div className="text-[oklch(52%_0.015_153)] text-[0.65rem] leading-snug">{spec.note}</div>
                 </div>
               ))}
             </div>
@@ -250,14 +251,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ========== QUALITY PILLARS ========== */}
-      <section className="section-py-lg">
+      {/* ========== QUALITY PILLARS (white bg) ========== */}
+      <section className="section-py-lg bg-white border-b border-[oklch(87%_0.010_140)]">
         <div className="container">
           <div className="text-center mb-14">
             <div className="section-divider mx-auto" />
             <span className="tag-green mb-4 inline-block">Product Quality</span>
-            <h2 className="text-[oklch(95%_0.003_200)] mb-4">Built to a Standard, Not a Price Point.</h2>
-            <p className="text-[oklch(65%_0.006_200)] max-w-xl mx-auto">
+            <h2 className="text-[oklch(18%_0.030_153)] mb-4">Built to a Standard, Not a Price Point.</h2>
+            <p className="text-[oklch(48%_0.018_153)] max-w-xl mx-auto">
               Premium buyers expect consistency. Our quality system is built around that expectation — from sourcing inputs to final packaging and export certification.
             </p>
           </div>
@@ -265,31 +266,31 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {qualityPillars.map((pillar) => (
               <div key={pillar.title} className="mz-card p-7">
-                <div className="w-10 h-10 rounded-sm bg-[oklch(22%_0.009_200)] flex items-center justify-center mb-5">
-                  <pillar.icon size={18} className="text-[oklch(65%_0.12_153)]" />
+                <div className="w-10 h-10 rounded-sm bg-[oklch(93%_0.010_140)] flex items-center justify-center mb-5">
+                  <pillar.icon size={18} className="text-[oklch(35.5%_0.088_153)]" />
                 </div>
-                <h3 className="text-[oklch(92%_0.003_200)] font-semibold text-base mb-3">{pillar.title}</h3>
-                <p className="text-sm text-[oklch(60%_0.006_200)] leading-relaxed">{pillar.description}</p>
+                <h3 className="text-[oklch(22%_0.030_153)] font-semibold text-base mb-3">{pillar.title}</h3>
+                <p className="text-sm text-[oklch(50%_0.018_153)] leading-relaxed">{pillar.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ========== SOURCING INTEGRITY ========== */}
-      <section className="section-py-lg bg-[oklch(15%_0.009_200)] border-y border-[oklch(22%_0.009_200)]">
+      {/* ========== SOURCING INTEGRITY (light-sage bg) ========== */}
+      <section className="section-py-lg bg-[oklch(93.5%_0.012_140)] border-y border-[oklch(87%_0.010_140)]">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
               <div className="section-divider" />
               <span className="tag-green mb-4 inline-block">Sourcing Integrity</span>
-              <h2 className="text-[oklch(95%_0.003_200)] mb-5">
+              <h2 className="text-[oklch(18%_0.030_153)] mb-5">
                 More Than a Supplier. A Quality Filter.
               </h2>
-              <p className="text-[oklch(65%_0.006_200)] leading-relaxed mb-5">
+              <p className="text-[oklch(42%_0.018_153)] leading-relaxed mb-5">
                 Mizuron does not simply pass product from producer to buyer. We audit supply, qualify producers, and filter output against defined standards. What reaches a buyer has already passed our operational judgment — not just the seller's assurance.
               </p>
-              <p className="text-[oklch(65%_0.006_200)] leading-relaxed mb-8">
+              <p className="text-[oklch(42%_0.018_153)] leading-relaxed mb-8">
                 Ethical feedstock sourcing, verified production conditions, and transparent processing records form the foundation of every consignment we ship.
               </p>
               <Link href="/about#vetting-protocol" className="btn-primary">
@@ -320,11 +321,11 @@ export default function Home() {
                   body: "No batch is released for export without passing our internal quality check and receiving a documented clearance reference.",
                 },
               ].map((item) => (
-                <div key={item.number} className="flex gap-5 border-l-2 border-[oklch(35.5%_0.088_153/0.3)] pl-5">
+                <div key={item.number} className="flex gap-5 border-l-2 border-[oklch(35.5%_0.088_153/0.35)] pl-5">
                   <div className="text-[0.7rem] font-bold text-[oklch(35.5%_0.088_153)] font-display w-6 flex-shrink-0 pt-0.5">{item.number}</div>
                   <div>
-                    <h4 className="text-[oklch(90%_0.003_200)] font-semibold text-sm mb-1">{item.title}</h4>
-                    <p className="text-xs text-[oklch(58%_0.006_200)] leading-relaxed">{item.body}</p>
+                    <h4 className="text-[oklch(22%_0.030_153)] font-semibold text-sm mb-1">{item.title}</h4>
+                    <p className="text-xs text-[oklch(50%_0.018_153)] leading-relaxed">{item.body}</p>
                   </div>
                 </div>
               ))}
@@ -333,14 +334,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ========== TRACEABILITY ========== */}
-      <section className="section-py-lg">
+      {/* ========== TRACEABILITY (white bg) ========== */}
+      <section className="section-py-lg bg-white border-b border-[oklch(87%_0.010_140)]">
         <div className="container">
           <div className="text-center mb-14">
             <div className="section-divider mx-auto" />
             <span className="tag-green mb-4 inline-block">Traceability</span>
-            <h2 className="text-[oklch(95%_0.003_200)] mb-4">Every Batch. Every Step. Documented.</h2>
-            <p className="text-[oklch(65%_0.006_200)] max-w-xl mx-auto">
+            <h2 className="text-[oklch(18%_0.030_153)] mb-4">Every Batch. Every Step. Documented.</h2>
+            <p className="text-[oklch(48%_0.018_153)] max-w-xl mx-auto">
               Full chain-of-custody from feedstock origin to destination port. Buyers receive a complete documentation package — not just a product.
             </p>
           </div>
@@ -352,28 +353,28 @@ export default function Home() {
                   <div className="hidden lg:block absolute top-1/2 -right-2 w-4 h-px bg-[oklch(35.5%_0.088_153/0.4)]" />
                 )}
                 <div className="text-[oklch(35.5%_0.088_153)] font-bold font-display text-xs mb-3">{s.step}</div>
-                <h4 className="text-[oklch(90%_0.003_200)] font-semibold text-sm mb-2">{s.title}</h4>
-                <p className="text-[0.7rem] text-[oklch(56%_0.006_200)] leading-relaxed">{s.detail}</p>
+                <h4 className="text-[oklch(22%_0.030_153)] font-semibold text-sm mb-2">{s.title}</h4>
+                <p className="text-[0.7rem] text-[oklch(52%_0.018_153)] leading-relaxed">{s.detail}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ========== EXPORT READINESS ========== */}
-      <section className="section-py-lg bg-[oklch(15%_0.009_200)] border-y border-[oklch(22%_0.009_200)]">
+      {/* ========== EXPORT READINESS (light-sage bg) ========== */}
+      <section className="section-py-lg bg-[oklch(93.5%_0.012_140)] border-y border-[oklch(87%_0.010_140)]">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="section-divider" />
               <span className="tag-green mb-4 inline-block">Export Readiness</span>
-              <h2 className="text-[oklch(95%_0.003_200)] mb-5">
+              <h2 className="text-[oklch(18%_0.030_153)] mb-5">
                 Container-Ready. Documentation-Complete.
               </h2>
-              <p className="text-[oklch(65%_0.006_200)] leading-relaxed mb-5">
+              <p className="text-[oklch(42%_0.018_153)] leading-relaxed mb-5">
                 Mizuron handles the full export stack. Product is packaged in export-grade formats, documentation is prepared to destination market standards, and shipment logistics are coordinated with precision.
               </p>
-              <p className="text-[oklch(65%_0.006_200)] leading-relaxed mb-8">
+              <p className="text-[oklch(42%_0.018_153)] leading-relaxed mb-8">
                 We support FOB, CIF, and DDP incoterms — adapting to the buyer's procurement model and destination port requirements.
               </p>
               <Link href="/logistics" className="btn-outline">
@@ -384,12 +385,12 @@ export default function Home() {
             <div className="space-y-4">
               {/* Incoterms */}
               <div className="mz-card p-6">
-                <h4 className="text-[oklch(90%_0.003_200)] font-semibold text-sm mb-4 uppercase tracking-wider">Incoterms Capability</h4>
+                <h4 className="text-[oklch(22%_0.030_153)] font-semibold text-sm mb-4 uppercase tracking-wider">Incoterms Capability</h4>
                 <div className="grid grid-cols-3 gap-3">
                   {exportCapabilities.map((t) => (
-                    <div key={t.label} className="text-center p-3 border border-[oklch(26%_0.009_200)] rounded-sm">
-                      <div className="text-[oklch(65%_0.12_153)] font-bold font-display text-lg">{t.label}</div>
-                      <div className="text-[0.62rem] text-[oklch(52%_0.006_200)] mt-1 leading-snug">{t.detail}</div>
+                    <div key={t.label} className="text-center p-3 border border-[oklch(87%_0.010_140)] rounded-sm bg-[oklch(97%_0.006_140)]">
+                      <div className="text-[oklch(35.5%_0.088_153)] font-bold font-display text-lg">{t.label}</div>
+                      <div className="text-[0.62rem] text-[oklch(50%_0.018_153)] mt-1 leading-snug">{t.detail}</div>
                     </div>
                   ))}
                 </div>
@@ -397,7 +398,7 @@ export default function Home() {
 
               {/* Documentation */}
               <div className="mz-card p-6">
-                <h4 className="text-[oklch(90%_0.003_200)] font-semibold text-sm mb-4 uppercase tracking-wider">Documentation Package</h4>
+                <h4 className="text-[oklch(22%_0.030_153)] font-semibold text-sm mb-4 uppercase tracking-wider">Documentation Package</h4>
                 <div className="grid grid-cols-2 gap-2">
                   {[
                     "Lab Test Report",
@@ -407,7 +408,7 @@ export default function Home() {
                     "Packing List & Invoice",
                     "Buyer-Specific Formats",
                   ].map((doc) => (
-                    <div key={doc} className="flex items-center gap-2 text-xs text-[oklch(65%_0.006_200)]">
+                    <div key={doc} className="flex items-center gap-2 text-xs text-[oklch(42%_0.018_153)]">
                       <CheckCircle2 size={11} className="text-[oklch(35.5%_0.088_153)] flex-shrink-0" />
                       {doc}
                     </div>
@@ -419,14 +420,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ========== GREEN METRICS ========== */}
-      <section className="section-py-lg">
+      {/* ========== GREEN METRICS (white bg) ========== */}
+      <section className="section-py-lg bg-white border-b border-[oklch(87%_0.010_140)]">
         <div className="container">
           <div className="text-center mb-12">
             <div className="section-divider mx-auto" />
             <span className="tag-green mb-4 inline-block">Technical Benchmarks</span>
-            <h2 className="text-[oklch(95%_0.003_200)] mb-4">Quality Measured. Performance Verified.</h2>
-            <p className="text-[oklch(65%_0.006_200)] max-w-xl mx-auto">
+            <h2 className="text-[oklch(18%_0.030_153)] mb-4">Quality Measured. Performance Verified.</h2>
+            <p className="text-[oklch(48%_0.018_153)] max-w-xl mx-auto">
               These are not marketing claims. They are operational parameters that govern our sourcing, processing, and quality control decisions.
             </p>
           </div>
@@ -435,8 +436,8 @@ export default function Home() {
             {greenMetrics.map((m) => (
               <div key={m.label} className="mz-card p-5 text-center">
                 <div className="metric-number mb-1">{m.value}</div>
-                <div className="text-xs font-semibold text-[oklch(80%_0.003_200)] mb-0.5">{m.label}</div>
-                <div className="text-[0.65rem] text-[oklch(50%_0.006_200)]">{m.sublabel}</div>
+                <div className="text-xs font-semibold text-[oklch(22%_0.025_153)] mb-0.5">{m.label}</div>
+                <div className="text-[0.65rem] text-[oklch(52%_0.015_153)]">{m.sublabel}</div>
               </div>
             ))}
           </div>
@@ -449,14 +450,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ========== INDUSTRIES SERVED ========== */}
-      <section className="section-py-lg bg-[oklch(15%_0.009_200)] border-y border-[oklch(22%_0.009_200)]">
+      {/* ========== INDUSTRIES SERVED (light-sage bg) ========== */}
+      <section className="section-py-lg bg-[oklch(93.5%_0.012_140)] border-y border-[oklch(87%_0.010_140)]">
         <div className="container">
           <div className="text-center mb-12">
             <div className="section-divider mx-auto" />
             <span className="tag-green mb-4 inline-block">Who We Serve</span>
-            <h2 className="text-[oklch(95%_0.003_200)] mb-4">Built for Buyers Who Require Standards.</h2>
-            <p className="text-[oklch(65%_0.006_200)] max-w-xl mx-auto">
+            <h2 className="text-[oklch(18%_0.030_153)] mb-4">Built for Buyers Who Require Standards.</h2>
+            <p className="text-[oklch(48%_0.018_153)] max-w-xl mx-auto">
               From island resort procurement teams to government greening programs — Mizuron is structured for buyers who need consistency, documentation, and a reliable trade partner.
             </p>
           </div>
@@ -465,8 +466,8 @@ export default function Home() {
             {industries.map((ind) => (
               <div key={ind.title} className="mz-card p-6">
                 <div className="text-2xl mb-3">{ind.icon}</div>
-                <h4 className="text-[oklch(90%_0.003_200)] font-semibold text-sm mb-2">{ind.title}</h4>
-                <p className="text-xs text-[oklch(58%_0.006_200)] leading-relaxed">{ind.description}</p>
+                <h4 className="text-[oklch(22%_0.030_153)] font-semibold text-sm mb-2">{ind.title}</h4>
+                <p className="text-xs text-[oklch(50%_0.018_153)] leading-relaxed">{ind.description}</p>
               </div>
             ))}
           </div>
@@ -479,14 +480,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ========== OTHER VERTICALS (de-emphasized) ========== */}
-      <section className="section-py-lg">
+      {/* ========== OTHER VERTICALS (white bg) ========== */}
+      <section className="section-py-lg bg-white border-b border-[oklch(87%_0.010_140)]">
         <div className="container">
           <div className="mb-12">
             <div className="section-divider" />
             <span className="tag-green mb-4 inline-block">What Else We Trade</span>
-            <h2 className="text-[oklch(95%_0.003_200)] mb-3">Expanding Trade Portfolio.</h2>
-            <p className="text-[oklch(65%_0.006_200)] max-w-2xl">
+            <h2 className="text-[oklch(18%_0.030_153)] mb-3">Expanding Trade Portfolio.</h2>
+            <p className="text-[oklch(48%_0.018_153)] max-w-2xl">
               Beyond vermicompost, Mizuron operates additional trade verticals — all built on the same sourcing discipline and export-grade execution standard.
             </p>
           </div>
@@ -496,14 +497,14 @@ export default function Home() {
               <Link key={v.title} href={v.href}>
                 <div className="mz-card p-7 h-full group cursor-pointer">
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-9 h-9 rounded-sm bg-[oklch(22%_0.009_200)] flex items-center justify-center group-hover:bg-[oklch(35.5%_0.088_153/0.15)] transition-colors">
-                      <v.icon size={16} className="text-[oklch(55%_0.10_153)]" />
+                    <div className="w-9 h-9 rounded-sm bg-[oklch(93%_0.010_140)] flex items-center justify-center group-hover:bg-[oklch(35.5%_0.088_153/0.12)] transition-colors">
+                      <v.icon size={16} className="text-[oklch(35.5%_0.088_153)]" />
                     </div>
                     <span className="tag-grey text-[0.6rem]">{v.tag}</span>
                   </div>
-                  <h3 className="text-[oklch(90%_0.003_200)] font-semibold text-base mb-2">{v.title}</h3>
-                  <p className="text-xs text-[oklch(58%_0.006_200)] leading-relaxed mb-4">{v.description}</p>
-                  <div className="flex items-center gap-1.5 text-[oklch(55%_0.10_153)] text-xs font-semibold">
+                  <h3 className="text-[oklch(22%_0.030_153)] font-semibold text-base mb-2">{v.title}</h3>
+                  <p className="text-xs text-[oklch(50%_0.018_153)] leading-relaxed mb-4">{v.description}</p>
+                  <div className="flex items-center gap-1.5 text-[oklch(35.5%_0.088_153)] text-xs font-semibold">
                     Learn More <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
@@ -513,15 +514,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ========== FINAL CTA ========== */}
-      <section className="section-py-lg bg-[oklch(15%_0.009_200)] border-t border-[oklch(22%_0.009_200)]">
+      {/* ========== FINAL CTA — Rich dark green brand section ========== */}
+      <section className="section-py-lg bg-[oklch(25%_0.065_153)]">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="section-divider mx-auto" />
+            <div className="section-divider mx-auto" style={{ background: "oklch(65% 0.12 153)" }} />
             <h2 className="text-[oklch(95%_0.003_200)] mb-5">
               Ready to Source with Confidence?
             </h2>
-            <p className="text-[oklch(65%_0.006_200)] mb-10 leading-relaxed">
+            <p className="text-[oklch(72%_0.012_153)] mb-10 leading-relaxed">
               Whether you are a resort group, distributor, importer, or government procurement team — Mizuron is designed for buyers who require verified quality, complete documentation, and a trade partner with real standards.
             </p>
 
@@ -537,7 +538,7 @@ export default function Home() {
                 <Link
                   key={cta.label}
                   href={cta.href}
-                  className="flex items-center justify-between px-4 py-3 border border-[oklch(26%_0.009_200)] text-sm text-[oklch(75%_0.006_200)] hover:border-[oklch(35.5%_0.088_153/0.5)] hover:text-[oklch(65%_0.12_153)] transition-all group rounded-sm"
+                  className="flex items-center justify-between px-4 py-3 border border-[oklch(40%_0.040_153)] text-sm text-[oklch(75%_0.012_153)] hover:border-[oklch(65%_0.12_153/0.6)] hover:text-[oklch(88%_0.008_153)] transition-all group rounded-sm"
                 >
                   {cta.label}
                   <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
@@ -549,7 +550,7 @@ export default function Home() {
               <Link href="/contact" className="btn-primary">
                 Send an Inquiry <ArrowRight size={16} />
               </Link>
-              <Link href="/about" className="btn-outline">
+              <Link href="/about" className="btn-outline-light">
                 Learn About Mizuron
               </Link>
             </div>

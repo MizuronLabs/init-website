@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { useTheme } from "@/contexts/ThemeContext";
 
-const LOGO_LIGHT = "/logos/logo-light.png";
-const LOGO_DARK = "/logos/logo-dark.png";
+// Colored green logo — always on white navbar
+const LOGO = "/logos/logo-dark.png";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -40,7 +39,6 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [location] = useLocation();
-  const { theme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
@@ -53,15 +51,10 @@ export default function Navbar() {
     setActiveDropdown(null);
   }, [location]);
 
-  // Use light logo on dark background (hero), and dark logo otherwise if theme is light
-  const logoSrc = theme === "dark" ? LOGO_LIGHT : (scrolled ? LOGO_DARK : LOGO_LIGHT);
-
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-[oklch(12%_0.008_200/0.97)] backdrop-blur-md border-b border-[oklch(26%_0.009_200)]"
-          : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/97 backdrop-blur-sm border-b border-[oklch(87%_0.010_140)] ${
+        scrolled ? "shadow-sm" : ""
       }`}
     >
       <div className="container">
@@ -69,14 +62,14 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center flex-shrink-0">
             <img
-              src={logoSrc}
+              src={LOGO}
               alt="Mizuron Global"
               className="h-8 lg:h-10 w-auto object-contain"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-0.5">
             {navItems.map((item) => (
               <div
                 key={item.label}
@@ -86,29 +79,30 @@ export default function Navbar() {
               >
                 <Link
                   href={item.href}
-                  className={`flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors rounded-sm ${
+                  className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-sm transition-colors ${
                     location === item.href
-                      ? "text-[oklch(65%_0.12_153)]"
-                      : "text-[oklch(75%_0.006_200)] hover:text-[oklch(95%_0.003_200)]"
+                      ? "text-[oklch(35.5%_0.088_153)]"
+                      : "text-[oklch(38%_0.025_153)] hover:text-[oklch(35.5%_0.088_153)]"
                   }`}
                 >
                   {item.label}
                   {item.children && (
                     <ChevronDown
-                      size={14}
-                      className={`transition-transform ${activeDropdown === item.label ? "rotate-180" : ""}`}
+                      size={13}
+                      className={`transition-transform duration-200 ${
+                        activeDropdown === item.label ? "rotate-180" : ""
+                      }`}
                     />
                   )}
                 </Link>
 
-                {/* Dropdown */}
                 {item.children && activeDropdown === item.label && (
-                  <div className="absolute top-full left-0 mt-1 w-56 bg-[oklch(17%_0.009_200)] border border-[oklch(26%_0.009_200)] rounded-sm shadow-xl py-1 z-50">
+                  <div className="absolute top-full left-0 mt-1 w-56 bg-white border border-[oklch(87%_0.010_140)] rounded-sm shadow-lg py-1 z-50">
                     {item.children.map((child) => (
                       <Link
                         key={child.label}
                         href={child.href}
-                        className="block px-4 py-2.5 text-sm text-[oklch(72%_0.006_200)] hover:text-[oklch(95%_0.003_200)] hover:bg-[oklch(22%_0.009_200)] transition-colors"
+                        className="block px-4 py-2.5 text-sm text-[oklch(42%_0.018_153)] hover:text-[oklch(35.5%_0.088_153)] hover:bg-[oklch(97%_0.006_140)] transition-colors"
                       >
                         {child.label}
                       </Link>
@@ -119,7 +113,7 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* Desktop CTA */}
+          {/* CTA */}
           <div className="hidden lg:flex items-center gap-3">
             <Link href="/contact" className="btn-primary text-xs py-2.5 px-5">
               Request Inquiry
@@ -128,7 +122,7 @@ export default function Navbar() {
 
           {/* Mobile Toggle */}
           <button
-            className="lg:hidden p-2 text-[oklch(75%_0.006_200)] hover:text-white transition-colors"
+            className="lg:hidden p-2 text-[oklch(38%_0.025_153)] hover:text-[oklch(35.5%_0.088_153)] transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
           >
@@ -139,23 +133,23 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="lg:hidden bg-[oklch(15%_0.009_200)] border-t border-[oklch(26%_0.009_200)] max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden bg-white border-t border-[oklch(87%_0.010_140)] max-h-[80vh] overflow-y-auto">
           <div className="container py-4 flex flex-col gap-1">
             {navItems.map((item) => (
               <div key={item.label}>
                 <Link
                   href={item.href}
-                  className="block px-3 py-3 text-sm font-medium text-[oklch(80%_0.006_200)] hover:text-white hover:bg-[oklch(22%_0.009_200)] rounded-sm transition-colors"
+                  className="block px-3 py-3 text-sm font-medium text-[oklch(38%_0.025_153)] hover:text-[oklch(35.5%_0.088_153)] hover:bg-[oklch(93%_0.010_140)] rounded-sm transition-colors"
                 >
                   {item.label}
                 </Link>
                 {item.children && (
-                  <div className="ml-4 border-l border-[oklch(26%_0.009_200)] pl-3 flex flex-col gap-0.5">
+                  <div className="ml-4 border-l-2 border-[oklch(35.5%_0.088_153/0.3)] pl-3 flex flex-col gap-0.5 mb-1">
                     {item.children.map((child) => (
                       <Link
                         key={child.label}
                         href={child.href}
-                        className="block px-3 py-2 text-xs text-[oklch(65%_0.006_200)] hover:text-[oklch(65%_0.12_153)] transition-colors"
+                        className="block px-3 py-2 text-xs text-[oklch(48%_0.018_153)] hover:text-[oklch(35.5%_0.088_153)] transition-colors"
                       >
                         {child.label}
                       </Link>
@@ -164,7 +158,7 @@ export default function Navbar() {
                 )}
               </div>
             ))}
-            <div className="pt-3 border-t border-[oklch(26%_0.009_200)] mt-2">
+            <div className="pt-3 border-t border-[oklch(87%_0.010_140)] mt-2">
               <Link href="/contact" className="btn-primary w-full justify-center text-xs">
                 Request Inquiry
               </Link>

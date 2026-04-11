@@ -139,7 +139,6 @@ export default function Contact() {
   const [formData, setFormData] = useState<FormState>(emptyForm);
   const [submitted, setSubmitted] = useState(false);
 
-  // Parse hash from URL to auto-select form
   useEffect(() => {
     const hash = window.location.hash.replace("#", "") as FormType;
     const valid = formConfigs.find((f) => f.id === hash);
@@ -175,40 +174,40 @@ export default function Contact() {
     });
   };
 
-  const inputClass = "w-full bg-[oklch(22%_0.009_200)] border border-[oklch(30%_0.009_200)] text-[oklch(85%_0.003_200)] text-sm px-3 py-2.5 rounded-sm focus:outline-none focus:border-[oklch(35.5%_0.088_153)] transition-colors placeholder:text-[oklch(38%_0.006_200)]";
-  const labelClass = "text-xs font-semibold text-[oklch(60%_0.006_200)] uppercase tracking-wider mb-1.5 block";
+  const inputClass = "w-full bg-white border border-[oklch(87%_0.010_140)] text-[oklch(22%_0.030_153)] text-sm px-3 py-2.5 rounded-sm focus:outline-none focus:border-[oklch(35.5%_0.088_153)] transition-colors placeholder:text-[oklch(62%_0.015_153)]";
+  const labelClass = "text-xs font-semibold text-[oklch(48%_0.018_153)] uppercase tracking-wider mb-1.5 block";
 
-  // Show trade-specific fields for export/distributor forms
   const showTradeFields = ["export_desk", "distributor", "product_availability"].includes(activeForm);
   const showProductField = !["company_profile", "general_contact"].includes(activeForm);
 
   return (
     <div className="min-h-screen bg-background">
-      {/* ========== HERO ========== */}
-      <section className="relative pt-32 pb-16 grid-bg overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[oklch(12%_0.008_200)] via-[oklch(14%_0.012_153)] to-[oklch(12%_0.008_200)]" />
+      {/* ========== HERO — dark forest green ========== */}
+      <section className="relative pt-32 pb-20 grid-bg overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-[oklch(18%_0.045_153)] via-[oklch(22%_0.060_153)] to-[oklch(18%_0.045_153)]" />
         <div className="container relative z-10">
           <div className="max-w-2xl">
-            <span className="tag-green mb-5 inline-block">Contact & Inquiries</span>
+            <span className="tag-green-dark mb-5 inline-block">Contact & Inquiries</span>
             <h1 className="text-[oklch(95%_0.003_200)] mb-5">
               Start a Qualified<br />
-              <span className="text-green-brand">Conversation.</span>
+              <span className="text-[oklch(65%_0.12_153)]">Conversation.</span>
             </h1>
-            <p className="text-[oklch(65%_0.006_200)] leading-relaxed">
+            <p className="text-[oklch(72%_0.012_153)] leading-relaxed">
               Select the inquiry type that best matches your requirement. Each form routes to the right team and triggers a response within 2–3 business days.
             </p>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[oklch(97.5%_0.006_140)] to-transparent" />
       </section>
 
-      {/* ========== MAIN CONTENT ========== */}
+      {/* ========== MAIN CONTENT — light bg ========== */}
       <section className="section-py">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
             {/* Left — Form Selector */}
             <div className="lg:col-span-1">
-              <h3 className="text-xs font-bold uppercase tracking-widest text-[oklch(55%_0.006_200)] mb-4">Select Inquiry Type</h3>
+              <h3 className="text-xs font-bold uppercase tracking-widest text-[oklch(48%_0.018_153)] mb-4">Select Inquiry Type</h3>
               <div className="flex flex-col gap-2">
                 {formConfigs.map((fc) => (
                   <button
@@ -216,16 +215,16 @@ export default function Contact() {
                     onClick={() => { setActiveForm(fc.id); setSubmitted(false); }}
                     className={`flex items-start gap-3 p-4 rounded-sm border text-left transition-all ${
                       activeForm === fc.id
-                        ? "border-[oklch(35.5%_0.088_153/0.5)] bg-[oklch(20%_0.012_153/0.3)]"
-                        : "border-[oklch(22%_0.009_200)] hover:border-[oklch(30%_0.009_200)]"
+                        ? "border-[oklch(35.5%_0.088_153/0.5)] bg-[oklch(35.5%_0.088_153/0.07)]"
+                        : "border-[oklch(87%_0.010_140)] bg-white hover:border-[oklch(35.5%_0.088_153/0.4)]"
                     }`}
                   >
-                    <fc.icon size={16} className={`mt-0.5 flex-shrink-0 ${activeForm === fc.id ? "text-[oklch(65%_0.12_153)]" : "text-[oklch(45%_0.006_200)]"}`} />
+                    <fc.icon size={16} className={`mt-0.5 flex-shrink-0 ${activeForm === fc.id ? "text-[oklch(35.5%_0.088_153)]" : "text-[oklch(55%_0.015_153)]"}`} />
                     <div>
-                      <div className={`text-sm font-semibold ${activeForm === fc.id ? "text-[oklch(90%_0.003_200)]" : "text-[oklch(70%_0.006_200)]"}`}>
+                      <div className={`text-sm font-semibold ${activeForm === fc.id ? "text-[oklch(22%_0.025_153)]" : "text-[oklch(38%_0.020_153)]"}`}>
                         {fc.title}
                       </div>
-                      <div className="text-[0.65rem] text-[oklch(45%_0.006_200)] mt-0.5">{fc.tag}</div>
+                      <div className="text-[0.65rem] text-[oklch(55%_0.015_153)] mt-0.5">{fc.tag}</div>
                     </div>
                   </button>
                 ))}
@@ -233,18 +232,18 @@ export default function Contact() {
 
               {/* Contact Info */}
               <div className="mt-8 mz-card p-5">
-                <h4 className="text-xs font-bold uppercase tracking-widest text-[oklch(55%_0.006_200)] mb-3">Direct Contact</h4>
+                <h4 className="text-xs font-bold uppercase tracking-widest text-[oklch(48%_0.018_153)] mb-3">Direct Contact</h4>
                 <div className="flex flex-col gap-2">
-                  <div className="text-xs text-[oklch(60%_0.006_200)]">
-                    <span className="text-[oklch(65%_0.12_153)] font-semibold">Email</span>
+                  <div className="text-xs text-[oklch(50%_0.018_153)]">
+                    <span className="text-[oklch(35.5%_0.088_153)] font-semibold">Email</span>
                     <br />info@mizuronglobal.com
                   </div>
-                  <div className="text-xs text-[oklch(60%_0.006_200)]">
-                    <span className="text-[oklch(65%_0.12_153)] font-semibold">Response Time</span>
+                  <div className="text-xs text-[oklch(50%_0.018_153)]">
+                    <span className="text-[oklch(35.5%_0.088_153)] font-semibold">Response Time</span>
                     <br />2–3 business days
                   </div>
-                  <div className="text-xs text-[oklch(60%_0.006_200)]">
-                    <span className="text-[oklch(65%_0.12_153)] font-semibold">Export Desk</span>
+                  <div className="text-xs text-[oklch(50%_0.018_153)]">
+                    <span className="text-[oklch(35.5%_0.088_153)] font-semibold">Export Desk</span>
                     <br />Available for qualified buyers
                   </div>
                 </div>
@@ -255,13 +254,13 @@ export default function Contact() {
             <div className="lg:col-span-2">
               {submitted ? (
                 <div className="mz-card p-12 text-center">
-                  <CheckCircle2 size={40} className="text-[oklch(65%_0.12_153)] mx-auto mb-5" />
-                  <h3 className="text-[oklch(90%_0.003_200)] font-semibold text-xl mb-3">Inquiry Received</h3>
-                  <p className="text-[oklch(62%_0.006_200)] mb-6">
+                  <CheckCircle2 size={40} className="text-[oklch(35.5%_0.088_153)] mx-auto mb-5" />
+                  <h3 className="text-[oklch(22%_0.025_153)] font-semibold text-xl mb-3">Inquiry Received</h3>
+                  <p className="text-[oklch(50%_0.018_153)] mb-6">
                     Thank you. Your {activeConfig.title.toLowerCase()} has been submitted. Our team will respond within 2–3 business days.
                   </p>
                   {activeConfig.contentRequested && (
-                    <p className="text-sm text-[oklch(55%_0.006_200)] mb-6">
+                    <p className="text-sm text-[oklch(52%_0.015_153)] mb-6">
                       If you requested gated content, it will be sent to your email address once your inquiry is reviewed.
                     </p>
                   )}
@@ -275,21 +274,20 @@ export default function Contact() {
               ) : (
                 <div className="mz-card p-8">
                   {/* Form Header */}
-                  <div className="flex items-start gap-4 mb-7 pb-6 border-b border-[oklch(22%_0.009_200)]">
-                    <div className="w-10 h-10 rounded-sm bg-[oklch(22%_0.009_200)] flex items-center justify-center flex-shrink-0">
-                      <activeConfig.icon size={18} className="text-[oklch(65%_0.12_153)]" />
+                  <div className="flex items-start gap-4 mb-7 pb-6 border-b border-[oklch(87%_0.010_140)]">
+                    <div className="w-10 h-10 rounded-sm bg-[oklch(93%_0.010_140)] flex items-center justify-center flex-shrink-0">
+                      <activeConfig.icon size={18} className="text-[oklch(35.5%_0.088_153)]" />
                     </div>
                     <div>
                       <div className="flex items-center gap-2 mb-1">
-                        <h3 className="text-[oklch(90%_0.003_200)] font-semibold">{activeConfig.title}</h3>
+                        <h3 className="text-[oklch(22%_0.025_153)] font-semibold">{activeConfig.title}</h3>
                         <span className="tag-green text-[0.6rem]">{activeConfig.tag}</span>
                       </div>
-                      <p className="text-sm text-[oklch(60%_0.006_200)]">{activeConfig.subtitle}</p>
+                      <p className="text-sm text-[oklch(50%_0.018_153)]">{activeConfig.subtitle}</p>
                     </div>
                   </div>
 
                   <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-                    {/* Identity */}
                     <div className="grid grid-cols-2 gap-4">
                       <div>
                         <label className={labelClass}>Full Name *</label>
@@ -365,7 +363,6 @@ export default function Contact() {
                       </div>
                     </div>
 
-                    {/* Product Interest */}
                     {showProductField && (
                       <div>
                         <label className={labelClass}>Product Interest</label>
@@ -382,7 +379,6 @@ export default function Contact() {
                       </div>
                     )}
 
-                    {/* Trade Fields */}
                     {showTradeFields && (
                       <div className="grid grid-cols-3 gap-4">
                         <div>
@@ -422,7 +418,6 @@ export default function Contact() {
                       </div>
                     )}
 
-                    {/* Message */}
                     <div>
                       <label className={labelClass}>Message / Additional Details</label>
                       <textarea
@@ -434,10 +429,9 @@ export default function Contact() {
                       />
                     </div>
 
-                    {/* Gated Content Notice */}
                     {activeConfig.contentRequested && (
-                      <div className="bg-[oklch(35.5%_0.088_153/0.08)] border border-[oklch(35.5%_0.088_153/0.2)] rounded-sm p-4">
-                        <p className="text-xs text-[oklch(65%_0.12_153)]">
+                      <div className="bg-[oklch(35.5%_0.088_153/0.06)] border border-[oklch(35.5%_0.088_153/0.2)] rounded-sm p-4">
+                        <p className="text-xs text-[oklch(35.5%_0.088_153)]">
                           <span className="font-semibold">Gated Content:</span> After submitting this form, the {activeConfig.contentRequested} will be sent to your email address. Mizuron reviews all requests before delivery.
                         </p>
                       </div>
@@ -452,7 +446,7 @@ export default function Contact() {
                       {!submitMutation.isPending && <ArrowRight size={16} />}
                     </button>
 
-                    <p className="text-[0.65rem] text-[oklch(40%_0.006_200)] text-center">
+                    <p className="text-[0.65rem] text-[oklch(55%_0.015_153)] text-center">
                       Your information is treated with strict confidentiality. Mizuron does not sell or share contact data.
                     </p>
                   </form>

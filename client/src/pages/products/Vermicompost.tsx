@@ -62,51 +62,51 @@ export default function Vermicompost() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* ========== HERO ========== */}
+      {/* ========== HERO — dark forest green ========== */}
       <section className="relative pt-32 pb-20 grid-bg overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[oklch(12%_0.008_200)] via-[oklch(14%_0.012_153)] to-[oklch(12%_0.008_200)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[oklch(18%_0.045_153)] via-[oklch(22%_0.060_153)] to-[oklch(18%_0.045_153)]" />
         <div className="container relative z-10">
-          <div className="flex items-center gap-2 text-xs text-[oklch(50%_0.006_200)] mb-6">
+          <div className="flex items-center gap-2 text-xs text-[oklch(65%_0.012_153)] mb-6">
             <Link href="/products" className="hover:text-[oklch(65%_0.12_153)] transition-colors">Products</Link>
             <span>/</span>
             <span className="text-[oklch(65%_0.12_153)]">Vermicompost</span>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <span className="tag-green mb-4 inline-block">Live Product · Soil Nutrition</span>
+              <span className="tag-green-dark mb-4 inline-block">Live Product · Soil Nutrition</span>
               <h1 className="text-[oklch(95%_0.003_200)] mb-5">
                 Export-Grade<br />
-                <span className="text-green-brand">Vermicompost</span>
+                <span className="text-[oklch(65%_0.12_153)]">Vermicompost</span>
               </h1>
-              <p className="text-lg text-[oklch(65%_0.006_200)] leading-relaxed mb-8">
+              <p className="text-lg text-[oklch(72%_0.012_153)] leading-relaxed mb-8">
                 Double-sifted, mature, low-odor vermicompost. pH-buffered for reef-safe applications. Low EC for salinity-sensitive environments. Dark, fine-textured, and export-ready for professional buyers worldwide.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link href="/contact#trial-kit" className="btn-primary">
                   Request a Trial Kit <ArrowRight size={16} />
                 </Link>
-                <Link href="/contact#datasheet" className="btn-outline">
+                <Link href="/contact#datasheet" className="btn-outline-light">
                   <Download size={15} /> Technical Datasheet
                 </Link>
-                <Link href="/contact#export-desk" className="btn-ghost">
+                <Link href="/contact#export-desk" className="btn-outline-light">
                   Speak to Export Desk
                 </Link>
               </div>
             </div>
 
-            {/* Quick Specs Panel */}
+            {/* Quick Specs Panel — white card on dark hero */}
             <div className="mz-card p-7">
-              <h4 className="text-xs font-bold uppercase tracking-widest text-[oklch(65%_0.12_153)] mb-5">Key Parameters</h4>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-[oklch(35.5%_0.088_153)] mb-5">Key Parameters</h4>
               <div className="grid grid-cols-2 gap-3">
                 {specs.slice(0, 6).map((spec) => (
-                  <div key={spec.param} className="border-b border-[oklch(22%_0.009_200)] pb-3">
-                    <div className="text-xs text-[oklch(50%_0.006_200)] mb-0.5">{spec.param}</div>
-                    <div className="text-sm font-bold text-[oklch(65%_0.12_153)]">{spec.value}</div>
-                    <div className="text-[0.65rem] text-[oklch(45%_0.006_200)]">{spec.note}</div>
+                  <div key={spec.param} className="border-b border-[oklch(87%_0.010_140)] pb-3">
+                    <div className="text-xs text-[oklch(50%_0.018_153)] mb-0.5">{spec.param}</div>
+                    <div className="text-sm font-bold text-[oklch(35.5%_0.088_153)]">{spec.value}</div>
+                    <div className="text-[0.65rem] text-[oklch(52%_0.015_153)]">{spec.note}</div>
                   </div>
                 ))}
               </div>
-              <div className="mt-4 pt-4 border-t border-[oklch(22%_0.009_200)]">
+              <div className="mt-4 pt-4 border-t border-[oklch(87%_0.010_140)]">
                 <div className="flex flex-wrap gap-2">
                   {["pH Buffered", "Low EC", "Double-Sifted", "Reef-Safe", "Export Ready"].map((tag) => (
                     <span key={tag} className="tag-green text-[0.6rem]">{tag}</span>
@@ -116,72 +116,73 @@ export default function Vermicompost() {
             </div>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[oklch(97.5%_0.006_140)] to-transparent" />
       </section>
 
-      {/* ========== FULL SPECIFICATIONS ========== */}
-      <section className="section-py">
+      {/* ========== FULL SPECIFICATIONS — white bg ========== */}
+      <section className="section-py bg-white border-b border-[oklch(87%_0.010_140)]">
         <div className="container">
           <div className="section-divider" />
           <span className="tag-green mb-4 inline-block">Technical Specifications</span>
-          <h2 className="text-[oklch(95%_0.003_200)] mb-8">Full Parameter Reference</h2>
+          <h2 className="text-[oklch(18%_0.030_153)] mb-8">Full Parameter Reference</h2>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
-                <tr className="border-b border-[oklch(26%_0.009_200)]">
-                  <th className="text-left py-3 px-4 text-xs font-bold uppercase tracking-widest text-[oklch(55%_0.006_200)]">Parameter</th>
-                  <th className="text-left py-3 px-4 text-xs font-bold uppercase tracking-widest text-[oklch(55%_0.006_200)]">Value / Range</th>
-                  <th className="text-left py-3 px-4 text-xs font-bold uppercase tracking-widest text-[oklch(55%_0.006_200)]">Notes</th>
+                <tr className="border-b border-[oklch(87%_0.010_140)]">
+                  <th className="text-left py-3 px-4 text-xs font-bold uppercase tracking-widest text-[oklch(48%_0.018_153)]">Parameter</th>
+                  <th className="text-left py-3 px-4 text-xs font-bold uppercase tracking-widest text-[oklch(48%_0.018_153)]">Value / Range</th>
+                  <th className="text-left py-3 px-4 text-xs font-bold uppercase tracking-widest text-[oklch(48%_0.018_153)]">Notes</th>
                 </tr>
               </thead>
               <tbody>
                 {specs.map((spec, i) => (
-                  <tr key={spec.param} className={`border-b border-[oklch(22%_0.009_200)] ${i % 2 === 0 ? "bg-[oklch(15%_0.009_200/0.5)]" : ""}`}>
-                    <td className="py-3 px-4 text-sm text-[oklch(75%_0.006_200)]">{spec.param}</td>
-                    <td className="py-3 px-4 text-sm font-semibold text-[oklch(65%_0.12_153)]">{spec.value}</td>
-                    <td className="py-3 px-4 text-xs text-[oklch(50%_0.006_200)]">{spec.note}</td>
+                  <tr key={spec.param} className={`border-b border-[oklch(87%_0.010_140)] ${i % 2 === 0 ? "bg-[oklch(97%_0.006_140)]" : ""}`}>
+                    <td className="py-3 px-4 text-sm text-[oklch(38%_0.020_153)]">{spec.param}</td>
+                    <td className="py-3 px-4 text-sm font-semibold text-[oklch(35.5%_0.088_153)]">{spec.value}</td>
+                    <td className="py-3 px-4 text-xs text-[oklch(52%_0.015_153)]">{spec.note}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-[oklch(45%_0.006_200)] mt-4">
+          <p className="text-xs text-[oklch(55%_0.015_153)] mt-4">
             * Parameters represent typical batch ranges. Specific batch reports available upon request. Values subject to seasonal and source variation within stated ranges.
           </p>
         </div>
       </section>
 
-      {/* ========== APPLICATIONS ========== */}
-      <section className="section-py bg-[oklch(15%_0.009_200)] border-y border-[oklch(22%_0.009_200)]">
+      {/* ========== APPLICATIONS — light sage bg ========== */}
+      <section className="section-py bg-[oklch(93.5%_0.012_140)] border-y border-[oklch(87%_0.010_140)]">
         <div className="container">
           <div className="section-divider" />
           <span className="tag-green mb-4 inline-block">Applications</span>
-          <h2 className="text-[oklch(95%_0.003_200)] mb-8">Who It's For</h2>
+          <h2 className="text-[oklch(18%_0.030_153)] mb-8">Who It's For</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {applications.map((app) => (
               <div key={app.title} className="mz-card p-6">
-                <h4 className="text-[oklch(90%_0.003_200)] font-semibold text-sm mb-2">{app.title}</h4>
-                <p className="text-xs text-[oklch(60%_0.006_200)] leading-relaxed">{app.description}</p>
+                <h4 className="text-[oklch(22%_0.025_153)] font-semibold text-sm mb-2">{app.title}</h4>
+                <p className="text-xs text-[oklch(50%_0.018_153)] leading-relaxed">{app.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ========== PACKAGING ========== */}
-      <section className="section-py">
+      {/* ========== PACKAGING — white bg ========== */}
+      <section className="section-py bg-white border-b border-[oklch(87%_0.010_140)]">
         <div className="container">
           <div className="section-divider" />
           <span className="tag-green mb-4 inline-block">Packaging Options</span>
-          <h2 className="text-[oklch(95%_0.003_200)] mb-8">Export-Ready Formats</h2>
+          <h2 className="text-[oklch(18%_0.030_153)] mb-8">Export-Ready Formats</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {packagingOptions.map((pkg) => (
               <div key={pkg.format} className="mz-card p-6 flex gap-4">
-                <div className="w-10 h-10 rounded-sm bg-[oklch(22%_0.009_200)] flex items-center justify-center flex-shrink-0">
-                  <Package size={18} className="text-[oklch(65%_0.12_153)]" />
+                <div className="w-10 h-10 rounded-sm bg-[oklch(93%_0.010_140)] flex items-center justify-center flex-shrink-0">
+                  <Package size={18} className="text-[oklch(35.5%_0.088_153)]" />
                 </div>
                 <div>
-                  <h4 className="text-[oklch(90%_0.003_200)] font-semibold text-sm mb-1">{pkg.format}</h4>
-                  <p className="text-xs text-[oklch(60%_0.006_200)] leading-relaxed mb-2">{pkg.description}</p>
+                  <h4 className="text-[oklch(22%_0.025_153)] font-semibold text-sm mb-1">{pkg.format}</h4>
+                  <p className="text-xs text-[oklch(50%_0.018_153)] leading-relaxed mb-2">{pkg.description}</p>
                   <span className="tag-grey text-[0.6rem]">Suitable for: {pkg.suitable}</span>
                 </div>
               </div>
@@ -190,22 +191,22 @@ export default function Vermicompost() {
         </div>
       </section>
 
-      {/* ========== COMPLIANCE & DOCUMENTATION ========== */}
-      <section className="section-py bg-[oklch(15%_0.009_200)] border-y border-[oklch(22%_0.009_200)]">
+      {/* ========== COMPLIANCE & DOCUMENTATION — light sage bg ========== */}
+      <section className="section-py bg-[oklch(93.5%_0.012_140)] border-y border-[oklch(87%_0.010_140)]">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
               <div className="section-divider" />
               <span className="tag-green mb-4 inline-block">Compliance & Documentation</span>
-              <h2 className="text-[oklch(95%_0.003_200)] mb-5">Documentation Readiness</h2>
-              <p className="text-[oklch(65%_0.006_200)] leading-relaxed mb-5">
+              <h2 className="text-[oklch(18%_0.030_153)] mb-5">Documentation Readiness</h2>
+              <p className="text-[oklch(50%_0.018_153)] leading-relaxed mb-5">
                 Mizuron prepares and verifies export documentation for each shipment. Our documentation package is designed to meet the requirements of professional importers, government procurement, and resort supply chains.
               </p>
-              <p className="text-xs text-[oklch(50%_0.006_200)] leading-relaxed">
+              <p className="text-xs text-[oklch(52%_0.015_153)] leading-relaxed">
                 Where technical, environmental, regulatory, compliance, or certification claims appear, Mizuron structures documentation so these can be supported by uploaded lab reports, certificates, and compliance documents. We do not present unsupported claims as final legal statements.
               </p>
             </div>
-            <div className="grid grid-cols-1 gap-3">
+            <div className="flex flex-col gap-2">
               {[
                 { icon: FileText, label: "Certificate of Origin" },
                 { icon: FlaskConical, label: "Batch Quality Report / Lab Analysis" },
@@ -216,9 +217,9 @@ export default function Vermicompost() {
                 { icon: CheckCircle2, label: "Heavy Metal & Pathogen Testing (on request)" },
                 { icon: FileText, label: "Buyer-Specific Compliance Documentation" },
               ].map((doc) => (
-                <div key={doc.label} className="flex items-center gap-3 py-2.5 border-b border-[oklch(22%_0.009_200)] last:border-0">
+                <div key={doc.label} className="flex items-center gap-3 py-2.5 border-b border-[oklch(87%_0.010_140)] last:border-0">
                   <doc.icon size={14} className="text-[oklch(35.5%_0.088_153)] flex-shrink-0" />
-                  <span className="text-sm text-[oklch(72%_0.006_200)]">{doc.label}</span>
+                  <span className="text-sm text-[oklch(38%_0.020_153)]">{doc.label}</span>
                 </div>
               ))}
             </div>
@@ -226,12 +227,12 @@ export default function Vermicompost() {
         </div>
       </section>
 
-      {/* ========== FAQ ========== */}
-      <section className="section-py">
+      {/* ========== FAQ — white bg ========== */}
+      <section className="section-py bg-white border-b border-[oklch(87%_0.010_140)]">
         <div className="container max-w-3xl">
           <div className="section-divider" />
           <span className="tag-green mb-4 inline-block">FAQ</span>
-          <h2 className="text-[oklch(95%_0.003_200)] mb-8">Common Questions</h2>
+          <h2 className="text-[oklch(18%_0.030_153)] mb-8">Common Questions</h2>
           <div className="flex flex-col gap-2">
             {faqs.map((faq, i) => (
               <div key={i} className="mz-card overflow-hidden">
@@ -239,15 +240,15 @@ export default function Vermicompost() {
                   className="w-full flex items-center justify-between px-6 py-4 text-left"
                   onClick={() => setOpenFaq(openFaq === i ? null : i)}
                 >
-                  <span className="text-sm font-semibold text-[oklch(85%_0.003_200)] pr-4">{faq.q}</span>
+                  <span className="text-sm font-semibold text-[oklch(22%_0.025_153)] pr-4">{faq.q}</span>
                   {openFaq === i
-                    ? <ChevronUp size={16} className="text-[oklch(65%_0.12_153)] flex-shrink-0" />
-                    : <ChevronDown size={16} className="text-[oklch(50%_0.006_200)] flex-shrink-0" />
+                    ? <ChevronUp size={16} className="text-[oklch(35.5%_0.088_153)] flex-shrink-0" />
+                    : <ChevronDown size={16} className="text-[oklch(52%_0.015_153)] flex-shrink-0" />
                   }
                 </button>
                 {openFaq === i && (
-                  <div className="px-6 pb-5 border-t border-[oklch(22%_0.009_200)]">
-                    <p className="text-sm text-[oklch(62%_0.006_200)] leading-relaxed pt-4">{faq.a}</p>
+                  <div className="px-6 pb-5 border-t border-[oklch(87%_0.010_140)]">
+                    <p className="text-sm text-[oklch(50%_0.018_153)] leading-relaxed pt-4">{faq.a}</p>
                   </div>
                 )}
               </div>
@@ -256,23 +257,23 @@ export default function Vermicompost() {
         </div>
       </section>
 
-      {/* ========== INQUIRY CTA ========== */}
-      <section className="section-py bg-[oklch(15%_0.009_200)] border-t border-[oklch(22%_0.009_200)]">
+      {/* ========== INQUIRY CTA — dark forest green ========== */}
+      <section className="section-py bg-[oklch(25%_0.065_153)]">
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
-            <div className="section-divider mx-auto" />
+            <div className="section-divider mx-auto" style={{ background: "oklch(65% 0.12 153)" }} />
             <h2 className="text-[oklch(95%_0.003_200)] mb-5">Ready to Source Vermicompost?</h2>
-            <p className="text-[oklch(65%_0.006_200)] mb-8 leading-relaxed">
+            <p className="text-[oklch(72%_0.012_153)] mb-8 leading-relaxed">
               Request a trial kit for evaluation, download the technical datasheet, or speak directly with our export team about your requirements.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/contact#trial-kit" className="btn-primary">
                 Request a Trial Kit <ArrowRight size={16} />
               </Link>
-              <Link href="/contact#datasheet" className="btn-outline">
+              <Link href="/contact#datasheet" className="btn-outline-light">
                 <Download size={15} /> Download Technical Datasheet
               </Link>
-              <Link href="/contact#export-desk" className="btn-ghost">
+              <Link href="/contact#export-desk" className="btn-outline-light">
                 Speak to Export Desk
               </Link>
             </div>

@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { ArrowRight, Sprout, Package, Wind, Truck, CheckCircle2, FlaskConical, Globe, Shield } from "lucide-react";
+import { ArrowRight, Sprout, Package, Wind, Truck, CheckCircle2, Globe } from "lucide-react";
 
 const verticals = [
   {
@@ -24,7 +24,6 @@ const verticals = [
       "Lab report and certificate support",
     ],
     cta: { label: "View Vermicompost", href: "/products/vermicompost" },
-    accentColor: "oklch(35.5% 0.088 153)",
   },
   {
     id: "commodities",
@@ -48,7 +47,6 @@ const verticals = [
       "Shipment readiness certification",
     ],
     cta: { label: "View Specialty Coffee", href: "/products/coffee" },
-    accentColor: "oklch(50% 0.10 153)",
   },
   {
     id: "carbon",
@@ -72,7 +70,6 @@ const verticals = [
       "Institutional and government collaboration",
     ],
     cta: { label: "Biochar 2027 Roadmap", href: "/products/biochar" },
-    accentColor: "oklch(37.5% 0.012 190)",
   },
   {
     id: "trade",
@@ -96,25 +93,24 @@ const verticals = [
       "Buyer-specific labeling and documentation",
     ],
     cta: { label: "View Logistics & Export", href: "/logistics" },
-    accentColor: "oklch(55% 0.012 190)",
   },
 ];
 
 export default function Solutions() {
   return (
     <div className="min-h-screen bg-background">
-      {/* ========== PAGE HERO ========== */}
+      {/* ========== PAGE HERO — dark forest green ========== */}
       <section className="relative pt-32 pb-20 grid-bg overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[oklch(12%_0.008_200)] via-[oklch(14%_0.012_153)] to-[oklch(12%_0.008_200)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[oklch(18%_0.045_153)] via-[oklch(22%_0.060_153)] to-[oklch(18%_0.045_153)]" />
         <div className="container relative z-10">
           <div className="max-w-3xl">
-            <span className="tag-green mb-5 inline-block">Our Solutions</span>
+            <span className="tag-green-dark mb-5 inline-block">Our Solutions</span>
             <h1 className="text-[oklch(95%_0.003_200)] mb-6">
               Four Verticals.
               <br />
-              <span className="text-green-brand">One Operational Standard.</span>
+              <span className="text-[oklch(65%_0.12_153)]">One Operational Standard.</span>
             </h1>
-            <p className="text-lg text-[oklch(65%_0.006_200)] leading-relaxed max-w-2xl">
+            <p className="text-lg text-[oklch(72%_0.012_153)] leading-relaxed max-w-2xl">
               Mizuron operates across four interconnected trade verticals. Each is built on the same foundation — technical discipline, reliable sourcing, and export-grade execution. The architecture is modular and designed to scale.
             </p>
           </div>
@@ -125,7 +121,7 @@ export default function Solutions() {
               <a
                 key={v.id}
                 href={`#${v.id}`}
-                className="flex items-center gap-2 px-4 py-2 border border-[oklch(26%_0.009_200)] text-sm text-[oklch(65%_0.006_200)] hover:border-[oklch(35.5%_0.088_153/0.5)] hover:text-[oklch(65%_0.12_153)] transition-all rounded-sm"
+                className="flex items-center gap-2 px-4 py-2 border border-[oklch(40%_0.030_153)] text-sm text-[oklch(72%_0.012_153)] hover:border-[oklch(65%_0.12_153/0.6)] hover:text-[oklch(85%_0.008_153)] transition-all rounded-sm"
               >
                 <v.icon size={14} />
                 {v.title}
@@ -133,14 +129,19 @@ export default function Solutions() {
             ))}
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[oklch(97.5%_0.006_140)] to-transparent" />
       </section>
 
-      {/* ========== VERTICALS ========== */}
+      {/* ========== VERTICALS — alternating light sections ========== */}
       {verticals.map((vertical, idx) => (
         <section
           key={vertical.id}
           id={vertical.id}
-          className={`section-py-lg ${idx % 2 === 1 ? "bg-[oklch(15%_0.009_200)] border-y border-[oklch(22%_0.009_200)]" : ""}`}
+          className={`section-py-lg ${
+            idx % 2 === 1
+              ? "bg-[oklch(93.5%_0.012_140)] border-y border-[oklch(87%_0.010_140)]"
+              : "bg-white border-b border-[oklch(87%_0.010_140)]"
+          }`}
         >
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
@@ -149,14 +150,14 @@ export default function Solutions() {
                 <div className="section-divider" />
                 <span className="tag-green mb-4 inline-block">{vertical.tag}</span>
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 rounded-sm bg-[oklch(22%_0.009_200)] flex items-center justify-center">
-                    <vertical.icon size={20} className="text-[oklch(65%_0.12_153)]" />
+                  <div className="w-10 h-10 rounded-sm bg-[oklch(93%_0.010_140)] flex items-center justify-center">
+                    <vertical.icon size={20} className="text-[oklch(35.5%_0.088_153)]" />
                   </div>
-                  <h2 className="text-[oklch(95%_0.003_200)]">{vertical.title}</h2>
+                  <h2 className="text-[oklch(18%_0.030_153)]">{vertical.title}</h2>
                 </div>
-                <h3 className="text-[oklch(75%_0.006_200)] text-xl font-normal mb-5">{vertical.headline}</h3>
-                <p className="text-[oklch(65%_0.006_200)] leading-relaxed mb-4">{vertical.description}</p>
-                <p className="text-[oklch(60%_0.006_200)] leading-relaxed mb-8 text-sm">{vertical.subtext}</p>
+                <h3 className="text-[oklch(38%_0.020_153)] text-xl font-normal mb-5">{vertical.headline}</h3>
+                <p className="text-[oklch(42%_0.018_153)] leading-relaxed mb-4">{vertical.description}</p>
+                <p className="text-[oklch(50%_0.018_153)] leading-relaxed mb-8 text-sm">{vertical.subtext}</p>
                 <Link href={vertical.cta.href} className="btn-primary">
                   {vertical.cta.label} <ArrowRight size={16} />
                 </Link>
@@ -166,20 +167,20 @@ export default function Solutions() {
               <div className={`space-y-5 ${idx % 2 === 1 ? "lg:order-1" : ""}`}>
                 {/* Features */}
                 <div className="mz-card p-6">
-                  <h4 className="text-xs font-bold uppercase tracking-widest text-[oklch(65%_0.12_153)] mb-4">Capabilities</h4>
+                  <h4 className="text-xs font-bold uppercase tracking-widest text-[oklch(35.5%_0.088_153)] mb-4">Capabilities</h4>
                   <div className="grid grid-cols-1 gap-2.5">
                     {vertical.features.map((feat) => (
                       <div key={feat} className="flex items-center gap-2.5">
                         <CheckCircle2 size={13} className="text-[oklch(35.5%_0.088_153)] flex-shrink-0" />
-                        <span className="text-sm text-[oklch(72%_0.006_200)]">{feat}</span>
+                        <span className="text-sm text-[oklch(42%_0.018_153)]">{feat}</span>
                       </div>
                     ))}
                   </div>
                 </div>
 
-                {/* Products in this vertical */}
+                {/* Products */}
                 <div className="mz-card p-6">
-                  <h4 className="text-xs font-bold uppercase tracking-widest text-[oklch(65%_0.12_153)] mb-4">Products in this Vertical</h4>
+                  <h4 className="text-xs font-bold uppercase tracking-widest text-[oklch(35.5%_0.088_153)] mb-4">Products in this Vertical</h4>
                   <div className="flex flex-col gap-3">
                     {vertical.products.map((product) => (
                       <Link
@@ -187,20 +188,20 @@ export default function Solutions() {
                         href={product.href}
                         className="flex items-center justify-between group"
                       >
-                        <span className="text-sm text-[oklch(75%_0.006_200)] group-hover:text-[oklch(95%_0.003_200)] transition-colors">
+                        <span className="text-sm text-[oklch(42%_0.018_153)] group-hover:text-[oklch(35.5%_0.088_153)] transition-colors">
                           {product.name}
                         </span>
                         <div className="flex items-center gap-2">
                           <span className={`text-[0.6rem] font-bold uppercase tracking-wider px-2 py-0.5 rounded-sm ${
                             product.status === "Live"
-                              ? "bg-[oklch(35.5%_0.088_153/0.2)] text-[oklch(65%_0.12_153)] border border-[oklch(35.5%_0.088_153/0.3)]"
+                              ? "bg-[oklch(35.5%_0.088_153/0.12)] text-[oklch(35.5%_0.088_153)] border border-[oklch(35.5%_0.088_153/0.28)]"
                               : product.status === "Expanding"
-                              ? "bg-[oklch(50%_0.10_153/0.15)] text-[oklch(60%_0.10_153)] border border-[oklch(50%_0.10_153/0.25)]"
-                              : "bg-[oklch(37.5%_0.012_190/0.15)] text-[oklch(55%_0.012_190)] border border-[oklch(37.5%_0.012_190/0.25)]"
+                              ? "bg-[oklch(50%_0.10_153/0.12)] text-[oklch(40%_0.10_153)] border border-[oklch(50%_0.10_153/0.25)]"
+                              : "bg-[oklch(37.5%_0.012_190/0.10)] text-[oklch(45%_0.012_190)] border border-[oklch(37.5%_0.012_190/0.22)]"
                           }`}>
                             {product.status}
                           </span>
-                          <ArrowRight size={12} className="text-[oklch(40%_0.006_200)] group-hover:text-[oklch(65%_0.12_153)] transition-colors" />
+                          <ArrowRight size={12} className="text-[oklch(55%_0.012_153)] group-hover:text-[oklch(35.5%_0.088_153)] transition-colors" />
                         </div>
                       </Link>
                     ))}
@@ -212,20 +213,20 @@ export default function Solutions() {
         </section>
       ))}
 
-      {/* ========== FINAL CTA ========== */}
-      <section className="section-py-lg bg-[oklch(15%_0.009_200)] border-t border-[oklch(22%_0.009_200)]">
+      {/* ========== FINAL CTA — rich dark green ========== */}
+      <section className="section-py-lg bg-[oklch(25%_0.065_153)]">
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
-            <div className="section-divider mx-auto" />
+            <div className="section-divider mx-auto" style={{ background: "oklch(65% 0.12 153)" }} />
             <h2 className="text-[oklch(95%_0.003_200)] mb-5">Start a Conversation</h2>
-            <p className="text-[oklch(65%_0.006_200)] mb-8 leading-relaxed">
+            <p className="text-[oklch(72%_0.012_153)] mb-8 leading-relaxed">
               Whether you are evaluating a specific product, planning a container order, or exploring a long-term partnership — Mizuron is ready to engage with precision.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/contact" className="btn-primary">
                 Send an Inquiry <ArrowRight size={16} />
               </Link>
-              <Link href="/products/vermicompost" className="btn-outline">
+              <Link href="/products/vermicompost" className="btn-outline-light">
                 View Vermicompost
               </Link>
             </div>

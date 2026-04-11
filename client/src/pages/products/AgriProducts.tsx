@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { ArrowRight, Package, CheckCircle2, Globe } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 const productCategories = [
   {
@@ -42,64 +42,65 @@ const sourcingFramework = [
 export default function AgriProducts() {
   return (
     <div className="min-h-screen bg-background">
-      {/* ========== HERO ========== */}
+      {/* ========== HERO — dark forest green ========== */}
       <section className="relative pt-32 pb-20 grid-bg overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[oklch(12%_0.008_200)] via-[oklch(14%_0.012_153)] to-[oklch(12%_0.008_200)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[oklch(18%_0.045_153)] via-[oklch(22%_0.060_153)] to-[oklch(18%_0.045_153)]" />
         <div className="container relative z-10">
-          <div className="flex items-center gap-2 text-xs text-[oklch(50%_0.006_200)] mb-6">
+          <div className="flex items-center gap-2 text-xs text-[oklch(65%_0.012_153)] mb-6">
             <Link href="/products" className="hover:text-[oklch(65%_0.12_153)] transition-colors">Products</Link>
             <span>/</span>
             <span className="text-[oklch(65%_0.12_153)]">High-Value Agri Products</span>
           </div>
           <div className="max-w-3xl">
-            <span className="tag-green mb-4 inline-block">Premium Sourcing · Sustainable Commodities</span>
+            <span className="tag-green-dark mb-4 inline-block">Premium Sourcing · Sustainable Commodities</span>
             <h1 className="text-[oklch(95%_0.003_200)] mb-5">
               High-Value Agri Products
               <br />
-              <span className="text-green-brand">Sourcing Excellence with Traceability</span>
+              <span className="text-[oklch(65%_0.12_153)]">Sourcing Excellence with Traceability</span>
             </h1>
-            <p className="text-lg text-[oklch(65%_0.006_200)] leading-relaxed mb-8">
+            <p className="text-lg text-[oklch(72%_0.012_153)] leading-relaxed mb-8">
               Mizuron's agri-commodity portfolio is built on the same sourcing standard as our soil nutrition products: technical discipline, ethical screening, and full export documentation. We source premium agricultural commodities for international buyers who require more than price.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link href="/contact#product-availability" className="btn-primary">
                 Request Product Availability <ArrowRight size={16} />
               </Link>
-              <Link href="/contact" className="btn-outline">
+              <Link href="/contact" className="btn-outline-light">
                 Speak to Our Team
               </Link>
             </div>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[oklch(97.5%_0.006_140)] to-transparent" />
       </section>
 
-      {/* ========== SOURCING FRAMEWORK ========== */}
-      <section className="section-py">
+      {/* ========== SOURCING FRAMEWORK — white bg ========== */}
+      <section className="section-py bg-white border-b border-[oklch(87%_0.010_140)]">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
               <div className="section-divider" />
               <span className="tag-green mb-4 inline-block">Our Approach</span>
-              <h2 className="text-[oklch(95%_0.003_200)] mb-5">The Mizuron Commodity Standard</h2>
-              <p className="text-[oklch(65%_0.006_200)] leading-relaxed mb-5">
+              <h2 className="text-[oklch(18%_0.030_153)] mb-5">The Mizuron Commodity Standard</h2>
+              <p className="text-[oklch(50%_0.018_153)] leading-relaxed mb-5">
                 Every commodity in our portfolio is evaluated against a defined sourcing framework. We do not source products that cannot meet our documentation, quality, and ethical standards — regardless of price.
               </p>
-              <p className="text-[oklch(65%_0.006_200)] leading-relaxed mb-5">
+              <p className="text-[oklch(50%_0.018_153)] leading-relaxed mb-5">
                 Our sourcing framework covers eight key dimensions: traceability, moisture analysis, quality grading, origin documentation, export packaging, ethical sourcing, compliance documentation, and shipment readiness.
               </p>
-              <p className="text-[oklch(55%_0.006_200)] text-sm leading-relaxed">
+              <p className="text-[oklch(52%_0.015_153)] text-sm leading-relaxed">
                 This framework is not aspirational — it is operational. Products that cannot meet these standards are not listed in our portfolio.
               </p>
             </div>
             <div className="mz-card p-6">
-              <h4 className="text-xs font-bold uppercase tracking-widest text-[oklch(65%_0.12_153)] mb-5">Sourcing Framework</h4>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-[oklch(35.5%_0.088_153)] mb-5">Sourcing Framework</h4>
               <div className="flex flex-col gap-3">
                 {sourcingFramework.map((item) => (
-                  <div key={item.label} className="flex items-start gap-3 py-2.5 border-b border-[oklch(22%_0.009_200)] last:border-0">
+                  <div key={item.label} className="flex items-start gap-3 py-2.5 border-b border-[oklch(87%_0.010_140)] last:border-0">
                     <CheckCircle2 size={13} className="text-[oklch(35.5%_0.088_153)] flex-shrink-0 mt-0.5" />
                     <div>
-                      <div className="text-xs font-semibold text-[oklch(80%_0.003_200)] mb-0.5">{item.label}</div>
-                      <div className="text-xs text-[oklch(55%_0.006_200)]">{item.description}</div>
+                      <div className="text-xs font-semibold text-[oklch(28%_0.025_153)] mb-0.5">{item.label}</div>
+                      <div className="text-xs text-[oklch(52%_0.015_153)]">{item.description}</div>
                     </div>
                   </div>
                 ))}
@@ -109,28 +110,28 @@ export default function AgriProducts() {
         </div>
       </section>
 
-      {/* ========== PRODUCT CATEGORIES ========== */}
-      <section className="section-py bg-[oklch(15%_0.009_200)] border-y border-[oklch(22%_0.009_200)]">
+      {/* ========== PRODUCT CATEGORIES — light sage bg ========== */}
+      <section className="section-py bg-[oklch(93.5%_0.012_140)] border-y border-[oklch(87%_0.010_140)]">
         <div className="container">
           <div className="text-center mb-10">
             <div className="section-divider mx-auto" />
             <span className="tag-green mb-4 inline-block">Portfolio</span>
-            <h2 className="text-[oklch(95%_0.003_200)] mb-4">Current & Expanding Categories</h2>
+            <h2 className="text-[oklch(18%_0.030_153)] mb-4">Current & Expanding Categories</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {productCategories.map((cat) => (
               <div key={cat.name} className="mz-card p-7">
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-[oklch(90%_0.003_200)] font-semibold">{cat.name}</h3>
+                  <h3 className="text-[oklch(22%_0.025_153)] font-semibold">{cat.name}</h3>
                   <span className={`text-[0.6rem] font-bold uppercase tracking-wider px-2 py-0.5 rounded-sm ${
                     cat.status === "Expanding"
-                      ? "bg-[oklch(50%_0.10_153/0.15)] text-[oklch(60%_0.10_153)] border border-[oklch(50%_0.10_153/0.25)]"
-                      : "bg-[oklch(37.5%_0.012_190/0.15)] text-[oklch(55%_0.012_190)] border border-[oklch(37.5%_0.012_190/0.25)]"
+                      ? "bg-[oklch(35.5%_0.088_153/0.10)] text-[oklch(35.5%_0.088_153)] border border-[oklch(35.5%_0.088_153/0.25)]"
+                      : "bg-[oklch(48%_0.018_153/0.10)] text-[oklch(48%_0.018_153)] border border-[oklch(48%_0.018_153/0.25)]"
                   }`}>
                     {cat.status}
                   </span>
                 </div>
-                <p className="text-sm text-[oklch(60%_0.006_200)] leading-relaxed mb-4">{cat.description}</p>
+                <p className="text-sm text-[oklch(50%_0.018_153)] leading-relaxed mb-4">{cat.description}</p>
                 <div className="flex flex-wrap gap-1.5">
                   {cat.specs.map((spec) => (
                     <span key={spec} className="tag-grey text-[0.6rem]">{spec}</span>
@@ -142,20 +143,20 @@ export default function AgriProducts() {
         </div>
       </section>
 
-      {/* ========== CTA ========== */}
-      <section className="section-py">
+      {/* ========== CTA — dark forest green ========== */}
+      <section className="section-py bg-[oklch(25%_0.065_153)]">
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
-            <div className="section-divider mx-auto" />
+            <div className="section-divider mx-auto" style={{ background: "oklch(65% 0.12 153)" }} />
             <h2 className="text-[oklch(95%_0.003_200)] mb-5">Looking for a Specific Commodity?</h2>
-            <p className="text-[oklch(65%_0.006_200)] mb-8 leading-relaxed">
+            <p className="text-[oklch(72%_0.012_153)] mb-8 leading-relaxed">
               Tell us what you need. Mizuron's sourcing capability extends beyond our listed portfolio. If you have a specific commodity requirement, contact us with your specifications and we will assess sourcing feasibility.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/contact#product-availability" className="btn-primary">
                 Request Product Availability <ArrowRight size={16} />
               </Link>
-              <Link href="/contact" className="btn-outline">
+              <Link href="/contact" className="btn-outline-light">
                 Speak to Our Team
               </Link>
             </div>

@@ -116,26 +116,27 @@ const industries = [
 export default function Industries() {
   return (
     <div className="min-h-screen bg-background">
-      {/* ========== HERO ========== */}
+      {/* ========== HERO — dark forest green ========== */}
       <section className="relative pt-32 pb-20 grid-bg overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[oklch(12%_0.008_200)] via-[oklch(14%_0.012_153)] to-[oklch(12%_0.008_200)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[oklch(18%_0.045_153)] via-[oklch(22%_0.060_153)] to-[oklch(18%_0.045_153)]" />
         <div className="container relative z-10">
           <div className="max-w-3xl">
-            <span className="tag-green mb-5 inline-block">Industries We Serve</span>
+            <span className="tag-green-dark mb-5 inline-block">Industries We Serve</span>
             <h1 className="text-[oklch(95%_0.003_200)] mb-6">
               Built for Buyers Who
               <br />
-              <span className="text-green-brand">Require More Than Price.</span>
+              <span className="text-[oklch(65%_0.12_153)]">Require More Than Price.</span>
             </h1>
-            <p className="text-lg text-[oklch(65%_0.006_200)] leading-relaxed">
+            <p className="text-lg text-[oklch(72%_0.012_153)] leading-relaxed">
               Mizuron serves professional buyers across six industry segments. Each has different requirements — but all share a common need: reliable supply, technical credibility, and export-grade execution.
             </p>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[oklch(97.5%_0.006_140)] to-transparent" />
       </section>
 
-      {/* ========== INDUSTRIES GRID ========== */}
-      <section className="section-py-lg">
+      {/* ========== INDUSTRIES GRID — white bg ========== */}
+      <section className="section-py-lg bg-white border-b border-[oklch(87%_0.010_140)]">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {industries.map((industry, idx) => (
@@ -143,15 +144,14 @@ export default function Industries() {
                 {/* Header */}
                 <div>
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-sm bg-[oklch(22%_0.009_200)] flex items-center justify-center">
-                      <industry.icon size={18} className="text-[oklch(65%_0.12_153)]" />
+                    <div className="w-10 h-10 rounded-sm bg-[oklch(93%_0.010_140)] flex items-center justify-center">
+                      <industry.icon size={18} className="text-[oklch(35.5%_0.088_153)]" />
                     </div>
                     <span className="tag-green text-[0.6rem]">{industry.tag}</span>
                   </div>
-                  <h3 className="text-[oklch(90%_0.003_200)] font-semibold text-xl mb-3">{industry.title}</h3>
-                  <p className="text-sm text-[oklch(62%_0.006_200)] leading-relaxed mb-5">{industry.description}</p>
+                  <h3 className="text-[oklch(22%_0.030_153)] font-semibold text-xl mb-3">{industry.title}</h3>
+                  <p className="text-sm text-[oklch(50%_0.018_153)] leading-relaxed mb-5">{industry.description}</p>
 
-                  {/* Products */}
                   <div className="flex flex-wrap gap-2 mb-5">
                     {industry.products.map((p) => (
                       <Link key={p.name} href={p.href} className="tag-grey text-[0.6rem] hover:border-[oklch(35.5%_0.088_153/0.5)] transition-colors">
@@ -165,13 +165,13 @@ export default function Industries() {
                   </Link>
                 </div>
 
-                {/* Needs list — only shown in the featured (first) card's second column, or inline for others */}
+                {/* Needs list */}
                 {idx === 0 ? (
                   <div>
-                    <h4 className="text-xs font-bold uppercase tracking-widest text-[oklch(65%_0.12_153)] mb-4">Key Requirements</h4>
+                    <h4 className="text-xs font-bold uppercase tracking-widest text-[oklch(35.5%_0.088_153)] mb-4">Key Requirements</h4>
                     <ul className="flex flex-col gap-2.5">
                       {industry.needs.map((need) => (
-                        <li key={need} className="flex items-start gap-2.5 text-sm text-[oklch(65%_0.006_200)]">
+                        <li key={need} className="flex items-start gap-2.5 text-sm text-[oklch(50%_0.018_153)]">
                           <span className="w-1.5 h-1.5 rounded-full bg-[oklch(35.5%_0.088_153)] mt-1.5 flex-shrink-0" />
                           {need}
                         </li>
@@ -179,11 +179,11 @@ export default function Industries() {
                     </ul>
                   </div>
                 ) : (
-                  <div className="mt-4 pt-4 border-t border-[oklch(22%_0.009_200)]">
-                    <h5 className="text-[0.65rem] font-bold uppercase tracking-widest text-[oklch(50%_0.006_200)] mb-2">Key Requirements</h5>
+                  <div className="mt-4 pt-4 border-t border-[oklch(87%_0.010_140)]">
+                    <h5 className="text-[0.65rem] font-bold uppercase tracking-widest text-[oklch(48%_0.018_153)] mb-2">Key Requirements</h5>
                     <ul className="flex flex-col gap-1.5">
                       {industry.needs.slice(0, 3).map((need) => (
-                        <li key={need} className="flex items-start gap-2 text-xs text-[oklch(58%_0.006_200)]">
+                        <li key={need} className="flex items-start gap-2 text-xs text-[oklch(52%_0.015_153)]">
                           <span className="w-1 h-1 rounded-full bg-[oklch(35.5%_0.088_153)] mt-1.5 flex-shrink-0" />
                           {need}
                         </li>
@@ -197,20 +197,20 @@ export default function Industries() {
         </div>
       </section>
 
-      {/* ========== CTA ========== */}
-      <section className="section-py bg-[oklch(15%_0.009_200)] border-t border-[oklch(22%_0.009_200)]">
+      {/* ========== CTA — dark forest green ========== */}
+      <section className="section-py bg-[oklch(25%_0.065_153)]">
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
-            <div className="section-divider mx-auto" />
+            <div className="section-divider mx-auto" style={{ background: "oklch(65% 0.12 153)" }} />
             <h2 className="text-[oklch(95%_0.003_200)] mb-5">Your Industry Not Listed?</h2>
-            <p className="text-[oklch(65%_0.006_200)] mb-8 leading-relaxed">
+            <p className="text-[oklch(72%_0.012_153)] mb-8 leading-relaxed">
               Mizuron's sourcing capability extends beyond our listed segments. If you have a specific requirement, contact us and we will assess whether we can serve your needs.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link href="/contact" className="btn-primary">
                 Send an Inquiry <ArrowRight size={16} />
               </Link>
-              <Link href="/solutions" className="btn-outline">
+              <Link href="/solutions" className="btn-outline-light">
                 View Our Solutions
               </Link>
             </div>

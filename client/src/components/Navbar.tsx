@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, ChevronDown } from "lucide-react";
+import { useTheme } from "@/contexts/ThemeContext";
 
-const LOGO_LIGHT = "https://d2xsxph8kpxj0f.cloudfront.net/310519663454826694/2qY7LtaKLgCV3LoWz2F2nM/mizuron-logo-light-1024_8e546806.png";
+const LOGO_LIGHT = "/logos/logo-light.png";
+const LOGO_DARK = "/logos/logo-dark.png";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -38,6 +40,7 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [location] = useLocation();
+  const { theme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
@@ -49,6 +52,9 @@ export default function Navbar() {
     setMobileOpen(false);
     setActiveDropdown(null);
   }, [location]);
+
+  // Use light logo on dark background (hero), and dark logo otherwise if theme is light
+  const logoSrc = theme === "dark" ? LOGO_LIGHT : (scrolled ? LOGO_DARK : LOGO_LIGHT);
 
   return (
     <header
@@ -63,7 +69,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center flex-shrink-0">
             <img
-              src={LOGO_LIGHT}
+              src={logoSrc}
               alt="Mizuron Global"
               className="h-8 lg:h-10 w-auto object-contain"
             />

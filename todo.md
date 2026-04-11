@@ -1,4 +1,4 @@
-# Mizuron Global Website — Project TODO
+# Mizuron Global website — Project TODO
 
 ## Phase 1: Foundation
 - [x] Review brief and extract content architecture

@@ -42,16 +42,16 @@
   --color-sidebar-ring: var(--sidebar-ring);
 
   /* Mizuron brand colors */
-  --color-ink: oklch(0.18 0.01 90);
-  --color-ink2: oklch(0.38 0.01 90);
-  --color-ink3: oklch(0.58 0.01 90);
-  --color-paper: oklch(0.975 0.005 90);
-  --color-paper2: oklch(0.955 0.005 90);
-  --color-paper3: oklch(0.92 0.005 90);
-  --color-gold: oklch(0.52 0.12 75);
-  --color-gold2: oklch(0.65 0.14 75);
-  --color-teal: oklch(0.37 0.07 165);
-  --color-teal2: oklch(0.28 0.06 165);
+  --color-ink: #1A1A18;      /* Carbon Black */
+  --color-ink2: #333330;     /* Muted Carbon */
+  --color-ink3: #86857F;     /* Grey Olive */
+  --color-paper: #FAF8F4;    /* Porcelain */
+  --color-paper2: #F4F1E9;   /* Porcelain Darker */
+  --color-paper3: #E8E4D8;   /* Porcelain Border */
+  --color-gold: #97782E;     /* Golden Earth */
+  --color-gold2: #B08D3C;    /* Golden Earth Lighter */
+  --color-teal: #0F4A36;     /* Pine Teal */
+  --color-teal2: #083325;    /* Pine Teal Darker */
 
   /* Font families */
   --font-serif: 'Cormorant Garamond', Georgia, serif;
@@ -60,38 +60,38 @@
 
 :root {
   --radius: 2px;
-  --background: oklch(0.975 0.005 90);
-  --foreground: oklch(0.18 0.01 90);
-  --card: oklch(0.975 0.005 90);
-  --card-foreground: oklch(0.18 0.01 90);
-  --popover: oklch(0.975 0.005 90);
-  --popover-foreground: oklch(0.18 0.01 90);
-  --primary: oklch(0.52 0.12 75);
-  --primary-foreground: oklch(0.975 0.005 90);
-  --secondary: oklch(0.955 0.005 90);
-  --secondary-foreground: oklch(0.38 0.01 90);
-  --muted: oklch(0.955 0.005 90);
-  --muted-foreground: oklch(0.58 0.01 90);
-  --accent: oklch(0.955 0.005 90);
-  --accent-foreground: oklch(0.18 0.01 90);
+  --background: #FAF8F4;
+  --foreground: #1A1A18;
+  --card: #FAF8F4;
+  --card-foreground: #1A1A18;
+  --popover: #FAF8F4;
+  --popover-foreground: #1A1A18;
+  --primary: #97782E;
+  --primary-foreground: #FAF8F4;
+  --secondary: #F4F1E9;
+  --secondary-foreground: #333330;
+  --muted: #F4F1E9;
+  --muted-foreground: #86857F;
+  --accent: #F4F1E9;
+  --accent-foreground: #1A1A18;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.005 90);
-  --input: oklch(0.92 0.005 90);
-  --ring: oklch(0.52 0.12 75);
-  --chart-1: oklch(0.52 0.12 75);
-  --chart-2: oklch(0.37 0.07 165);
-  --chart-3: oklch(0.65 0.14 75);
-  --chart-4: oklch(0.38 0.01 90);
-  --chart-5: oklch(0.18 0.01 90);
-  --sidebar: oklch(0.975 0.005 90);
-  --sidebar-foreground: oklch(0.18 0.01 90);
-  --sidebar-primary: oklch(0.52 0.12 75);
-  --sidebar-primary-foreground: oklch(0.975 0.005 90);
-  --sidebar-accent: oklch(0.955 0.005 90);
-  --sidebar-accent-foreground: oklch(0.18 0.01 90);
-  --sidebar-border: oklch(0.92 0.005 90);
-  --sidebar-ring: oklch(0.52 0.12 75);
+  --border: #E8E4D8;
+  --input: #E8E4D8;
+  --ring: #97782E;
+  --chart-1: #97782E;
+  --chart-2: #0F4A36;
+  --chart-3: #B08D3C;
+  --chart-4: #333330;
+  --chart-5: #1A1A18;
+  --sidebar: #FAF8F4;
+  --sidebar-foreground: #1A1A18;
+  --sidebar-primary: #97782E;
+  --sidebar-primary-foreground: #FAF8F4;
+  --sidebar-accent: #F4F1E9;
+  --sidebar-accent-foreground: #1A1A18;
+  --sidebar-border: #E8E4D8;
+  --sidebar-ring: #97782E;
 }
 
 @layer base {
@@ -117,11 +117,11 @@
     line-height: 1.2;
   }
   ::selection {
-    background-color: oklch(0.52 0.12 75 / 0.2);
-    color: oklch(0.18 0.01 90);
+    background-color: #97782E;
+    color: #FAF8F4;
   }
   :focus-visible {
-    outline: 2px solid oklch(0.52 0.12 75);
+    outline: 2px solid #97782E;
     outline-offset: 2px;
   }
   button:not(:disabled),

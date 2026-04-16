@@ -1,6 +1,6 @@
 import { Linkedin, Twitter, Instagram, MessageCircle } from "lucide-react";
 
-const LOGO_DARK = "https://d2xsxph8kpxj0f.cloudfront.net/310519663454826694/Sz2WXn73m6MgVBcMywT6dB/logo-dark_727f34c9.svg";
+const LOGO_LIGHT = "/assets/logo-light.png";
 
 const socialLinks = [
   { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/company/mizuron-global" },
@@ -31,7 +31,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <img
-              src={LOGO_DARK}
+              src={LOGO_LIGHT}
               alt="Mizuron Global"
               className="h-[40px] w-auto mb-4"
             />

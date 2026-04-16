@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
-const LOGO_LIGHT = "https://d2xsxph8kpxj0f.cloudfront.net/310519663454826694/Sz2WXn73m6MgVBcMywT6dB/logo-light_49a10034.svg";
+const LOGO_DARK = "/assets/logo-dark.png";
 
 const navLinks = [
   { label: "Services", href: "#services" },
@@ -54,7 +54,7 @@ export default function Navbar() {
           }}
         >
           <img
-            src={LOGO_LIGHT}
+            src={LOGO_DARK}
             alt="Mizuron Global — India Ingredient Intelligence"
             className="h-[42px] w-auto"
           />

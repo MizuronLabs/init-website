@@ -1,18 +1,20 @@
+import { lazy, Suspense } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/sections/Hero";
 import TrustStrip from "@/components/sections/TrustStrip";
 import ProblemBar from "@/components/sections/ProblemBar";
 import Services from "@/components/sections/Services";
-import CostOfFailure from "@/components/sections/CostOfFailure";
-import HowItWorks from "@/components/sections/HowItWorks";
-import Proof from "@/components/sections/Proof";
-import Categories from "@/components/sections/Categories";
-import About from "@/components/sections/About";
-import FAQ from "@/components/sections/FAQ";
-import Contact from "@/components/sections/Contact";
-import FinalCTA from "@/components/sections/FinalCTA";
-import Footer from "@/components/Footer";
+
+const CostOfFailure = lazy(() => import("@/components/sections/CostOfFailure"));
+const HowItWorks = lazy(() => import("@/components/sections/HowItWorks"));
+const Proof = lazy(() => import("@/components/sections/Proof"));
+const Categories = lazy(() => import("@/components/sections/Categories"));
+const About = lazy(() => import("@/components/sections/About"));
+const FAQ = lazy(() => import("@/components/sections/FAQ"));
+const Contact = lazy(() => import("@/components/sections/Contact"));
+const FinalCTA = lazy(() => import("@/components/sections/FinalCTA"));
+const Footer = lazy(() => import("@/components/Footer"));
 
 export default function Home() {
   const scrollRef = useScrollAnimation();
@@ -25,16 +27,20 @@ export default function Home() {
         <TrustStrip />
         <ProblemBar />
         <Services />
-        <CostOfFailure />
-        <HowItWorks />
-        <Proof />
-        <Categories />
-        <About />
-        <FAQ />
-        <Contact />
-        <FinalCTA />
+        <Suspense fallback={null}>
+          <CostOfFailure />
+          <HowItWorks />
+          <Proof />
+          <Categories />
+          <About />
+          <FAQ />
+          <Contact />
+          <FinalCTA />
+        </Suspense>
       </main>
-      <Footer />
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }

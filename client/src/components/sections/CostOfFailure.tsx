@@ -59,7 +59,7 @@ export default function CostOfFailure() {
                     <span className="font-serif text-paper text-[1.1rem]">USD 20,000</span>
                   </div>
                   <div className="w-full h-2 bg-white/10 overflow-hidden">
-                    <div className="h-full bg-red-400/60 w-full" />
+                    <div className="h-full bg-[oklch(0.58_0.17_22)]/65 w-full" />
                   </div>
                 </div>
 
@@ -71,7 +71,7 @@ export default function CostOfFailure() {
                     <span className="font-serif text-paper text-[1.1rem]">USD 50,000</span>
                   </div>
                   <div className="w-full h-2 bg-white/10 overflow-hidden">
-                    <div className="h-full bg-red-400/60 w-full" />
+                    <div className="h-full bg-[oklch(0.58_0.17_22)]/65 w-full" />
                   </div>
                 </div>
 

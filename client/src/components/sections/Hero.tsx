@@ -50,9 +50,9 @@ export default function Hero() {
             className="text-[1.05rem] text-ink2 mb-8 max-w-[520px] leading-[1.8] fade-up"
             style={{ transitionDelay: "160ms" }}
           >
-            For companies importing Indian spices, botanical ingredients, and wellness inputs who
-            care about documentation, traceability, and clean customs clearance. We verify Indian
-            suppliers so you don't take blind risk.
+            Mizuron Global helps Asian food and wellness manufacturers source from India with
+            absolute confidence — verified suppliers, market-specific documentation, and zero
+            customs surprises.
           </p>
 
           {/* CTAs */}

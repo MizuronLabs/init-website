@@ -23,6 +23,8 @@ const companyLinks = [
   { label: "Contact Us", href: "#contact" },
 ];
 
+const supplierLink = { label: "Supplier Readiness Programs", href: "/for-suppliers" };
+
 export default function Footer() {
   return (
     <footer className="bg-ink text-paper pt-16 pb-8" aria-label="Site footer">
@@ -88,6 +90,26 @@ export default function Footer() {
               </a>
             ))}
           </div>
+        </div>
+
+        {/* Supplier Readiness Teaser */}
+        <div className="border-t border-white/8 py-6 mb-0 flex items-center justify-between gap-8 flex-wrap">
+          <div>
+            <div className="text-[10px] tracking-[0.13em] uppercase text-paper/35 font-medium mb-1">
+              For Indian Exporters
+            </div>
+            <p className="text-[12.5px] text-paper/55 max-w-[520px] leading-[1.65]">
+              Capable Indian supplier looking to meet international standards? Mizuron offers structured
+              readiness programs for spice and Ayurvedic ingredient exporters targeting Japan, Korea, and
+              Southeast Asia.
+            </p>
+          </div>
+          <a
+            href={supplierLink.href}
+            className="text-[12px] text-gold2 no-underline tracking-[0.03em] whitespace-nowrap transition-colors hover:text-paper shrink-0"
+          >
+            {supplierLink.label} →
+          </a>
         </div>
 
         {/* Bottom */}

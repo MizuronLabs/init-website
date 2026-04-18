@@ -35,7 +35,7 @@ export default function Footer() {
             <img
               src={LOGO_LIGHT}
               alt="Mizuron Global"
-              className="h-[40px] w-auto mb-4"
+              className="h-[50px] w-auto mb-4"
             />
             <p className="text-[12.5px] text-paper/45 leading-[1.75] max-w-[280px]">
               Verified Indian spice and Ayurvedic ingredient sourcing for food manufacturers,

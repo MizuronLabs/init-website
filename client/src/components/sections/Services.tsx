@@ -145,22 +145,25 @@ const sourcingPhases = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-16 md:py-20" aria-labelledby="services-heading">
+    <section id="services" className="py-16 md:py-24" aria-labelledby="services-heading">
       <div className="container">
         <span className="tag fade-up">Our Services</span>
         <h2
           id="services-heading"
-          className="font-serif text-[clamp(1.8rem,3vw,2.6rem)] mb-3 fade-up"
+          className="font-serif text-[clamp(1.8rem,3vw,2.6rem)] mb-3 fade-up leading-[1.1]"
           style={{ transitionDelay: "80ms" }}
         >
-          Three ways Mizuron Global works with you
+          Three ways we work with you.
+          <br />
+          <em className="italic text-ink3 font-normal">One principle behind all of them.</em>
         </h2>
         <p
-          className="text-ink2 text-[15px] max-w-[560px] mb-10 fade-up"
-          style={{ transitionDelay: "120ms" }}
+          className="text-ink2 text-[15px] max-w-[560px] mb-10 fade-up leading-[1.85]"
+          style={{ transitionDelay: "140ms" }}
         >
-          Each service is designed to reduce your risk at a specific stage of the India sourcing
-          journey — from first evaluation to ongoing trade.
+          Every engagement is designed to reduce your risk at a specific stage of the India
+          sourcing journey — from evaluating a single supplier to managing an entire import
+          programme. The buyer's interest comes first. Always.
         </p>
 
         {/* Overview cards */}

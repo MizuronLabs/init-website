@@ -35,7 +35,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="bg-paper2 py-16 md:py-20" aria-labelledby="how-heading">
+    <section id="how-it-works" className="bg-paper2 py-16 md:py-24" aria-labelledby="how-heading">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Left: Steps */}
@@ -43,10 +43,11 @@ export default function HowItWorks() {
             <span className="tag fade-up">How It Works</span>
             <h2
               id="how-heading"
-              className="font-serif text-[clamp(1.8rem,3vw,2.6rem)] mb-8 fade-up"
+              className="font-serif text-[clamp(1.8rem,3vw,2.6rem)] mb-8 fade-up leading-[1.1]"
               style={{ transitionDelay: "80ms" }}
             >
-              From enquiry to verified shipment
+              From first conversation to{" "}
+              <em className="italic">verified shipment.</em>
             </h2>
             <div className="space-y-6">
               {steps.map((s, i) => (

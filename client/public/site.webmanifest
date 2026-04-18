@@ -1,0 +1,16 @@
+{
+  "name": "Mizuron Global",
+  "short_name": "Mizuron",
+  "description": "Independent supplier verification for Indian ingredients",
+  "start_url": "/",
+  "display": "browser",
+  "theme_color": "#0F4A36",
+  "background_color": "#FAF8F4",
+  "icons": [
+    {
+      "src": "/assets/favicon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}

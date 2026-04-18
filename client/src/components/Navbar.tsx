@@ -44,8 +44,8 @@ export default function Navbar() {
           : "bg-paper/97 backdrop-blur-md border-b border-paper3"
       }`}
     >
-      <div className="container flex items-center justify-between h-[88px]">
-        {/* Logo — SVG file */}
+      <div className="container flex items-center justify-between h-[60px] lg:h-[88px]">
+        {/* Logo */}
         <a
           href="/"
           className="block no-underline shrink-0"
@@ -62,7 +62,7 @@ export default function Navbar() {
           <img
             src={LOGO_DARK}
             alt="Mizuron Global — India Ingredient Intelligence"
-            className="h-[68px] w-auto"
+            className="h-[44px] lg:h-[68px] w-auto"
           />
         </a>
 
@@ -98,7 +98,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="lg:hidden fixed inset-0 top-[88px] bg-paper z-40 overflow-y-auto">
+        <div className="lg:hidden fixed inset-0 top-[60px] bg-paper z-40 overflow-y-auto">
           <div className="container py-8 flex flex-col gap-1">
             {navLinks.map((link) => (
               <a

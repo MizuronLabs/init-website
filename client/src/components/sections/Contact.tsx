@@ -39,7 +39,7 @@ function PhoneField() {
   }, []);
 
   return (
-    <div className="flex" ref={ref}>
+    <div className="flex relative" ref={ref}>
       {/* Hidden combined value for form submission */}
       <input type="hidden" name="phone_dial_code" value={selected.code} />
 
@@ -55,9 +55,9 @@ function PhoneField() {
         <ChevronDown size={12} className={`text-ink3 transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
 
-      {/* Dropdown */}
+      {/* Dropdown — anchored to parent, clipped to viewport */}
       {open && (
-        <div className="absolute z-50 mt-[42px] w-52 bg-paper border border-paper3 shadow-md max-h-64 overflow-y-auto">
+        <div className="absolute top-full left-0 z-50 w-52 max-w-[calc(100vw-2rem)] bg-paper border border-paper3 shadow-md max-h-60 overflow-y-auto">
           {dialCodes.map((d) => (
             <button
               key={d.country}

@@ -71,8 +71,8 @@ export default function Contact() {
                 <Phone size={17} className="text-gold mt-0.5 shrink-0" strokeWidth={1.5} />
                 <div>
                   <div className="text-[11px] tracking-[0.1em] uppercase text-ink3 mb-0.5">WhatsApp</div>
-                  <a href="https://wa.me/91XXXXXXXXXX" className="text-[14px] text-ink no-underline hover:text-gold transition-colors">
-                    +91 XXXX XXXX XX
+                  <a href="https://wa.me/916361406325?text=Hi%20Mizuron%20Global,%20I%20reached%20out%20via%20your%20website.%20I%20am%20interested%20in%20learning%20more%20about%20your%20India%20sourcing%20and%20verification%20services." className="text-[14px] text-ink no-underline hover:text-gold transition-colors">
+                    +91 6361 40 6325
                   </a>
                 </div>
               </div>
@@ -80,7 +80,9 @@ export default function Contact() {
                 <MapPin size={17} className="text-gold mt-0.5 shrink-0" strokeWidth={1.5} />
                 <div>
                   <div className="text-[11px] tracking-[0.1em] uppercase text-ink3 mb-0.5">Office</div>
-                  <span className="text-[14px] text-ink">Ahmedabad, Gujarat, India</span>
+                  <span className="text-[14px] text-ink">
+                    Regus, 2nd Floor, Privilon East Wing, SG Highway, Ahmedabad 380054
+                  </span>
                 </div>
               </div>
               <div className="flex items-start gap-3">

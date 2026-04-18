@@ -35,7 +35,7 @@ export default function Footer() {
             <img
               src={LOGO_LIGHT}
               alt="Mizuron Global"
-              className="h-[50px] w-auto mb-4"
+              className="h-[64px] w-auto mb-5"
             />
             <p className="text-[12.5px] text-paper/45 leading-[1.75] max-w-[280px]">
               Verified Indian spice and Ayurvedic ingredient sourcing for food manufacturers,
@@ -117,7 +117,7 @@ export default function Footer() {
           <span className="text-[11.5px] text-paper/30">
             &copy; 2026 Mizuron Global. All rights reserved. Ahmedabad, Gujarat, India.
           </span>
-          <span className="font-serif italic text-[13px] text-paper/35">
+          <span className="font-serif italic text-[15px] text-paper/70 tracking-[0.015em]">
             India's ingredients. Your confidence.
           </span>
         </div>

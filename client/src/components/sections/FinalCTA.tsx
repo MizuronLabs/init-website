@@ -22,13 +22,13 @@ export default function FinalCTA() {
           <div className="flex flex-wrap justify-center gap-3">
             <a
               href="#contact"
-              className="inline-block bg-gold text-paper px-7 py-3 text-[13px] tracking-[0.06em] font-medium no-underline transition-colors hover:bg-teal"
+              className="inline-block bg-gold text-paper px-7 py-3.5 text-[12.5px] tracking-[0.08em] uppercase font-medium no-underline transition-all duration-200 hover:bg-teal hover:shadow-[0_6px_20px_rgba(15,74,54,0.35)]"
             >
               Book a Discovery Call
             </a>
             <a
               href="mailto:hello@mizuronglobal.com"
-              className="inline-block bg-transparent text-paper px-7 py-3 text-[13px] tracking-[0.06em] font-medium no-underline border border-white/20 transition-all hover:border-gold2 hover:text-gold2"
+              className="inline-block bg-transparent text-paper px-7 py-3.5 text-[12.5px] tracking-[0.08em] uppercase font-medium no-underline border border-white/20 transition-all duration-200 hover:border-gold2/70 hover:text-gold2"
             >
               Email Us Directly
             </a>

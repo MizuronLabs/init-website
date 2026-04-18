@@ -109,7 +109,7 @@
   }
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 96px;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-serif);
@@ -168,7 +168,9 @@
 
   /* Tag / eyebrow label */
   .tag {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     font-size: 10.5px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -176,6 +178,15 @@
     font-family: var(--font-sans);
     font-weight: 500;
     margin-bottom: 0.9rem;
+  }
+  .tag::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 1px;
+    background-color: var(--color-gold);
+    flex-shrink: 0;
+    opacity: 0.7;
   }
 
   /* Scroll animation */

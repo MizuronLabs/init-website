@@ -82,7 +82,7 @@ export default function About() {
               {advantages.map((adv, i) => (
                 <div
                   key={adv.title}
-                  className="bg-paper border border-paper3 p-5 fade-up"
+                  className="bg-paper border border-paper3 p-5 fade-up transition-all duration-200 hover:border-gold/50 hover:shadow-[0_4px_16px_rgba(0,0,0,0.05)]"
                   style={{ transitionDelay: `${i * 80}ms` }}
                 >
                   <h4 className="font-serif text-[1.05rem] mb-1.5">{adv.title}</h4>
@@ -103,7 +103,7 @@ export default function About() {
                   { market: "Singapore", body: "HSA, SFA documentation" },
                   { market: "Southeast Asia", body: "ASEAN regulatory frameworks" },
                 ].map((m) => (
-                  <div key={m.market} className="border border-white/10 p-3">
+                  <div key={m.market} className="border border-white/10 p-3 transition-colors duration-200 hover:border-white/25">
                     <div className="font-serif text-[1rem] text-paper mb-0.5">{m.market}</div>
                     <div className="text-[11px] text-paper/45">{m.body}</div>
                   </div>

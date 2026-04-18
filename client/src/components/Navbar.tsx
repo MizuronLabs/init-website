@@ -44,7 +44,7 @@ export default function Navbar() {
           : "bg-paper/97 backdrop-blur-md border-b border-paper3"
       }`}
     >
-      <div className="container flex items-center justify-between h-[76px]">
+      <div className="container flex items-center justify-between h-[88px]">
         {/* Logo — SVG file */}
         <a
           href="/"
@@ -62,7 +62,7 @@ export default function Navbar() {
           <img
             src={LOGO_DARK}
             alt="Mizuron Global — India Ingredient Intelligence"
-            className="h-[54px] w-auto"
+            className="h-[68px] w-auto"
           />
         </a>
 
@@ -79,7 +79,7 @@ export default function Navbar() {
           ))}
           <a
             href="/#contact"
-            className="bg-ink text-paper px-[22px] py-[9px] text-[12px] tracking-[0.07em] font-medium no-underline transition-colors duration-200 hover:bg-gold"
+            className="bg-ink text-paper px-[22px] py-[10px] text-[11.5px] tracking-[0.09em] uppercase font-medium no-underline transition-all duration-200 hover:bg-gold hover:shadow-[0_4px_16px_rgba(151,120,46,0.28)]"
           >
             Work With Us
           </a>
@@ -98,7 +98,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="lg:hidden fixed inset-0 top-[76px] bg-paper z-40 overflow-y-auto">
+        <div className="lg:hidden fixed inset-0 top-[88px] bg-paper z-40 overflow-y-auto">
           <div className="container py-8 flex flex-col gap-1">
             {navLinks.map((link) => (
               <a
@@ -113,7 +113,7 @@ export default function Navbar() {
             <a
               href="/#contact"
               onClick={handleLinkClick}
-              className="mt-4 block text-center bg-ink text-paper py-3 text-[13px] tracking-[0.07em] font-medium no-underline transition-colors hover:bg-gold"
+              className="mt-4 block text-center bg-ink text-paper py-3.5 text-[12px] tracking-[0.09em] uppercase font-medium no-underline transition-all hover:bg-gold"
             >
               Work With Us
             </a>

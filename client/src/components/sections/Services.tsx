@@ -168,10 +168,10 @@ export default function Services() {
           {services.map((svc, i) => (
             <article
               key={svc.num}
-              className={`relative p-6 md:p-7 border transition-all duration-300 hover:-translate-y-1 fade-up ${
+              className={`relative p-7 md:p-8 border transition-all duration-300 hover:-translate-y-1 fade-up ${
                 svc.featured
-                  ? "border-gold bg-paper2"
-                  : "border-paper3 bg-paper hover:border-gold"
+                  ? "border-gold bg-paper2 shadow-[0_4px_24px_rgba(151,120,46,0.12)]"
+                  : "border-paper3 bg-paper hover:border-gold/70 hover:shadow-[0_8px_32px_rgba(0,0,0,0.07)]"
               }`}
               style={{ transitionDelay: `${i * 100}ms` }}
             >
@@ -180,7 +180,7 @@ export default function Services() {
                   Most Popular
                 </div>
               )}
-              <div className="font-serif text-[2.6rem] text-paper3 font-semibold leading-none mb-4">
+              <div className="font-serif text-[2.4rem] text-ink/10 font-semibold leading-none mb-4 select-none">
                 {svc.num}
               </div>
               <h3 className="font-serif text-[1.15rem] mb-2">{svc.title}</h3>
@@ -214,7 +214,7 @@ export default function Services() {
           </div>
           <a
             href="#contact"
-            className="shrink-0 bg-gold text-paper px-5 py-2.5 text-[12px] tracking-[0.06em] font-medium no-underline transition-colors hover:bg-teal"
+            className="shrink-0 bg-gold text-paper px-5 py-2.5 text-[11.5px] tracking-[0.08em] uppercase font-medium no-underline transition-all duration-200 hover:bg-teal hover:shadow-[0_4px_16px_rgba(15,74,54,0.25)]"
           >
             Check Pilot Availability
           </a>
@@ -234,7 +234,7 @@ export default function Services() {
                 <div className="text-[11.5px] text-ink3 mb-5">Higher rate for Japan/Korea pathways</div>
                 <a
                   href="#contact"
-                  className="inline-block bg-ink text-paper px-5 py-2.5 text-[12px] tracking-[0.06em] font-medium no-underline transition-colors hover:bg-gold"
+                  className="inline-block bg-ink text-paper px-5 py-2.5 text-[11.5px] tracking-[0.08em] uppercase font-medium no-underline transition-all duration-200 hover:bg-gold hover:shadow-[0_4px_16px_rgba(151,120,46,0.25)]"
                 >
                   Request a Report
                 </a>
@@ -279,7 +279,7 @@ export default function Services() {
 
                 <a
                   href="#contact"
-                  className="inline-block bg-ink text-paper px-5 py-2.5 text-[12px] tracking-[0.06em] font-medium no-underline transition-colors hover:bg-gold"
+                  className="inline-block bg-ink text-paper px-5 py-2.5 text-[11.5px] tracking-[0.08em] uppercase font-medium no-underline transition-all duration-200 hover:bg-gold hover:shadow-[0_4px_16px_rgba(151,120,46,0.25)]"
                 >
                   Discuss a Retainer
                 </a>
@@ -316,7 +316,7 @@ export default function Services() {
                 <div className="text-[11.5px] text-ink3 mb-5">Deal fee capped at USD 3,000 · 6-week delivery</div>
                 <a
                   href="#contact"
-                  className="inline-block bg-ink text-paper px-5 py-2.5 text-[12px] tracking-[0.06em] font-medium no-underline transition-colors hover:bg-gold"
+                  className="inline-block bg-ink text-paper px-5 py-2.5 text-[11.5px] tracking-[0.08em] uppercase font-medium no-underline transition-all duration-200 hover:bg-gold hover:shadow-[0_4px_16px_rgba(151,120,46,0.25)]"
                 >
                   Discuss a Project
                 </a>

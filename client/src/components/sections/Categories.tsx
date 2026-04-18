@@ -56,14 +56,14 @@ const wellnessCategories = [
 function CategoryCard({ cat, delay }: { cat: typeof spiceCategories[0]; delay: number }) {
   return (
     <div
-      className="bg-paper2 border border-paper3 p-5 fade-up"
+      className="bg-paper2 border border-paper3 p-5 fade-up transition-all duration-200 hover:border-gold/50 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)]"
       style={{ transitionDelay: `${delay}ms` }}
     >
       <h4 className="font-serif text-[1.1rem] mb-1.5">{cat.title}</h4>
       <p className="text-[13px] text-ink2 leading-[1.7] mb-3">{cat.desc}</p>
       <div className="flex flex-wrap gap-1.5">
         {cat.tags.map((tag) => (
-          <span key={tag} className="text-[10.5px] px-2 py-[3px] bg-paper3 text-ink2">
+          <span key={tag} className="text-[10.5px] px-2.5 py-1 bg-paper3 text-ink2 border border-transparent transition-colors duration-150 hover:border-gold/40 hover:text-ink">
             {tag}
           </span>
         ))}
@@ -165,7 +165,7 @@ export default function Categories() {
             </p>
             <a
               href="#contact"
-              className="inline-block bg-paper text-teal2 px-6 py-3 text-[13px] tracking-[0.06em] font-medium no-underline transition-colors hover:bg-paper2"
+              className="inline-block bg-paper text-teal2 px-6 py-3 text-[12px] tracking-[0.08em] uppercase font-medium no-underline transition-all duration-200 hover:bg-paper2 hover:shadow-[0_4px_16px_rgba(0,0,0,0.15)]"
             >
               Ask About Your Ingredient
             </a>

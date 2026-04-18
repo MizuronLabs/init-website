@@ -88,7 +88,7 @@ export default function HowItWorks() {
               </p>
               <a
                 href="#contact"
-                className="inline-block bg-gold text-paper px-6 py-3 text-[12px] tracking-[0.06em] font-medium no-underline transition-colors hover:bg-teal"
+                className="inline-block bg-gold text-paper px-6 py-3 text-[11.5px] tracking-[0.08em] uppercase font-medium no-underline transition-all duration-200 hover:bg-teal hover:shadow-[0_4px_16px_rgba(15,74,54,0.30)]"
               >
                 Book a Discovery Call
               </a>

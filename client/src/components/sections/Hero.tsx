@@ -62,13 +62,13 @@ export default function Hero() {
           >
             <a
               href="#contact"
-              className="inline-block bg-ink text-paper px-7 py-3 text-[13px] tracking-[0.06em] font-medium no-underline transition-colors hover:bg-gold"
+              className="inline-block bg-ink text-paper px-7 py-3.5 text-[12.5px] tracking-[0.07em] uppercase font-medium no-underline transition-all duration-200 hover:bg-gold hover:shadow-[0_6px_20px_rgba(151,120,46,0.30)]"
             >
               Book a Discovery Call
             </a>
             <a
               href="#proof"
-              className="inline-block bg-transparent text-ink px-7 py-3 text-[13px] tracking-[0.06em] font-medium no-underline border-[1.5px] border-ink transition-all hover:bg-ink hover:text-paper"
+              className="inline-block bg-transparent text-ink px-7 py-3.5 text-[12.5px] tracking-[0.07em] uppercase font-medium no-underline border-2 border-ink/70 transition-all duration-200 hover:bg-ink hover:border-ink hover:text-paper"
             >
               See a Sample Report
             </a>

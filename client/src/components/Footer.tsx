@@ -3,7 +3,7 @@ import { Linkedin, Twitter, Instagram, MessageCircle } from "lucide-react";
 const LOGO_LIGHT = "/assets/logo-light.png";
 
 const socialLinks = [
-  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/company/mizuron/" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/company/mizuron" },
   { icon: Twitter, label: "X / Twitter", href: "https://x.com/MizuronGlobal" },
   { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/mizuron.global/" },
   { icon: MessageCircle, label: "WhatsApp", href: "https://wa.me/916361406325?text=Hi%20Mizuron%20Global,%20I%20reached%20out%20via%20your%20website.%20I%20am%20interested%20in%20learning%20more%20about%20your%20India%20sourcing%20and%20verification%20services." },

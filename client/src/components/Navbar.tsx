@@ -1,20 +1,22 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { useLocation } from "wouter";
 
 const LOGO_DARK = "/assets/logo-dark.png";
 
 const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Proof", href: "#proof" },
-  { label: "Categories", href: "#categories" },
-  { label: "About", href: "#about" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Services", href: "/#services" },
+  { label: "How It Works", href: "/#how-it-works" },
+  { label: "Proof", href: "/#proof" },
+  { label: "Categories", href: "/#categories" },
+  { label: "About", href: "/#about" },
+  { label: "FAQ", href: "/#faq" },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [location, navigate] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -45,12 +47,16 @@ export default function Navbar() {
       <div className="container flex items-center justify-between h-[66px]">
         {/* Logo — SVG file */}
         <a
-          href="#"
+          href="/"
           className="block no-underline shrink-0"
           aria-label="Mizuron Global home"
           onClick={(e) => {
             e.preventDefault();
-            window.scrollTo({ top: 0, behavior: "smooth" });
+            if (location === "/") {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            } else {
+              navigate("/");
+            }
           }}
         >
           <img
@@ -72,7 +78,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="/#contact"
             className="bg-ink text-paper px-[22px] py-[9px] text-[12px] tracking-[0.07em] font-medium no-underline transition-colors duration-200 hover:bg-gold"
           >
             Work With Us
@@ -105,7 +111,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#contact"
+              href="/#contact"
               onClick={handleLinkClick}
               className="mt-4 block text-center bg-ink text-paper py-3 text-[13px] tracking-[0.07em] font-medium no-underline transition-colors hover:bg-gold"
             >

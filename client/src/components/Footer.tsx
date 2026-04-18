@@ -10,17 +10,17 @@ const socialLinks = [
 ];
 
 const serviceLinks = [
-  { label: "Verification Reports", href: "#services" },
-  { label: "Documentation Retainer", href: "#services" },
-  { label: "Full Sourcing Projects", href: "#services" },
-  { label: "Pilot Engagement", href: "#contact" },
+  { label: "Verification Reports", href: "/#services" },
+  { label: "Documentation Retainer", href: "/#services" },
+  { label: "Full Sourcing Projects", href: "/#services" },
+  { label: "Pilot Engagement", href: "/#contact" },
 ];
 
 const companyLinks = [
-  { label: "About Mizuron Global", href: "#about" },
-  { label: "Ingredient Categories", href: "#categories" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "About Mizuron Global", href: "/#about" },
+  { label: "Ingredient Categories", href: "/#categories" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Contact Us", href: "/#contact" },
 ];
 
 const supplierLink = { label: "Supplier Readiness Programs", href: "/for-suppliers" };

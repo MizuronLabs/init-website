@@ -1,5 +1,194 @@
+import { useState, useRef, useEffect, type FormEvent } from "react";
+import { ChevronDown, Send, CheckCircle2 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
+const supplierDialCodes = [
+  { flag: "🇮🇳", code: "+91", country: "India" },
+  { flag: "🇯🇵", code: "+81", country: "Japan" },
+  { flag: "🇰🇷", code: "+82", country: "South Korea" },
+  { flag: "🇸🇬", code: "+65", country: "Singapore" },
+  { flag: "🇹🇭", code: "+66", country: "Thailand" },
+  { flag: "🇻🇳", code: "+84", country: "Vietnam" },
+  { flag: "🇮🇩", code: "+62", country: "Indonesia" },
+  { flag: "🇲🇾", code: "+60", country: "Malaysia" },
+  { flag: "🌍", code: "", country: "Other" },
+];
+
+function SupplierPhoneField() {
+  const [open, setOpen] = useState(false);
+  const [selected, setSelected] = useState(supplierDialCodes[0]);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function close(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    }
+    document.addEventListener("mousedown", close);
+    return () => document.removeEventListener("mousedown", close);
+  }, []);
+
+  return (
+    <div className="flex relative" ref={ref}>
+      <input type="hidden" name="phone_dial_code" value={selected.code} />
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        className="relative shrink-0 flex items-center gap-1.5 px-3 border border-r-0 border-paper3 bg-paper text-[13px] text-ink hover:border-gold focus:outline-none transition-colors min-w-[86px]"
+        aria-label="Select country dial code"
+      >
+        <span>{selected.flag}</span>
+        <span className="text-ink2">{selected.code || "—"}</span>
+        <ChevronDown size={12} className={`text-ink3 transition-transform ${open ? "rotate-180" : ""}`} />
+      </button>
+      {open && (
+        <div className="absolute z-50 top-full left-0 w-48 bg-paper border border-paper3 shadow-md max-h-56 overflow-y-auto">
+          {supplierDialCodes.map((d) => (
+            <button
+              key={d.country}
+              type="button"
+              onClick={() => { setSelected(d); setOpen(false); }}
+              className={`w-full flex items-center gap-2.5 px-3 py-2 text-[12.5px] text-left hover:bg-paper2 transition-colors ${
+                selected.country === d.country ? "text-gold font-medium" : "text-ink2"
+              }`}
+            >
+              <span>{d.flag}</span>
+              <span>{d.country}</span>
+              <span className="ml-auto text-ink3">{d.code}</span>
+            </button>
+          ))}
+        </div>
+      )}
+      <input
+        type="tel"
+        name="phone_number"
+        placeholder="Phone number"
+        className="flex-1 px-3 py-2.5 border border-paper3 bg-paper text-[14px] text-ink focus:border-gold focus:outline-none transition-colors"
+      />
+    </div>
+  );
+}
+
+function SupplierInquiryForm() {
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setSubmitting(true);
+    setError("");
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", { method: "POST", body: data });
+      const json = await res.json();
+      if (json.success) {
+        setSubmitted(true);
+      } else {
+        setError("Something went wrong. Please email us directly at hello@mizuronglobal.com");
+      }
+    } catch {
+      setError("Network error. Please email us at hello@mizuronglobal.com");
+    } finally {
+      setSubmitting(false);
+    }
+  }
+
+  const inputCls = "w-full px-3 py-2.5 border border-paper3 bg-paper text-[14px] text-ink focus:border-gold focus:outline-none transition-colors";
+  const labelCls = "block text-[11px] tracking-[0.1em] uppercase text-ink3 mb-1.5 font-medium";
+
+  return (
+    <section id="supplier-inquiry" className="py-20 bg-paper2">
+      <div className="container max-w-[720px]">
+        <span className="tag">Begin Your Readiness Journey</span>
+        <h2 className="text-[clamp(1.5rem,2.8vw,2rem)] mb-2">Tell us about your business</h2>
+        <p className="text-[13.5px] text-ink2 leading-[1.8] mb-8">
+          The Export Readiness Audit is the starting point for all Mizuron supplier programs.
+          Share your details below and we will confirm whether this is the right fit within one business day.
+        </p>
+
+        {submitted ? (
+          <div className="bg-paper border border-teal p-8 text-center">
+            <CheckCircle2 size={40} className="text-teal mx-auto mb-4" strokeWidth={1.5} />
+            <h3 className="font-serif text-[1.4rem] mb-2">Thank you — we'll be in touch</h3>
+            <p className="text-[14px] text-ink2 leading-[1.7]">
+              Your enquiry has been received. We'll review it and respond within one business day with
+              a direct answer on fit and next steps.
+            </p>
+          </div>
+        ) : (
+          <form onSubmit={handleSubmit} className="bg-paper border border-paper3 p-6 md:p-8 space-y-5">
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY" />
+            <input type="hidden" name="subject" value="Supplier Readiness Enquiry — Mizuron Global" />
+            <input type="hidden" name="from_name" value="Mizuron Global — Supplier Page" />
+            <input type="checkbox" name="botcheck" className="hidden" />
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label htmlFor="s_name" className={labelCls}>Your Name *</label>
+                <input id="s_name" name="name" type="text" required className={inputCls} placeholder="Full name" autoComplete="name" />
+              </div>
+              <div>
+                <label htmlFor="s_business" className={labelCls}>Business / Company Name *</label>
+                <input id="s_business" name="business" type="text" required className={inputCls} placeholder="Your company name" autoComplete="organization" />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label htmlFor="s_email" className={labelCls}>Business Email *</label>
+                <input id="s_email" name="email" type="email" required className={inputCls} placeholder="you@company.com" autoComplete="email" />
+              </div>
+              <div>
+                <label className={labelCls}>Phone Number</label>
+                <div className="relative">
+                  <SupplierPhoneField />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label htmlFor="s_service" className={labelCls}>Service Interested In *</label>
+              <select id="s_service" name="service_interest" required className={inputCls}>
+                <option value="">Select a program</option>
+                <option value="tier1">Export Readiness Audit — ₹55,000 · 10–14 days</option>
+                <option value="tier2">Market-Ready Alignment — ₹1,40,000 · 4–5 weeks</option>
+                <option value="tier3">International Standards Alignment — ₹3,20,000 · 7–8 weeks</option>
+                <option value="tier4">Export Advisory Retainer — from ₹1,80,000/month</option>
+                <option value="unsure">Not sure — please recommend</option>
+              </select>
+            </div>
+
+            <div>
+              <label htmlFor="s_products" className={labelCls}>What do you manufacture / export? *</label>
+              <input id="s_products" name="products" type="text" required className={inputCls} placeholder="e.g. Turmeric powder, Black pepper, Ashwagandha extract" />
+            </div>
+
+            <div>
+              <label htmlFor="s_note" className={labelCls}>Anything else we should know?</label>
+              <textarea id="s_note" name="note" rows={3} className={`${inputCls} resize-y`} placeholder="Current export markets, certifications you hold, specific challenges, or anything else relevant..." />
+            </div>
+
+            {error && <p className="text-[13px] text-red-600">{error}</p>}
+
+            <button
+              type="submit"
+              disabled={submitting}
+              className="w-full flex items-center justify-center gap-2 bg-teal2 text-paper py-3.5 text-[13px] tracking-[0.07em] font-medium transition-colors hover:bg-gold disabled:opacity-60"
+            >
+              {submitting ? "Sending..." : <><Send size={14} />Submit Supplier Enquiry</>}
+            </button>
+
+            <p className="text-[11px] text-ink3 text-center leading-[1.6]">
+              We respond within one business day. Your information is never shared with buyers or third parties.
+            </p>
+          </form>
+        )}
+      </div>
+    </section>
+  );
+}
 
 export default function SupplierReadiness() {
   return (
@@ -436,7 +625,7 @@ export default function SupplierReadiness() {
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <a
-                href="/#contact"
+                href="#supplier-inquiry"
                 className="inline-block bg-paper text-teal2 font-medium px-7 py-3 text-[13px] tracking-[0.06em] no-underline transition-colors hover:bg-gold hover:text-paper"
               >
                 Begin with a Readiness Audit
@@ -452,6 +641,8 @@ export default function SupplierReadiness() {
         </div>
 
       </main>
+
+      <SupplierInquiryForm />
 
       <Footer />
     </div>

@@ -81,9 +81,8 @@ function SupplierInquiryForm() {
     const form = e.currentTarget;
     const data = new FormData(form);
     try {
-      const res = await fetch("https://api.web3forms.com/submit", { method: "POST", body: data });
-      const json = await res.json();
-      if (json.success) {
+      const res = await fetch("https://formspree.io/f/xnjldkjn", { method: "POST", body: data, headers: { Accept: "application/json" } });
+      if (res.ok) {
         setSubmitted(true);
       } else {
         setError("Something went wrong. Please email us directly at hello@mizuronglobal.com");
@@ -119,10 +118,6 @@ function SupplierInquiryForm() {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="bg-paper border border-paper3 p-6 md:p-8 space-y-5">
-            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY" />
-            <input type="hidden" name="subject" value="Supplier Readiness Enquiry — Mizuron Global" />
-            <input type="hidden" name="from_name" value="Mizuron Global — Supplier Page" />
-            <input type="checkbox" name="botcheck" className="hidden" />
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>

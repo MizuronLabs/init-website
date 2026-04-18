@@ -103,12 +103,12 @@ export default function Contact() {
     const data = new FormData(form);
 
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch("https://formspree.io/f/mbdqrjzp", {
         method: "POST",
         body: data,
+        headers: { Accept: "application/json" },
       });
-      const json = await res.json();
-      if (json.success) {
+      if (res.ok) {
         setSubmitted(true);
       } else {
         setError("Something went wrong. Please try emailing us directly.");
@@ -229,10 +229,6 @@ export default function Contact() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="bg-paper border border-paper3 p-6 md:p-8">
-                <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY" />
-                <input type="hidden" name="subject" value="New Enquiry — Mizuron Global Website" />
-                <input type="hidden" name="from_name" value="Mizuron Global Website" />
-                <input type="checkbox" name="botcheck" className="hidden" />
 
                 <h3 className="font-serif text-[1.4rem] mb-1">Sourcing Enquiry</h3>
                 <p className="text-[12.5px] text-ink3 mb-6">Fields marked * are required. All information is kept strictly confidential.</p>

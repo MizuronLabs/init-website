@@ -186,6 +186,25 @@ function SupplierInquiryForm() {
 }
 
 export default function SupplierReadiness() {
+  useEffect(() => {
+    const prevTitle = document.title;
+    document.title = "Supplier Readiness Programs | Mizuron Global";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    const prevDesc = metaDesc?.getAttribute("content") ?? "";
+    metaDesc?.setAttribute(
+      "content",
+      "Mizuron Global helps Indian spice and Ayurvedic ingredient exporters meet international standards for Japan, Korea, Singapore, and Southeast Asia. Export readiness audits, documentation alignment, and market-specific positioning programs from ₹55,000."
+    );
+    const canonical = document.querySelector('link[rel="canonical"]');
+    const prevCanonical = canonical?.getAttribute("href") ?? "";
+    canonical?.setAttribute("href", "https://www.mizuronglobal.com/for-suppliers");
+    return () => {
+      document.title = prevTitle;
+      metaDesc?.setAttribute("content", prevDesc);
+      canonical?.setAttribute("href", prevCanonical);
+    };
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col bg-paper">
       <Navbar />

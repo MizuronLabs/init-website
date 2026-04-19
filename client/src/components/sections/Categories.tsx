@@ -1,59 +1,11 @@
-/*
- * Design: Archival Intelligence
- * Two-column layout: category description left, ingredient cards right
- * Spice warehouse and botanical wellness images
- */
+import { useTranslation } from "react-i18next";
 
 const SPICE_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663454826694/Sz2WXn73m6MgVBcMywT6dB/spice-warehouse-Xvm5eZBko4cpeniNJuDiVx.webp";
 const BOTANICAL_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663454826694/Sz2WXn73m6MgVBcMywT6dB/botanical-wellness-FfmY4tUN77eqjfiECbNk33.webp";
 
-const spiceCategories = [
-  {
-    title: "Functional Spices",
-    desc: "Turmeric (curcumin-verified), black pepper (piperine content confirmed), ginger — for health-positioned food and supplement applications.",
-    tags: ["Curcumin % testing", "Piperine verification", "Pesticide MRL"],
-  },
-  {
-    title: "Culinary Spices",
-    desc: "Cumin, coriander, cardamom, chili, fenugreek — verified-origin documentation for food manufacturers needing geographic provenance.",
-    tags: ["Origin documentation", "GI certification", "Microbial testing"],
-  },
-  {
-    title: "Seed Spices",
-    desc: "Fennel, ajwain, nigella, mustard seed — sourced from specific Indian growing districts with full traceability.",
-    tags: ["Region traceability", "Moisture specs", "Adulteration testing"],
-  },
-  {
-    title: "Spice Extracts & Oleoresins",
-    desc: "Standardised extracts for nutraceutical and food manufacturers — specification-matched with batch-consistent profiles.",
-    tags: ["Active compound %", "Solvent residue", "CoA chain"],
-  },
-];
+type CategoryCard = { title: string; desc: string; tags: string[] };
 
-const wellnessCategories = [
-  {
-    title: "Adaptogenic Herbs",
-    desc: "Ashwagandha (withanolide-verified), brahmi, shatavari, triphala, tulsi — for supplement manufacturers requiring pharmaceutical-standard documentation.",
-    tags: ["Withanolide %", "Heavy metals panel", "Pharmaceutical grade"],
-  },
-  {
-    title: "Beauty & Cosmetic Botanicals",
-    desc: "Neem extract, kumkumadi actives, bakuchi (natural retinol alternative), sandalwood, vetiver — for K-beauty and J-wellness formulation.",
-    tags: ["Purity testing", "EU cosmetic compliance", "Authenticity verification"],
-  },
-  {
-    title: "Herbal Teas & Functional Blends",
-    desc: "Tulsi, moringa, ginger-lemon, spiced wellness blends — for health retailers and branded beverage manufacturers across Southeast Asia.",
-    tags: ["Microbial testing", "Pesticide screening", "Origin documentation"],
-  },
-  {
-    title: "Standardised Herbal Extracts",
-    desc: "Botanical extracts for OEM supplement manufacturing — confirmed active constituent profiles with full batch documentation.",
-    tags: ["Standardisation specs", "HACCP compliance", "CoA chain"],
-  },
-];
-
-function CategoryCard({ cat, delay }: { cat: typeof spiceCategories[0]; delay: number }) {
+function Card({ cat, delay }: { cat: CategoryCard; delay: number }) {
   return (
     <div
       className="bg-paper2 border border-paper3 p-5 fade-up transition-all duration-200 hover:border-gold/50 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)]"
@@ -73,31 +25,32 @@ function CategoryCard({ cat, delay }: { cat: typeof spiceCategories[0]; delay: n
 }
 
 export default function Categories() {
+  const { t } = useTranslation();
+  const spiceItems = t("categories.spiceItems", { returnObjects: true }) as CategoryCard[];
+  const wellnessItems = t("categories.wellnessItems", { returnObjects: true }) as CategoryCard[];
+  const spicesBuyers = t("categories.spicesBuyers", { returnObjects: true }) as string[];
+  const wellnessBuyers = t("categories.wellnessBuyers", { returnObjects: true }) as string[];
+
   return (
     <section id="categories" className="py-16 md:py-20" aria-labelledby="categories-heading">
       <div className="container">
-        <span className="tag fade-up">Ingredient Categories</span>
+        <span className="tag fade-up">{t("categories.tag")}</span>
         <h2
           id="categories-heading"
           className="font-serif text-[clamp(1.8rem,3vw,2.6rem)] mb-3 fade-up"
         >
-          Focused expertise, not broad coverage
+          {t("categories.h2")}
         </h2>
         <p className="text-ink2 text-[15px] max-w-[600px] mb-12 fade-up">
-          We deliberately stay narrow. Two core categories, deep expertise — because genuine
-          knowledge in a specific domain is worth more than superficial coverage of everything.
+          {t("categories.sub")}
         </p>
 
         {/* Primary: Spices */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
           <div className="fade-up">
-            <span className="tag">Primary Category</span>
-            <h3 className="font-serif text-[1.7rem] mb-3">Indian Spices & Specialty Ingredients</h3>
-            <p className="text-[14px] text-ink2 leading-[1.8] mb-4">
-              India supplies over 70% of the world's spices. The global market has shifted toward
-              functional spices, culinary authenticity, and clean-label ingredients — all requiring
-              verified documentation that most Indian exporters struggle to provide.
-            </p>
+            <span className="tag">{t("categories.spicesTag")}</span>
+            <h3 className="font-serif text-[1.7rem] mb-3">{t("categories.spicesH3")}</h3>
+            <p className="text-[14px] text-ink2 leading-[1.8] mb-4">{t("categories.spicesDesc")}</p>
             <div className="overflow-hidden mb-4">
               <img
                 src={SPICE_IMG}
@@ -107,14 +60,14 @@ export default function Categories() {
               />
             </div>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1.5 border border-paper3 text-[12.5px] text-ink2 bg-paper">Japanese food manufacturers</span>
-              <span className="px-3 py-1.5 border border-paper3 text-[12.5px] text-ink2 bg-paper">Korean functional food brands</span>
-              <span className="px-3 py-1.5 border border-paper3 text-[12.5px] text-ink2 bg-paper">SEA ingredient importers</span>
+              {spicesBuyers.map((b) => (
+                <span key={b} className="px-3 py-1.5 border border-paper3 text-[12.5px] text-ink2 bg-paper">{b}</span>
+              ))}
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {spiceCategories.map((cat, i) => (
-              <CategoryCard key={cat.title} cat={cat} delay={i * 60} />
+            {spiceItems.map((cat, i) => (
+              <Card key={cat.title} cat={cat} delay={i * 60} />
             ))}
           </div>
         </div>
@@ -124,14 +77,9 @@ export default function Categories() {
         {/* Secondary: Wellness */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           <div className="fade-up">
-            <span className="tag">Secondary Category</span>
-            <h3 className="font-serif text-[1.7rem] mb-3">Ayurvedic & Herbal Wellness Ingredients</h3>
-            <p className="text-[14px] text-ink2 leading-[1.8] mb-4">
-              Japan and Korea are the world's most sophisticated wellness markets — both actively
-              sourcing Indian Ayurvedic ingredients for supplement manufacturing, nutraceutical
-              formulation, and K-beauty applications. Most Indian exporters cannot navigate these
-              regulatory frameworks. We translate Indian supply into documentation Asian markets accept.
-            </p>
+            <span className="tag">{t("categories.wellnessTag")}</span>
+            <h3 className="font-serif text-[1.7rem] mb-3">{t("categories.wellnessH3")}</h3>
+            <p className="text-[14px] text-ink2 leading-[1.8] mb-4">{t("categories.wellnessDesc")}</p>
             <div className="overflow-hidden mb-4">
               <img
                 src={BOTANICAL_IMG}
@@ -141,14 +89,14 @@ export default function Categories() {
               />
             </div>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1.5 border border-paper3 text-[12.5px] text-ink2 bg-paper">Japanese supplement manufacturers</span>
-              <span className="px-3 py-1.5 border border-paper3 text-[12.5px] text-ink2 bg-paper">K-beauty ingredient buyers</span>
-              <span className="px-3 py-1.5 border border-paper3 text-[12.5px] text-ink2 bg-paper">SEA wellness distributors</span>
+              {wellnessBuyers.map((b) => (
+                <span key={b} className="px-3 py-1.5 border border-paper3 text-[12.5px] text-ink2 bg-paper">{b}</span>
+              ))}
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {wellnessCategories.map((cat, i) => (
-              <CategoryCard key={cat.title} cat={cat} delay={i * 60} />
+            {wellnessItems.map((cat, i) => (
+              <Card key={cat.title} cat={cat} delay={i * 60} />
             ))}
           </div>
         </div>
@@ -157,17 +105,16 @@ export default function Categories() {
         <div className="mt-16 bg-teal2 text-paper py-12 md:py-16 text-center fade-up">
           <div className="max-w-[560px] mx-auto px-6">
             <h3 className="font-serif text-[clamp(1.3rem,3vw,2rem)] mb-3 text-paper">
-              Don't see your specific ingredient?
+              {t("categories.ctaBanner")}
             </h3>
             <p className="text-[13.5px] text-paper/70 mb-6">
-              If it originates in India and you're sourcing it for Asian manufacturing, Mizuron Global
-              can likely help.
+              {t("categories.ctaBannerSub")}
             </p>
             <a
               href="#contact"
               className="inline-block bg-paper text-teal2 px-6 py-3 text-[12px] tracking-[0.08em] uppercase font-medium no-underline transition-all duration-200 hover:bg-paper2 hover:shadow-[0_4px_16px_rgba(0,0,0,0.15)]"
             >
-              Ask About Your Ingredient
+              {t("categories.ctaBannerCta")}
             </a>
           </div>
         </div>

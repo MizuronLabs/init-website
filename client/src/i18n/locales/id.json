@@ -1,0 +1,362 @@
+{
+  "meta": {
+    "title": "Mizuron Global | Verifikasi Pemasok India untuk Asia",
+    "description": "Verifikasi independen dari sisi pembeli atas pemasok rempah dan bahan Ayurveda India untuk produsen makanan dan kesehatan di Jepang, Korea, Singapura, dan Asia Tenggara.",
+    "supplierTitle": "Program Kesiapan Pemasok | Mizuron Global",
+    "supplierDescription": "Mizuron Global membantu eksportir rempah dan bahan Ayurveda India memenuhi standar internasional untuk Jepang, Korea, Singapura, dan Asia Tenggara."
+  },
+  "nav": {
+    "services": "Layanan",
+    "howItWorks": "Cara Kerja",
+    "proof": "Bukti",
+    "categories": "Kategori",
+    "about": "Tentang Kami",
+    "faq": "FAQ",
+    "cta": "Hubungi Kami"
+  },
+  "hero": {
+    "eyebrow": "India · Singapura · Jepang · Korea · Asia Tenggara",
+    "h1": "Pemasok terbaik India,",
+    "h1em": "diverifikasi untuk Anda.",
+    "clarify": "Mitra verifikasi independen untuk pembeli Asia — hanya dibayar oleh Anda, tidak pernah oleh pemasok.",
+    "sub": "Mizuron Global membantu produsen makanan dan kesehatan di Jepang, Korea, Singapura, dan Asia Tenggara bersumber dari India dengan keyakinan penuh — verifikasi pemasok independen, dokumentasi yang dibangun untuk pasar regulasi Anda, dan tanpa ikatan komersial ke sisi eksportir.",
+    "cta1": "Jadwalkan Konsultasi",
+    "cta2": "Lihat Apa yang Kami Verifikasi",
+    "stats": [
+      { "num": "100%", "label": "Hanya Sisi Pembeli" },
+      { "num": "4+",   "label": "Pasar Fokus" },
+      { "num": "3–4w", "label": "Waktu Pengiriman Laporan" },
+      { "num": "0",    "label": "Konflik Pemasok" }
+    ]
+  },
+  "trust": {
+    "label": "Kerangka Regulasi yang Kami Navigasi",
+    "items": ["FSSAI Terverifikasi", "APEDA Terdaftar", "Dewan Rempah India", "MHLW (Jepang)", "MFDS (Korea)", "HSA / SFA (Singapura)", "Regulasi ASEAN"]
+  },
+  "problems": {
+    "tag": "Mengapa Pengadaan India Gagal bagi Pembeli Internasional",
+    "h2": "Tiga masalah struktural. Kami dibangun untuk menyelesaikan semuanya.",
+    "items": [
+      {
+        "num": "01",
+        "title": "Agen pengadaan Anda dibayar oleh pemasok.",
+        "detail": "Yang membuat Anda menjadi produk, bukan klien.",
+        "text": "Sebagian besar agen pengadaan India mendapatkan komisi dari eksportir. Ini menciptakan konflik kepentingan struktural yang membentuk setiap rekomendasi yang mereka buat — dan yang tidak Anda miliki visibilitasnya. Ketika pemasok dan agen memiliki hubungan komersial, kepentingan Anda menjadi nomor dua.",
+        "cost": "Tidak terlihat sampai merugikan",
+        "costUnit": "konflik kepentingan"
+      },
+      {
+        "num": "02",
+        "title": "Dokumentasi dibangun untuk ekspor — bukan untuk pasar Anda.",
+        "detail": "FSSAI memuaskan India. Petugas bea cukai Anda membutuhkan lebih.",
+        "text": "Apa yang MHLW Jepang, MFDS Korea, atau HSA Singapura benar-benar butuhkan di pelabuhan adalah set dokumen yang berbeda dari apa yang biasanya diproduksi eksportir India. Celah itu — antara 'bersertifikat untuk ekspor' dan 'sesuai untuk impor' — adalah tempat pengiriman tertahan.",
+        "cost": "USD 5.000 – 20.000",
+        "costUnit": "per penahanan bea cukai"
+      },
+      {
+        "num": "03",
+        "title": "Sampelnya sangat baik. Pengiriman ketiga tidak.",
+        "detail": "Kualitas berkelanjutan membutuhkan verifikasi berkelanjutan.",
+        "text": "Tanpa pengawasan tingkat batch yang berkelanjutan, kualitas akan merosot. Pemasok India mengoptimalkan untuk sampel ketika mereka tahu sedang dievaluasi. Kadar curcumin, kadar air, ambang residu — ini bergeser seiring waktu kecuali ada seseorang yang memantau. Terus-menerus.",
+        "cost": "USD 20.000 – 50.000",
+        "costUnit": "per pengiriman yang ditolak"
+      }
+    ],
+    "bridge": "Tidak ada masalah ini yang berkaitan dengan kualitas India. Mereka berkaitan dengan infrastruktur verifikasi — dan itulah yang telah kami bangun.",
+    "bridgeCta": "Lihat bagaimana kami menyelesaikannya"
+  },
+  "services": {
+    "tag": "Layanan Kami",
+    "h2": "Tiga cara kami bekerja dengan Anda.",
+    "h2em": "Satu prinsip di balik semuanya.",
+    "sub": "Setiap keterlibatan dirancang untuk mengurangi risiko Anda pada tahap tertentu dari perjalanan pengadaan India — dari mengevaluasi satu pemasok hingga mengelola seluruh program impor. Kepentingan pembeli selalu diutamakan.",
+    "popular": "Paling Populer",
+    "items": [
+      {
+        "num": "01",
+        "title": "Laporan Verifikasi",
+        "desc": "Uji tuntas independen atas pemasok bahan India tertentu sebelum Anda menempatkan pesanan pertama.",
+        "price": "USD 1.200 – 2.500",
+        "note": "Per laporan · Pengiriman 3–4 minggu",
+        "items": ["Verifikasi badan hukum & fasilitas", "Koordinasi pengujian laboratorium pihak ketiga", "Audit validitas sertifikasi", "Pemeriksaan keterlacakan rantai pasokan", "Penilaian risiko & rekomendasi jelas"]
+      },
+      {
+        "num": "02",
+        "title": "Layanan Dokumentasi Bulanan",
+        "desc": "Manajemen dokumentasi dan kepatuhan bulanan yang berkelanjutan untuk hubungan pemasok India aktif Anda.",
+        "price": "USD 600 – 2.800/bln",
+        "note": "Minimum 6 bulan · 3 tingkat tersedia",
+        "items": ["Daftar periksa dokumentasi pra-pengiriman", "Pemantauan kadaluarsa sertifikat", "Briefing regulasi bulanan", "Manajemen hubungan pemasok", "Pelacakan harga pasar & kualitas"]
+      },
+      {
+        "num": "03",
+        "title": "Proyek Pengadaan Penuh",
+        "desc": "Dari awal hingga akhir: temukan, verifikasi, dan fasilitasi pesanan pertama Anda dengan pemasok bahan India baru.",
+        "price": "USD 3.500 – 12.000",
+        "note": "Biaya proyek + 2–3% biaya transaksi (dibatasi)",
+        "items": ["Intelijen pasar & daftar panjang pemasok", "Verifikasi 3 pemasok terpilih teratas", "Koordinasi sampel & dukungan negosiasi", "Pemantauan pesanan pertama dari awal hingga akhir", "Paket dokumentasi lengkap"]
+      }
+    ],
+    "pilot": {
+      "title": "Keterlibatan percontohan — 3 klien internasional pertama",
+      "desc": "Harga percontohan yang disukai (~50% dari tarif standar) sebagai imbalan atas studi kasus anonim dan testimonial. Sebutkan 'percontohan' dalam pertanyaan Anda.",
+      "cta": "Periksa Ketersediaan Percontohan"
+    }
+  },
+  "cost": {
+    "tag": "Ekonomi Verifikasi",
+    "h2": "Perbandingannya bukan kami vs. gratis.",
+    "h2em": "Ini kami vs. apa yang salah.",
+    "sub": "Pembeli internasional tidak membandingkan biaya kami dengan tidak ada apa-apa. Mereka membandingkannya dengan penahanan bea cukai di Narita, kontainer yang ditolak di Busan, atau enam bulan membangun kembali rantai pasokan dari awal.",
+    "risks": [
+      { "cost": "USD 5.000 – 20.000", "label": "Penahanan bea cukai — kesalahan dokumentasi di pelabuhan masuk" },
+      { "cost": "USD 20.000 – 50.000", "label": "Pengiriman ditolak — kegagalan kualitas atau spesifikasi saat tiba" },
+      { "cost": "USD 100.000+", "label": "Penarikan produk — pemalsuan atau pelabelan yang salah di distribusi" },
+      { "cost": "6+ bulan", "label": "Waktu hilang akibat kegagalan uji pemasok dan pengadaan ulang" }
+    ],
+    "box": {
+      "h3": "Satu Laporan Verifikasi. Kurang dari 10% dari satu pengiriman yang gagal.",
+      "sub": "Pemeriksaan realitas berdampingan.",
+      "row1label": "Satu penolakan bea cukai",
+      "row1val": "USD 20.000",
+      "row2label": "Satu kegagalan kualitas",
+      "row2val": "USD 50.000",
+      "row3label": "Laporan Verifikasi Mizuron",
+      "row3val": "USD 1.200 – 2.500",
+      "quote": "\"Satu penolakan yang dihindari membayar sepuluh laporan. Klien kami tidak melihat verifikasi sebagai biaya — mereka melihatnya sebagai asuransi termurah dalam rantai pasokan mereka.\"",
+      "cta": "Minta Penawaran Percontohan"
+    }
+  },
+  "howItWorks": {
+    "tag": "Cara Kerja",
+    "h2": "Dari percakapan pertama hingga",
+    "h2em": "pengiriman terverifikasi.",
+    "steps": [
+      { "num": "01", "title": "Konsultasi awal", "text": "Kami memahami bahan, spesifikasi, pasar regulasi, dan jadwal Anda dalam panggilan 30 menit tanpa kewajiban." },
+      { "num": "02", "title": "Riset & seleksi pemasok", "text": "Kami mengidentifikasi dan menyaring kandidat di wilayah pengadaan kunci India terhadap spesifikasi dan persyaratan volume Anda." },
+      { "num": "03", "title": "Verifikasi lapangan", "text": "Kami memverifikasi fasilitas, sertifikasi, hasil laboratorium pihak ketiga, dan dokumentasi — selaras dengan persyaratan bea cukai pasar spesifik Anda." },
+      { "num": "04", "title": "Laporan & rekomendasi", "text": "Laporan profesional dan terstruktur dengan rekomendasi berperingkat kami dan dokumentasi pendukung lengkap." },
+      { "num": "05", "title": "Pemantauan berkelanjutan", "text": "Kami terus mengelola dokumentasi dan kualitas pemasok di setiap pengiriman — sehingga tidak ada yang terlewat." }
+    ],
+    "ctaBox": {
+      "tag": "Langkah Berikutnya Anda",
+      "h3": "Tidak yakin layanan mana yang cocok?",
+      "sub": "Jadwalkan konsultasi 20 menit. Kami akan memahami situasi Anda dan merekomendasikan keterlibatan yang tepat — tanpa kewajiban, tanpa presentasi umum.",
+      "cta": "Jadwalkan Konsultasi"
+    }
+  },
+  "proof": {
+    "tag": "Bukti, Bukan Sekadar Klaim",
+    "h2": "Apa yang sebenarnya dicakup Laporan Verifikasi Mizuron",
+    "sub": "Setiap laporan diakhiri dengan rekomendasi jelas Lanjutkan, Lanjutkan dengan Syarat, atau Jangan Lanjutkan — didukung oleh bukti terdokumentasi di enam area verifikasi.",
+    "areas": [
+      { "title": "Badan Hukum & Fasilitas", "desc": "Registrasi GST, kode IEC, pendirian perusahaan, fasilitas fisik dikonfirmasi terhadap alamat sebenarnya" },
+      { "title": "Riwayat Ekspor", "desc": "Catatan pengiriman terverifikasi melalui data DGFT dan bea cukai — bukan klaim yang dilaporkan sendiri" },
+      { "title": "Audit Sertifikasi", "desc": "FSSAI, APEDA, Dewan Rempah, sertifikat organik divalidasi langsung dengan badan penerbit" },
+      { "title": "Pengujian Laboratorium Independen", "desc": "Pengujian laboratorium pihak ketiga pada batch sebenarnya — MRL pestisida, logam berat, mikroba, senyawa aktif" },
+      { "title": "Keterlacakan Rantai Pasokan", "desc": "Wilayah sumber, dokumentasi pertanian atau pusat pengumpulan, standar fasilitas pemrosesan" },
+      { "title": "Verifikasi Komersial", "desc": "MOQ sebenarnya, tolok ukur harga saat ini, waktu pengiriman diverifikasi terhadap riwayat pengiriman nyata" }
+    ],
+    "reportTag": "Struktur Laporan Sampel",
+    "reportH3": "Profesional, terstruktur, diarsipkan dengan penuh keyakinan",
+    "reportDesc": "Laporan Verifikasi kami adalah dokumen PDF profesional 15–25 halaman — terstruktur sehingga petugas kepatuhan, tim pengadaan, dan broker bea cukai Anda masing-masing dapat menemukan tepat apa yang mereka butuhkan.",
+    "reportCta": "Minta Laporan Sampel",
+    "comparisonTag": "Mizuron Global vs. Alternatif",
+    "comparisonH3": "Apa yang kami verifikasi vs. apa yang dilakukan agen pengadaan biasa",
+    "comparison": [
+      { "aspect": "Dibayar oleh pemasok India?", "us": "Tidak pernah", "them": "Biasanya" },
+      { "aspect": "Bekerja eksklusif untuk pembeli?", "us": "Selalu", "them": "Jarang" },
+      { "aspect": "Kehadiran lapangan di India?", "us": "Ya — berbasis di Gujarat", "them": "Sering dari jarak jauh" },
+      { "aspect": "Pengujian laboratorium independen?", "us": "Setiap laporan", "them": "CoA yang disediakan pemasok" },
+      { "aspect": "Dokumentasi khusus pasar?", "us": "Disesuaikan Jepang, Korea, Asia Tenggara", "them": "Generik" },
+      { "aspect": "Rekomendasi lanjutkan/tidak lanjutkan yang jelas?", "us": "Setiap laporan", "them": "Jarang" },
+      { "aspect": "Pemantauan berkelanjutan?", "us": "Tersedia", "them": "Tidak ditawarkan" }
+    ],
+    "caseTag": "Studi Kasus Percontohan",
+    "caseH3": "Produsen suplemen Singapura — verifikasi ekstrak kunyit",
+    "caseText1": "Sebuah perusahaan nutraceutical menengah di Singapura perlu memverifikasi pemasok ekstrak kunyit India baru (spesifikasi 95% curcumin) sebelum berkomitmen pada pesanan berulang 2 MT/tahun.",
+    "caseText2": "Pengujian laboratorium independen mengungkapkan kadar curcumin secara konsisten 12% di bawah spesifikasi yang dinyatakan di beberapa batch — perbedaan sekitar 10,5g/kg terhadap klaim 13,0g/kg.",
+    "caseOutcomeLabel": "Rekomendasi dikeluarkan",
+    "caseOutcome": "Lanjutkan dengan Syarat",
+    "caseSaved": "Estimasi penghematan tahunan: USD 15.000 dalam biaya kelebihan spesifikasi"
+  },
+  "categories": {
+    "tag": "Kategori Bahan",
+    "h2": "Keahlian terfokus, bukan cakupan luas",
+    "sub": "Kami sengaja tetap sempit. Dua kategori inti, keahlian mendalam — karena pengetahuan tulus dalam domain tertentu bernilai lebih dari cakupan dangkal atas segalanya.",
+    "spicesTag": "Kategori Utama",
+    "spicesH3": "Rempah India & Bahan Khusus",
+    "spicesDesc": "India memasok lebih dari 70% rempah dunia. Pasar global telah bergeser menuju rempah fungsional, keaslian kuliner, dan bahan berlabel bersih — semuanya memerlukan dokumentasi terverifikasi yang kesulitan disediakan sebagian besar eksportir India.",
+    "spicesBuyers": ["Produsen makanan Jepang", "Merek makanan fungsional Korea", "Importir bahan Asia Tenggara"],
+    "spiceItems": [
+      { "title": "Rempah Fungsional", "desc": "Kunyit (curcumin terverifikasi), lada hitam (kandungan piperine dikonfirmasi), jahe — untuk aplikasi makanan dan suplemen yang diposisikan untuk kesehatan.", "tags": ["Pengujian % curcumin", "Verifikasi piperine", "MRL pestisida"] },
+      { "title": "Rempah Kuliner", "desc": "Jinten, ketumbar, kardamom, cabai, fenugreek — dokumentasi asal terverifikasi untuk produsen makanan yang membutuhkan provenance geografis.", "tags": ["Dokumentasi asal", "Sertifikasi GI", "Pengujian mikroba"] },
+      { "title": "Rempah Biji", "desc": "Adas, ajwain, nigella, biji mustard — bersumber dari distrik budidaya India tertentu dengan keterlacakan penuh.", "tags": ["Keterlacakan wilayah", "Spesifikasi kelembaban", "Pengujian pemalsuan"] },
+      { "title": "Ekstrak Rempah & Oleoresin", "desc": "Ekstrak terstandarisasi untuk produsen nutraceutical dan makanan — disesuaikan spesifikasi dengan profil konsisten per batch.", "tags": ["% senyawa aktif", "Residu pelarut", "Rantai CoA"] }
+    ],
+    "wellnessTag": "Kategori Sekunder",
+    "wellnessH3": "Bahan Kesehatan Ayurveda & Herbal",
+    "wellnessDesc": "Jepang dan Korea adalah pasar kesehatan paling canggih di dunia — keduanya aktif bersumber dari bahan Ayurveda India untuk produksi suplemen, formulasi nutraceutical, dan aplikasi K-beauty.",
+    "wellnessBuyers": ["Produsen suplemen Jepang", "Pembeli bahan K-beauty", "Distributor kesehatan Asia Tenggara"],
+    "wellnessItems": [
+      { "title": "Herbal Adaptogenik", "desc": "Ashwagandha (withanolide terverifikasi), brahmi, shatavari, triphala, tulsi — untuk produsen suplemen yang memerlukan dokumentasi standar farmasi.", "tags": ["% withanolide", "Panel logam berat", "Kelas farmasi"] },
+      { "title": "Tanaman Kecantikan & Kosmetik", "desc": "Ekstrak neem, aktif kumkumadi, bakuchi (alternatif retinol alami), kayu cendana, vetiver — untuk formulasi K-beauty dan J-wellness.", "tags": ["Pengujian kemurnian", "Kepatuhan kosmetik EU", "Verifikasi keaslian"] },
+      { "title": "Teh Herbal & Campuran Fungsional", "desc": "Tulsi, moringa, jahe-lemon, campuran kesehatan rempah — untuk pengecer kesehatan dan produsen minuman bermerek di seluruh Asia Tenggara.", "tags": ["Pengujian mikroba", "Skrining pestisida", "Dokumentasi asal"] },
+      { "title": "Ekstrak Herbal Terstandarisasi", "desc": "Ekstrak botanikal untuk produksi suplemen OEM — profil konstituen aktif yang dikonfirmasi dengan dokumentasi batch lengkap.", "tags": ["Spesifikasi standarisasi", "Kepatuhan HACCP", "Rantai CoA"] }
+    ],
+    "ctaBanner": "Tidak menemukan bahan spesifik Anda?",
+    "ctaBannerSub": "Jika Anda bersumber dari rempah India atau tanaman Ayurveda yang tidak terdaftar di sini, hubungi kami. Kategori kami adalah jangkar, bukan batasan.",
+    "ctaBannerCta": "Tanyakan Tentang Bahan Anda"
+  },
+  "about": {
+    "tag": "Tentang Mizuron Global",
+    "h2": "Dibangun untuk menyelesaikan masalah spesifik di koridor tertentu.",
+    "p1": "Setiap industri memiliki celah yang diterima semua orang karena belum ada yang memperbaikinya. Dalam pengadaan bahan India, celah itu adalah verifikasi independen.",
+    "p2": "Bukan sertifikat — yang itu sudah ada. Tetapi konfirmasi tingkat lapangan, didanai pembeli tentang apakah pemasok adalah siapa yang mereka katakan, apakah kualitas mereka bertahan setelah pengiriman ketiga, dan apakah dokumentasi mereka benar-benar memuaskan apa yang Jepang atau Korea atau Singapura butuhkan di perbatasan. Infrastruktur itu tidak ada di koridor India-ke-Asia. Kami membangunnya.",
+    "p3": "Kami berfokus secara eksklusif pada rempah dan kesehatan Ayurveda — dua kategori — dan empat pasar target: Jepang, Korea, Singapura, dan Asia Tenggara. Itu bukan keterbatasan. Itu sebuah keputusan.",
+    "quote": "\"Basis pasokan India benar-benar berkelas dunia. Kami telah melihat pemasok yang akan menjadi mitra jangka panjang yang luar biasa bagi pembeli internasional serius. Masalahnya tidak pernah tentang potensi kualitas — melainkan infrastruktur verifikasi. Kami membangun apa yang seharusnya ada sepuluh tahun lalu.\"",
+    "quoteAttr": "Tim Pendiri",
+    "quoteLocation": "Mizuron Global, Ahmedabad, Gujarat",
+    "whyTag": "Mengapa Mizuron Global",
+    "whyH3": "Keunggulan struktural, bukan klaim pemasaran.",
+    "advantages": [
+      { "title": "Berbasis di Gujarat. Hadir di India.", "desc": "Kami beroperasi dari Ahmedabad — pusat perdagangan rempah terbesar India. Kehadiran lapangan berarti fasilitas diverifikasi secara langsung, bukan dari meja di Singapura atau Seoul." },
+      { "title": "100% sisi pembeli. Selalu.", "desc": "Kami tidak menerima uang dari pemasok India. Tidak ada komisi, tidak ada biaya referral, tidak ada pengaturan bilateral. Pendapatan kami sepenuhnya berasal dari pembeli internasional — dan itu struktural, bukan aspirasional." },
+      { "title": "Metodologi mengutamakan dokumentasi.", "desc": "Setiap keterlibatan menghasilkan dokumentasi profesional yang dapat ditindaklanjuti oleh tim kepatuhan, broker bea cukai, dan petugas pengadaan Anda. Bukan jaminan lisan." },
+      { "title": "Kedalaman regulasi, bukan keluasan.", "desc": "Kami memahami apa yang MHLW Jepang, MFDS Korea, HSA/SFA Singapura, dan kerangka ASEAN benar-benar butuhkan di pelabuhan — dan kami membangun dokumentasi yang sesuai." }
+    ],
+    "marketsLabel": "Pasar yang Kami Layani",
+    "markets": [
+      { "market": "Jepang", "body": "Standar MHLW, JETRO" },
+      { "market": "Korea Selatan", "body": "Kepatuhan MFDS, KFDA" },
+      { "market": "Singapura", "body": "Dokumentasi HSA, SFA" },
+      { "market": "Asia Tenggara", "body": "Kerangka regulasi ASEAN" }
+    ]
+  },
+  "faq": {
+    "tag": "Pertanyaan yang Sering Diajukan",
+    "h2": "Pertanyaan yang kami dengar dari tim pengadaan",
+    "sub": "Jika pertanyaan Anda belum terjawab di sini, tulis kepada kami — kami merespons setiap pertanyaan dalam satu hari kerja.",
+    "categories": [
+      {
+        "label": "Tentang Layanan Kami",
+        "items": [
+          { "q": "Apa yang tepat diverifikasi Mizuron Global dalam Laporan Verifikasi Pemasok?", "a": "Kami memverifikasi enam area: (1) Badan hukum — registrasi GST, kode IEC, pendirian perusahaan, fasilitas fisik; (2) Riwayat ekspor — catatan pengiriman terverifikasi; (3) Sertifikasi — FSSAI, APEDA, Dewan Rempah, sertifikat organik; (4) Pengujian lab — pengujian pihak ketiga independen; (5) Keterlacakan rantai pasokan; (6) Realitas komersial — MOQ sebenarnya, tolok ukur harga, waktu pengiriman." },
+          { "q": "Bagaimana Mizuron Global berbeda dari agen pengadaan India standar?", "a": "Perbedaan mendasarnya adalah siapa yang membayar kami. Agen pengadaan tradisional mendapatkan komisi dari pemasok India. Mizuron Global membebankan biaya langsung kepada pembeli dan tidak menerima pembayaran dari pemasok." },
+          { "q": "Bisakah Anda memverifikasi pemasok yang sudah kami temukan sendiri?", "a": "Ya — ini adalah salah satu jenis keterlibatan paling umum kami. Banyak pembeli menemukan pemasok potensial melalui pameran dagang, IndiaMART, atau referral dan menginginkan verifikasi independen sebelum berkomitmen pada pesanan pertama." },
+          { "q": "Apakah Anda menangani logistik, pengiriman?", "a": "Tidak — ini disengaja. Mizuron Global adalah layanan verifikasi, dokumentasi, dan intelijen. Hubungan pengiriman tetap antara Anda dan forwarder pengiriman yang Anda pilih." },
+          { "q": "Apa yang terjadi jika Laporan Verifikasi merekomendasikan kami untuk tidak melanjutkan?", "a": "Rekomendasi Jangan Lanjutkan berarti kami menemukan masalah material. Anda menerima laporan lengkap dengan semua temuan. Dalam kebanyakan kasus kami mengidentifikasi 1–2 pemasok alternatif dalam kategori yang sama." }
+        ]
+      },
+      {
+        "label": "Harga & Proses",
+        "items": [
+          { "q": "Berapa lama Laporan Verifikasi dikirimkan?", "a": "Pengiriman standar adalah 3–4 minggu dari konfirmasi keterlibatan dan pembayaran. Layanan ekspres 2 minggu tersedia dengan surcharge 30%." },
+          { "q": "Apa syarat pembayaran Anda?", "a": "Laporan Verifikasi: 50% saat konfirmasi keterlibatan, 50% saat pengiriman. Layanan Dokumentasi Bulanan: bulanan di muka. Proyek Pengadaan: 40% saat keterlibatan, 30% saat pengiriman shortlist, 30% saat laporan akhir." },
+          { "q": "Apa penawaran keterlibatan percontohan?", "a": "Kami menerima tiga klien internasional dengan tarif percontohan yang disukai — sekitar 50% dari harga Laporan Verifikasi standar. Sebagai imbalannya, kami meminta izin untuk menggunakan keterlibatan sebagai studi kasus anonim dan testimonial tertulis." },
+          { "q": "Apakah Anda menawarkan jaminan kepuasan?", "a": "Untuk klien pertama kali, kami menawarkan pengembalian 50% jika Laporan Verifikasi tidak memenuhi standar yang didokumentasikan dalam perjanjian keterlibatan kami." }
+        ]
+      },
+      {
+        "label": "Pasar & Regulasi",
+        "items": [
+          { "q": "Negara mana yang saat ini dilayani Mizuron Global?", "a": "Pasar fokus kami saat ini adalah Singapura, Jepang, Korea Selatan, dan Asia Tenggara secara luas (Thailand, Vietnam, Indonesia, Malaysia, Filipina)." },
+          { "q": "Bisakah Mizuron Global membantu kepatuhan Undang-Undang Sanitasi Pangan Jepang?", "a": "Ya — kepatuhan FSA Jepang untuk rempah dan tanaman asal India adalah salah satu spesialisasi inti kami." },
+          { "q": "Sertifikasi India apa yang Anda periksa dan verifikasi?", "a": "Untuk setiap keterlibatan kami memverifikasi: lisensi FSSAI, registrasi APEDA, sertifikasi Dewan Rempah India, sertifikasi organik NPOP, NOP dan EU Organic, ISO 22000 dan HACCP, dan tag GI bila berlaku." }
+        ]
+      },
+      {
+        "label": "Untuk Eksportir India",
+        "items": [
+          { "q": "Saya adalah eksportir India. Bisakah Mizuron Global membantu saya mengakses pasar Asia?", "a": "Ya — kami menawarkan program kesiapan pemasok terstruktur untuk eksportir rempah dan bahan Ayurveda India yang ingin menjadi lebih kredibel untuk pasar Jepang, Korea, dan Asia Tenggara.", "link": { "href": "/for-suppliers", "text": "Pelajari lebih lanjut tentang Program Kesiapan Pemasok →" } },
+          { "q": "Apakah Mizuron Global akan merekomendasikan perusahaan saya kepada pembeli internasional?", "a": "Tidak melalui pengaturan preferensial atau komersial. Pemasok yang menyelesaikan program kesiapan kami dinilai berdasarkan standar yang sama yang digunakan Mizuron saat memverifikasi atas nama pembeli." }
+        ]
+      }
+    ],
+    "stillQuestion": "Masih ada pertanyaan?",
+    "stillSub": "Setiap pertanyaan mendapat respons pribadi dalam satu hari kerja.",
+    "stillCta": "Kirim Pertanyaan"
+  },
+  "contact": {
+    "tag": "Hubungi Kami",
+    "h2": "Mulai percakapan pengadaan India Anda",
+    "sub": "Beri tahu kami apa yang Anda cari, di mana Anda berada dalam prosesnya, dan kekhawatiran utama Anda. Kami merespons dengan rekomendasi spesifik dalam satu hari kerja.",
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp",
+    "officeLabel": "Kantor",
+    "officeAddress": "Regus, Lantai 2, Privilon East Wing, SG Highway, Ahmedabad 380054",
+    "responseLabel": "Waktu Respons",
+    "responseTime": "Dalam 24 jam (hari kerja IST)",
+    "nextH4": "Apa yang terjadi setelah Anda mengirim",
+    "nextSteps": [
+      "Pertanyaan Anda ditinjau secara pribadi — bukan oleh responder otomatis",
+      "Panggilan konsultasi 30 menit untuk memahami kebutuhan Anda secara mendalam",
+      "Proposal tertulis dengan ruang lingkup, jadwal, dan harga — tanpa ambiguitas",
+      "Anda memutuskan — tanpa tekanan tindak lanjut"
+    ],
+    "formSections": {
+      "aboutYou": "Tentang Anda",
+      "sourcingNeed": "Kebutuhan Pengadaan Anda",
+      "serviceTimeline": "Layanan & Jadwal",
+      "additionalContext": "Konteks Tambahan"
+    },
+    "fields": {
+      "name": "Nama Lengkap",
+      "company": "Nama Perusahaan",
+      "email": "Alamat Email",
+      "country": "Negara",
+      "countryPlaceholder": "Pilih negara Anda",
+      "phone": "Telepon (opsional)",
+      "ingredient": "Bahan yang Anda cari",
+      "ingredientPlaceholder": "mis. Ekstrak kunyit 95% curcumin",
+      "industry": "Industri",
+      "industryPlaceholder": "Pilih industri",
+      "volume": "Estimasi volume tahunan",
+      "volumePlaceholder": "mis. 5 MT/tahun",
+      "stage": "Di mana Anda dalam proses pengadaan?",
+      "stagePlaceholder": "Pilih tahap",
+      "concern": "Kekhawatiran utama",
+      "concernPlaceholder": "Pilih kekhawatiran utama Anda",
+      "service": "Layanan yang Anda minati",
+      "servicePlaceholder": "Pilih layanan",
+      "market": "Pasar regulasi untuk impor",
+      "marketPlaceholder": "Pilih pasar",
+      "timeline": "Jadwal",
+      "timelinePlaceholder": "Pilih jadwal",
+      "message": "Konteks atau pertanyaan tambahan",
+      "messagePlaceholder": "Beri tahu kami hal lain yang akan membantu kami memahami situasi Anda",
+      "source": "Bagaimana Anda mendengar tentang kami?",
+      "sourcePlaceholder": "mis. LinkedIn, Google, referral"
+    },
+    "submit": "Kirim Pertanyaan",
+    "submitting": "Mengirim...",
+    "successH3": "Pertanyaan diterima — terima kasih.",
+    "successP": "Kami akan meninjau pertanyaan Anda secara pribadi dan merespons dalam satu hari kerja (IST). Jika kebutuhan Anda mendesak, WhatsApp kami langsung.",
+    "errorMsg": "Terjadi kesalahan. Silakan coba kirim email langsung.",
+    "networkError": "Kesalahan jaringan. Silakan coba kirim email langsung ke hello@mizuronglobal.com"
+  },
+  "finalCta": {
+    "tag": "Siap Bersumber dengan Percaya Diri?",
+    "h2": "Anda sudah melakukan riset.",
+    "h2em": "Sekarang mari kita berbicara nyata.",
+    "sub": "Pembeli yang menghubungi tidak menebak-nebak — mereka serius ingin mendapatkan pengadaan India yang benar. Baik Anda mengevaluasi pemasok tertentu, meninjau hubungan yang ada, atau menjelajahi pasar untuk pertama kalinya, kami akan memberi tahu Anda dengan tepat apa yang akan kami lakukan dan apakah kami cocok.",
+    "note": "Tanpa kewajiban. Tanpa presentasi umum. Hanya percakapan langsung dengan seseorang yang mengenal koridor ini.",
+    "cta1": "Jadwalkan Konsultasi",
+    "cta2": "Tulis kepada Kami Langsung",
+    "responseTime": "Respons dalam 24j IST",
+    "email": "hello@mizuronglobal.com",
+    "location": "Ahmedabad, Gujarat"
+  },
+  "footer": {
+    "tagline": "Bahan India. Kepercayaan Anda.",
+    "desc": "Pengadaan rempah India dan bahan Ayurveda terverifikasi untuk produsen makanan, perusahaan nutraceutical, dan distributor suplemen di Jepang, Korea, dan Asia Tenggara. Berbasis di Gujarat, India.",
+    "servicesLabel": "Layanan",
+    "companyLabel": "Perusahaan",
+    "serviceLinks": ["Laporan Verifikasi", "Layanan Dokumentasi Bulanan", "Proyek Pengadaan Penuh", "Keterlibatan Percontohan"],
+    "companyLinks": ["Tentang Mizuron Global", "Kategori Bahan", "FAQ", "Hubungi Kami"],
+    "supplierLabel": "Untuk Eksportir India",
+    "supplierDesc": "Pemasok India yang mampu ingin memenuhi standar internasional? Mizuron menawarkan program kesiapan terstruktur untuk eksportir rempah dan bahan Ayurveda yang menargetkan Jepang, Korea, dan Asia Tenggara.",
+    "supplierLink": "Program Kesiapan Pemasok →",
+    "copyright": "© 2026 Mizuron Global. Semua hak dilindungi. Ahmedabad, Gujarat, India."
+  }
+}

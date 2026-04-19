@@ -1,0 +1,362 @@
+{
+  "meta": {
+    "title": "Mizuron Global | Indian Supplier Verification for Asia",
+    "description": "Independent, buyer-side verification of Indian spice and Ayurvedic ingredient suppliers for food and wellness manufacturers in Japan, Korea, Singapore, and Southeast Asia.",
+    "supplierTitle": "Supplier Readiness Programs | Mizuron Global",
+    "supplierDescription": "Mizuron Global helps Indian spice and Ayurvedic ingredient exporters meet international standards for Japan, Korea, Singapore, and Southeast Asia."
+  },
+  "nav": {
+    "services": "Services",
+    "howItWorks": "How It Works",
+    "proof": "Proof",
+    "categories": "Categories",
+    "about": "About",
+    "faq": "FAQ",
+    "cta": "Work With Us"
+  },
+  "hero": {
+    "eyebrow": "India · Singapore · Japan · Korea · SE Asia",
+    "h1": "India's finest suppliers,",
+    "h1em": "verified yours.",
+    "clarify": "An independent verification partner for Asian buyers — paid only by you, never by the supplier.",
+    "sub": "Mizuron Global helps food and wellness manufacturers in Japan, Korea, Singapore, and Southeast Asia source from India with complete confidence — independent supplier verification, documentation built for your regulatory market, and no commercial ties to the exporter side.",
+    "cta1": "Book a Discovery Call",
+    "cta2": "See What We Verify",
+    "stats": [
+      { "num": "100%", "label": "Buyer-Side Only" },
+      { "num": "4+",   "label": "Focus Markets" },
+      { "num": "3–4w", "label": "Report Turnaround" },
+      { "num": "0",    "label": "Supplier Conflicts" }
+    ]
+  },
+  "trust": {
+    "label": "Frameworks We Navigate",
+    "items": ["FSSAI Verified", "APEDA Registered", "Spices Board India", "MHLW (Japan)", "MFDS (Korea)", "HSA / SFA (Singapore)", "ASEAN Regulatory"]
+  },
+  "problems": {
+    "tag": "Why India Sourcing Fails International Buyers",
+    "h2": "Three structural problems. We were built to close all of them.",
+    "items": [
+      {
+        "num": "01",
+        "title": "Your sourcing agent is paid by the supplier.",
+        "detail": "Which makes you the product, not the client.",
+        "text": "Most India sourcing agents earn commission from the exporter. This creates a structural conflict that shapes every recommendation they make — and that you have no visibility into. When the supplier and the agent have a commercial relationship, your interests come second.",
+        "cost": "Invisible until it costs you",
+        "costUnit": "conflict of interest"
+      },
+      {
+        "num": "02",
+        "title": "Documentation is built for export — not for your market.",
+        "detail": "FSSAI satisfies India. Your customs officer needs more.",
+        "text": "What Japan's MHLW, Korea's MFDS, or Singapore's HSA actually requires at the port is a different document set than what Indian exporters routinely produce. That gap — between 'certified for export' and 'compliant for import' — is where shipments get held.",
+        "cost": "USD 5,000 – 20,000",
+        "costUnit": "per customs hold"
+      },
+      {
+        "num": "03",
+        "title": "The sample was excellent. The third shipment wasn't.",
+        "detail": "Sustained quality requires sustained verification.",
+        "text": "Without ongoing batch-level oversight, quality drifts. Indian suppliers optimize for the sample when they know they're being evaluated. Curcumin levels, moisture content, residue thresholds — these shift over time unless someone is watching. Continuously.",
+        "cost": "USD 20,000 – 50,000",
+        "costUnit": "per rejected shipment"
+      }
+    ],
+    "bridge": "None of these problems are about Indian quality. They're about the verification infrastructure — and that's exactly what we've built.",
+    "bridgeCta": "See how we solve them"
+  },
+  "services": {
+    "tag": "Our Services",
+    "h2": "Three ways we work with you.",
+    "h2em": "One principle behind all of them.",
+    "sub": "Every engagement is designed to reduce your risk at a specific stage of the India sourcing journey — from evaluating a single supplier to managing an entire import programme. The buyer's interest comes first. Always.",
+    "popular": "Most Popular",
+    "items": [
+      {
+        "num": "01",
+        "title": "Verification Report",
+        "desc": "Independent due diligence on a specific Indian ingredient supplier before you place your first order.",
+        "price": "USD 1,200 – 2,500",
+        "note": "Per report · 3–4 week delivery",
+        "items": ["Legal entity & facility verification", "Third-party lab test coordination", "Certifications validity audit", "Supply chain traceability check", "Risk assessment & clear recommendation"]
+      },
+      {
+        "num": "02",
+        "title": "Documentation Retainer",
+        "desc": "Ongoing monthly documentation and compliance management for your active Indian supplier relationships.",
+        "price": "USD 600 – 2,800/mo",
+        "note": "6-month minimum · 3 tiers available",
+        "items": ["Pre-shipment documentation checklist", "Certificate expiry monitoring", "Monthly regulatory briefing", "Supplier relationship management", "Market price & quality tracking"]
+      },
+      {
+        "num": "03",
+        "title": "Full Sourcing Project",
+        "desc": "End-to-end: find, verify, and facilitate your first order with a new Indian ingredient supplier.",
+        "price": "USD 3,500 – 12,000",
+        "note": "Project fee + 2–3% deal fee (capped)",
+        "items": ["Market intelligence & supplier longlist", "Verification of top 3 shortlisted suppliers", "Sample coordination & negotiation support", "First order end-to-end monitoring", "Complete documentation package"]
+      }
+    ],
+    "pilot": {
+      "title": "Pilot engagement — first 3 international clients",
+      "desc": "Preferred pilot pricing (~50% of standard rate) in exchange for an anonymised case study and testimonial. Mention "pilot" in your enquiry.",
+      "cta": "Check Pilot Availability"
+    }
+  },
+  "cost": {
+    "tag": "The Economics of Verification",
+    "h2": "The comparison isn't us vs. free.",
+    "h2em": "It's us vs. what goes wrong.",
+    "sub": "International buyers don't compare our fee to nothing. They compare it to a customs hold at Narita, a rejected container in Busan, or six months rebuilding a supply chain from scratch. The math is straightforward once you see it clearly.",
+    "risks": [
+      { "cost": "USD 5,000 – 20,000", "label": "Customs hold — documentation error at the port of entry" },
+      { "cost": "USD 20,000 – 50,000", "label": "Rejected shipment — quality or specification failure on arrival" },
+      { "cost": "USD 100,000+", "label": "Product recall — adulteration or mislabeling at distribution" },
+      { "cost": "6+ months", "label": "Time lost on failed supplier trials and re-sourcing" }
+    ],
+    "box": {
+      "h3": "One Verification Report. Less than 10% of one failed shipment.",
+      "sub": "A side-by-side reality check.",
+      "row1label": "One customs rejection",
+      "row1val": "USD 20,000",
+      "row2label": "One quality failure",
+      "row2val": "USD 50,000",
+      "row3label": "Mizuron Verification Report",
+      "row3val": "USD 1,200 – 2,500",
+      "quote": "\"One avoided rejection pays for ten reports. Our clients don't see verification as a cost — they see it as the cheapest insurance in their supply chain.\"",
+      "cta": "Request a Pilot Quote"
+    }
+  },
+  "howItWorks": {
+    "tag": "How It Works",
+    "h2": "From first conversation to",
+    "h2em": "verified shipment.",
+    "steps": [
+      { "num": "01", "title": "Discovery call", "text": "We understand your ingredient, specification, regulatory market, and timeline in a 30-minute no-obligation call." },
+      { "num": "02", "title": "Supplier research & shortlisting", "text": "We identify and screen candidates across India's key sourcing regions against your specification and volume requirements." },
+      { "num": "03", "title": "On-ground verification", "text": "We verify facilities, certifications, third-party lab results, and documentation — aligned to your specific market's customs requirements." },
+      { "num": "04", "title": "Report & recommendation", "text": "A professional, structured report with our ranked recommendation and complete supporting documentation." },
+      { "num": "05", "title": "Ongoing monitoring", "text": "We continue managing documentation and supplier quality on every shipment — so nothing slips through." }
+    ],
+    "ctaBox": {
+      "tag": "Your Next Step",
+      "h3": "Not sure which service fits?",
+      "sub": "Book a 20-minute discovery call. We'll understand your situation and recommend the right engagement — no obligation, no generic pitch.",
+      "cta": "Book a Discovery Call"
+    }
+  },
+  "proof": {
+    "tag": "Proof, Not Just Claims",
+    "h2": "What a Mizuron Verification Report actually covers",
+    "sub": "Every report concludes with a clear Proceed, Proceed with Conditions, or Do Not Proceed recommendation — backed by documented evidence across six verification areas.",
+    "areas": [
+      { "title": "Legal Entity & Facility", "desc": "GST registration, IEC code, company incorporation, physical facility confirmed against actual address" },
+      { "title": "Export History", "desc": "Verified shipment records through DGFT and customs data — not self-reported claims" },
+      { "title": "Certifications Audit", "desc": "FSSAI, APEDA, Spices Board, organic certificates validated directly with issuing bodies" },
+      { "title": "Independent Lab Testing", "desc": "Third-party lab testing on actual batch — pesticide MRL, heavy metals, microbial, active compounds" },
+      { "title": "Supply Chain Traceability", "desc": "Source region, farm or collection centre documentation, processing facility standards" },
+      { "title": "Commercial Verification", "desc": "Actual MOQ, current price benchmark, lead time verified against real shipping history" }
+    ],
+    "reportTag": "Sample Report Structure",
+    "reportH3": "Professional, structured, filed with confidence",
+    "reportDesc": "Our Verification Reports are 15–25 page professional PDF documents — structured so your compliance officer, procurement team, and customs broker can each find exactly what they need.",
+    "reportCta": "Request a Sample Report",
+    "comparisonTag": "Mizuron Global vs. the Alternatives",
+    "comparisonH3": "What we verify vs. what a normal sourcing agent does",
+    "comparison": [
+      { "aspect": "Paid by Indian suppliers?", "us": "Never", "them": "Usually" },
+      { "aspect": "Works exclusively for buyers?", "us": "Always", "them": "Rarely" },
+      { "aspect": "On-ground India presence?", "us": "Yes — Gujarat based", "them": "Often remote" },
+      { "aspect": "Independent lab testing?", "us": "Every report", "them": "Supplier-provided CoA" },
+      { "aspect": "Market-specific documentation?", "us": "Japan, Korea, SEA tailored", "them": "Generic" },
+      { "aspect": "Clear proceed/don't proceed recommendation?", "us": "Every report", "them": "Rarely" },
+      { "aspect": "Ongoing monitoring?", "us": "Available", "them": "Not offered" }
+    ],
+    "caseTag": "Pilot Case Study",
+    "caseH3": "Singapore supplement manufacturer — turmeric extract verification",
+    "caseText1": "A mid-size nutraceutical company in Singapore needed to verify a new Indian turmeric extract supplier (95% curcumin specification) before committing to a recurring order of 2 MT/year.",
+    "caseText2": "Independent lab testing revealed curcumin content was consistently 12% below the stated specification across multiple batches — a difference of approximately 10.5g/kg against the claimed 13.0g/kg.",
+    "caseOutcomeLabel": "Recommendation issued",
+    "caseOutcome": "Proceed with Conditions",
+    "caseSaved": "Estimated annual saving: USD 15,000 in over-specification costs"
+  },
+  "categories": {
+    "tag": "Ingredient Categories",
+    "h2": "Focused expertise, not broad coverage",
+    "sub": "We deliberately stay narrow. Two core categories, deep expertise — because genuine knowledge in a specific domain is worth more than superficial coverage of everything.",
+    "spicesTag": "Primary Category",
+    "spicesH3": "Indian Spices & Specialty Ingredients",
+    "spicesDesc": "India supplies over 70% of the world's spices. The global market has shifted toward functional spices, culinary authenticity, and clean-label ingredients — all requiring verified documentation that most Indian exporters struggle to provide.",
+    "spicesBuyers": ["Japanese food manufacturers", "Korean functional food brands", "SEA ingredient importers"],
+    "spiceItems": [
+      { "title": "Functional Spices", "desc": "Turmeric (curcumin-verified), black pepper (piperine content confirmed), ginger — for health-positioned food and supplement applications.", "tags": ["Curcumin % testing", "Piperine verification", "Pesticide MRL"] },
+      { "title": "Culinary Spices", "desc": "Cumin, coriander, cardamom, chili, fenugreek — verified-origin documentation for food manufacturers needing geographic provenance.", "tags": ["Origin documentation", "GI certification", "Microbial testing"] },
+      { "title": "Seed Spices", "desc": "Fennel, ajwain, nigella, mustard seed — sourced from specific Indian growing districts with full traceability.", "tags": ["Region traceability", "Moisture specs", "Adulteration testing"] },
+      { "title": "Spice Extracts & Oleoresins", "desc": "Standardised extracts for nutraceutical and food manufacturers — specification-matched with batch-consistent profiles.", "tags": ["Active compound %", "Solvent residue", "CoA chain"] }
+    ],
+    "wellnessTag": "Secondary Category",
+    "wellnessH3": "Ayurvedic & Herbal Wellness Ingredients",
+    "wellnessDesc": "Japan and Korea are the world's most sophisticated wellness markets — both actively sourcing Indian Ayurvedic ingredients for supplement manufacturing, nutraceutical formulation, and K-beauty applications.",
+    "wellnessBuyers": ["Japanese supplement manufacturers", "K-beauty ingredient buyers", "SEA wellness distributors"],
+    "wellnessItems": [
+      { "title": "Adaptogenic Herbs", "desc": "Ashwagandha (withanolide-verified), brahmi, shatavari, triphala, tulsi — for supplement manufacturers requiring pharmaceutical-standard documentation.", "tags": ["Withanolide %", "Heavy metals panel", "Pharmaceutical grade"] },
+      { "title": "Beauty & Cosmetic Botanicals", "desc": "Neem extract, kumkumadi actives, bakuchi (natural retinol alternative), sandalwood, vetiver — for K-beauty and J-wellness formulation.", "tags": ["Purity testing", "EU cosmetic compliance", "Authenticity verification"] },
+      { "title": "Herbal Teas & Functional Blends", "desc": "Tulsi, moringa, ginger-lemon, spiced wellness blends — for health retailers and branded beverage manufacturers across Southeast Asia.", "tags": ["Microbial testing", "Pesticide screening", "Origin documentation"] },
+      { "title": "Standardised Herbal Extracts", "desc": "Botanical extracts for OEM supplement manufacturing — confirmed active constituent profiles with full batch documentation.", "tags": ["Standardisation specs", "HACCP compliance", "CoA chain"] }
+    ],
+    "ctaBanner": "Don't see your specific ingredient?",
+    "ctaBannerSub": "If you're sourcing Indian spices or Ayurvedic botanicals not listed here, contact us. Our categories are anchors, not limits.",
+    "ctaBannerCta": "Ask About Your Ingredient"
+  },
+  "about": {
+    "tag": "About Mizuron Global",
+    "h2": "Built to solve a specific problem in a specific corridor.",
+    "p1": "Every industry has a gap that everyone accepts because no one has fixed it yet. In Indian ingredient sourcing, that gap is independent verification.",
+    "p2": "Not certificates — those exist. But the ground-level, buyer-funded confirmation of whether a supplier is who they say they are, whether their quality holds past the third shipment, and whether their documentation actually satisfies what Japan or Korea or Singapore requires at the border. That infrastructure didn't exist in the India-to-Asia corridor. We built it.",
+    "p3": "We focus exclusively on spices and Ayurvedic wellness — two categories — and four target markets: Japan, Korea, Singapore, and Southeast Asia. That's not a limitation. It's a decision. Genuine expertise requires depth, not reach. We'd rather be the best in a narrow lane than mediocre everywhere.",
+    "quote": "\"The Indian supply base is genuinely world-class. We've seen suppliers who would be exceptional long-term partners for serious international buyers. The problem was never quality potential — it was the verification infrastructure. We built what should have existed ten years ago.\"",
+    "quoteAttr": "Founding Team",
+    "quoteLocation": "Mizuron Global, Ahmedabad, Gujarat",
+    "whyTag": "Why Mizuron Global",
+    "whyH3": "Structural advantages, not marketing claims.",
+    "advantages": [
+      { "title": "Gujarat-based. India-present.", "desc": "We operate from Ahmedabad — India's largest spice trading hub. On-ground presence means facilities are verified in person, not from a desk in Singapore or Seoul." },
+      { "title": "100% buyer-side. Always.", "desc": "We take no money from Indian suppliers. No commissions, no referral fees, no bilateral arrangements. Our revenue comes entirely from the international buyer — and that's structural, not aspirational." },
+      { "title": "Documentation-first methodology.", "desc": "Every engagement produces professional documentation your compliance team, customs broker, and procurement officer can act on. Not verbal assurances." },
+      { "title": "Regulatory depth, not breadth.", "desc": "We understand what Japan's MHLW, Korea's MFDS, Singapore's HSA/SFA, and ASEAN frameworks actually require at the port — and we build documentation accordingly." }
+    ],
+    "marketsLabel": "Markets We Serve",
+    "markets": [
+      { "market": "Japan", "body": "MHLW, JETRO standards" },
+      { "market": "South Korea", "body": "MFDS, KFDA compliance" },
+      { "market": "Singapore", "body": "HSA, SFA documentation" },
+      { "market": "Southeast Asia", "body": "ASEAN regulatory frameworks" }
+    ]
+  },
+  "faq": {
+    "tag": "Frequently Asked Questions",
+    "h2": "Questions we hear from procurement teams",
+    "sub": "If your question isn't answered here, write to us — we respond to every enquiry within one business day.",
+    "categories": [
+      {
+        "label": "About Our Services",
+        "items": [
+          { "q": "What exactly does Mizuron Global verify in a Supplier Verification Report?", "a": "We verify six areas: (1) Legal entity — GST registration, IEC code, company incorporation, physical facility confirmed against actual address; (2) Export history — verified shipment records through DGFT and customs data; (3) Certifications — FSSAI, APEDA, Spices Board, organic certificates validity confirmed directly with issuing bodies; (4) Lab testing — independent third-party testing on the actual batch; (5) Supply chain traceability — source region and processing facility; (6) Commercial reality — actual MOQ, price benchmark, lead time. Every report concludes with a clear Proceed / Proceed with Conditions / Do Not Proceed recommendation." },
+          { "q": "How is Mizuron Global different from a standard India sourcing agent?", "a": "The fundamental difference is who pays us. Traditional sourcing agents earn commission from Indian suppliers — which creates a financial incentive to recommend suppliers who pay them best, not suppliers who are best for you. Mizuron Global charges fees directly to buyers and accepts zero payments from suppliers. Additionally, we produce documented verification reports, manage documentation chains on ongoing shipments, and provide regulatory market intelligence." },
+          { "q": "Can you verify a supplier we have already found ourselves?", "a": "Yes — this is one of our most common engagement types. Many buyers find potential suppliers through trade shows, IndiaMART, or referrals and want independent verification before committing to a first order. Simply provide us the supplier details and your ingredient specification and we conduct a full Verification Report." },
+          { "q": "Do you handle logistics, freight, or shipping?", "a": "No — this is intentional. Mizuron Global is a verification, documentation, and intelligence service. The shipping relationship remains between you and your chosen freight forwarder. We are happy to recommend reliable freight partners for India-to-Japan, India-to-Korea, and India-to-Southeast Asia routes if needed." },
+          { "q": "What happens if the Verification Report recommends we do not proceed?", "a": "A Do Not Proceed recommendation means we found material issues — falsified certifications, quality inconsistencies, or documentation gaps that would not survive customs inspection. You receive the full report with complete findings regardless. In most cases we identify 1–2 alternative suppliers in the same category." }
+        ]
+      },
+      {
+        "label": "Pricing & Process",
+        "items": [
+          { "q": "How long does a Verification Report take to deliver?", "a": "Standard delivery is 3–4 weeks from engagement confirmation and payment. This includes facility verification, independent third-party lab testing coordination, certification validation with issuing bodies, and professional report preparation. An expedited 2-week service is available at a 30% surcharge." },
+          { "q": "What are your payment terms?", "a": "Verification Reports: 50% on engagement confirmation, 50% on delivery. Documentation Retainers: monthly in advance. Sourcing Projects: 40% on engagement, 30% on shortlist delivery, 30% on final report. We invoice in USD and accept SWIFT transfer and major payment platforms." },
+          { "q": "What is the pilot engagement offer?", "a": "We are accepting three international clients at a preferred pilot rate — approximately 50% of standard Verification Report pricing. In exchange, we ask for permission to use the engagement as an anonymised case study and a written testimonial if you are satisfied." },
+          { "q": "Do you offer any satisfaction guarantee?", "a": "For first-time clients, we offer a 50% refund if the Verification Report does not meet the documented standard outlined in our engagement agreement — specifically if any of the six verification areas are incomplete or our recommendation lacks specified supporting evidence." }
+        ]
+      },
+      {
+        "label": "Markets & Regulations",
+        "items": [
+          { "q": "Which countries does Mizuron Global currently serve?", "a": "Our current focus markets are Singapore, Japan, South Korea, and Southeast Asia broadly (Thailand, Vietnam, Indonesia, Malaysia, Philippines). Singapore is our recommended starting point for buyers new to India sourcing given its English-language business environment and role as a regional procurement hub." },
+          { "q": "Can Mizuron Global help with Japan Food Sanitation Act compliance?", "a": "Yes — Japan FSA compliance for Indian-origin spices and botanicals is one of our core specialisations. We understand which pesticide residues commonly fail Japan's positive list system for specific Indian spice categories, and what documentation Japanese customs requires for each ingredient type." },
+          { "q": "What Indian certifications do you check and verify?", "a": "For every engagement we verify as applicable: FSSAI license, APEDA registration, Spices Board of India certification, NPOP organic certification, NOP and EU Organic equivalency, ISO 22000 and HACCP, and GI tags where applicable. We confirm validity directly with issuing bodies." }
+        ]
+      },
+      {
+        "label": "For Indian Exporters",
+        "items": [
+          { "q": "I am an Indian exporter. Can Mizuron Global help me access Asian markets?", "a": "Yes — we offer structured supplier readiness programs for Indian spice and Ayurvedic ingredient exporters who want to become more credible for Japanese, Korean, and Southeast Asian markets. Engagements range from ₹55,000 for a Readiness Audit to ₹3,20,000 for a full International Standards Alignment.", "link": { "href": "/for-suppliers", "text": "Learn more about our Supplier Readiness Programs →" } },
+          { "q": "Will Mizuron Global recommend my company to your international buyers?", "a": "Not through a preferential or commercial arrangement. Suppliers who complete our readiness programs are assessed against the same standards Mizuron uses when verifying on behalf of buyers. Completing a readiness program does not entitle you to buyer introductions or preferential placement." }
+        ]
+      }
+    ],
+    "stillQuestion": "Still have a question?",
+    "stillSub": "Every enquiry receives a personal response within one business day.",
+    "stillCta": "Send a Question"
+  },
+  "contact": {
+    "tag": "Get In Touch",
+    "h2": "Start your India sourcing conversation",
+    "sub": "Tell us what you're sourcing, where you are in the process, and your primary concern. We respond with a specific recommendation within one business day — no generic pitch.",
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp",
+    "officeLabel": "Office",
+    "officeAddress": "Regus, 2nd Floor, Privilon East Wing, SG Highway, Ahmedabad 380054",
+    "responseLabel": "Response Time",
+    "responseTime": "Within 24 hours (IST business days)",
+    "nextH4": "What happens after you submit",
+    "nextSteps": [
+      "Your enquiry is reviewed personally — not by an auto-responder",
+      "30-minute discovery call to understand your needs in depth",
+      "Written proposal with scope, timeline, and pricing — no ambiguity",
+      "You decide — no follow-up pressure"
+    ],
+    "formSections": {
+      "aboutYou": "About You",
+      "sourcingNeed": "Your Sourcing Need",
+      "serviceTimeline": "Service & Timeline",
+      "additionalContext": "Additional Context"
+    },
+    "fields": {
+      "name": "Full Name",
+      "company": "Company Name",
+      "email": "Email Address",
+      "country": "Country",
+      "countryPlaceholder": "Select your country",
+      "phone": "Phone (optional)",
+      "ingredient": "Ingredient you are sourcing",
+      "ingredientPlaceholder": "e.g. Turmeric extract 95% curcumin",
+      "industry": "Industry",
+      "industryPlaceholder": "Select industry",
+      "volume": "Annual volume estimate",
+      "volumePlaceholder": "e.g. 5 MT/year",
+      "stage": "Where are you in the sourcing process?",
+      "stagePlaceholder": "Select stage",
+      "concern": "Primary concern",
+      "concernPlaceholder": "Select your main concern",
+      "service": "Service you are interested in",
+      "servicePlaceholder": "Select service",
+      "market": "Regulatory market for import",
+      "marketPlaceholder": "Select market",
+      "timeline": "Timeline",
+      "timelinePlaceholder": "Select timeline",
+      "message": "Additional context or questions",
+      "messagePlaceholder": "Tell us anything else that would help us understand your situation",
+      "source": "How did you hear about us?",
+      "sourcePlaceholder": "e.g. LinkedIn, Google, referral"
+    },
+    "submit": "Send Enquiry",
+    "submitting": "Sending...",
+    "successH3": "Enquiry received — thank you.",
+    "successP": "We'll review your enquiry personally and respond within one business day (IST). If your need is urgent, WhatsApp us directly.",
+    "errorMsg": "Something went wrong. Please try emailing us directly.",
+    "networkError": "Network error. Please try emailing us directly at hello@mizuronglobal.com"
+  },
+  "finalCta": {
+    "tag": "Ready to Source With Confidence?",
+    "h2": "You've done the research.",
+    "h2em": "Now let's have a real conversation.",
+    "sub": "The buyers who reach out aren't guessing — they're serious about getting India sourcing right. Whether you're evaluating a specific supplier, reviewing an existing relationship, or exploring the market for the first time, we'll tell you exactly what we'd do and whether we're the right fit.",
+    "note": "No obligation. No generic pitch deck. Just a direct conversation with someone who knows this corridor.",
+    "cta1": "Book a Discovery Call",
+    "cta2": "Write to Us Directly",
+    "responseTime": "Response within 24h IST",
+    "email": "hello@mizuronglobal.com",
+    "location": "Ahmedabad, Gujarat"
+  },
+  "footer": {
+    "tagline": "India's ingredients. Your confidence.",
+    "desc": "Verified Indian spice and Ayurvedic ingredient sourcing for food manufacturers, nutraceutical companies, and supplement distributors in Japan, Korea, and Southeast Asia. Based in Gujarat, India.",
+    "servicesLabel": "Services",
+    "companyLabel": "Company",
+    "serviceLinks": ["Verification Reports", "Documentation Retainer", "Full Sourcing Projects", "Pilot Engagement"],
+    "companyLinks": ["About Mizuron Global", "Ingredient Categories", "FAQ", "Contact Us"],
+    "supplierLabel": "For Indian Exporters",
+    "supplierDesc": "Capable Indian supplier looking to meet international standards? Mizuron offers structured readiness programs for spice and Ayurvedic ingredient exporters targeting Japan, Korea, and Southeast Asia.",
+    "supplierLink": "Supplier Readiness Programs →",
+    "copyright": "© 2026 Mizuron Global. All rights reserved. Ahmedabad, Gujarat, India."
+  }
+}

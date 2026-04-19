@@ -1,0 +1,362 @@
+{
+  "meta": {
+    "title": "Mizuron Global | Xác minh nhà cung cấp Ấn Độ cho châu Á",
+    "description": "Xác minh độc lập, phía người mua, về các nhà cung cấp gia vị và nguyên liệu Ayurveda Ấn Độ cho các nhà sản xuất thực phẩm và sức khỏe tại Nhật Bản, Hàn Quốc, Singapore và Đông Nam Á.",
+    "supplierTitle": "Chương trình Sẵn sàng Xuất khẩu | Mizuron Global",
+    "supplierDescription": "Mizuron Global hỗ trợ các nhà xuất khẩu gia vị và nguyên liệu Ayurveda Ấn Độ đáp ứng tiêu chuẩn quốc tế cho thị trường Nhật Bản, Hàn Quốc, Singapore và Đông Nam Á."
+  },
+  "nav": {
+    "services": "Dịch vụ",
+    "howItWorks": "Quy trình",
+    "proof": "Bằng chứng",
+    "categories": "Danh mục",
+    "about": "Về chúng tôi",
+    "faq": "FAQ",
+    "cta": "Liên hệ"
+  },
+  "hero": {
+    "eyebrow": "Ấn Độ · Singapore · Nhật Bản · Hàn Quốc · Đông Nam Á",
+    "h1": "Nhà cung cấp Ấn Độ uy tín nhất,",
+    "h1em": "được xác minh cho bạn.",
+    "clarify": "Đối tác xác minh độc lập cho người mua châu Á — chỉ do bạn trả phí, không bao giờ từ nhà cung cấp.",
+    "sub": "Mizuron Global giúp các nhà sản xuất thực phẩm và sức khỏe tại Nhật Bản, Hàn Quốc, Singapore và Đông Nam Á tìm nguồn hàng từ Ấn Độ với sự tin tưởng hoàn toàn — xác minh nhà cung cấp độc lập, tài liệu xây dựng cho thị trường quy định của bạn, và không có ràng buộc thương mại với phía xuất khẩu.",
+    "cta1": "Đặt cuộc gọi tư vấn",
+    "cta2": "Xem những gì chúng tôi xác minh",
+    "stats": [
+      { "num": "100%", "label": "Chỉ phía người mua" },
+      { "num": "4+",   "label": "Thị trường trọng tâm" },
+      { "num": "3–4w", "label": "Thời gian giao báo cáo" },
+      { "num": "0",    "label": "Xung đột nhà cung cấp" }
+    ]
+  },
+  "trust": {
+    "label": "Các khung quy định chúng tôi điều hướng",
+    "items": ["FSSAI Đã xác minh", "APEDA Đã đăng ký", "Hội đồng Gia vị Ấn Độ", "MHLW (Nhật Bản)", "MFDS (Hàn Quốc)", "HSA / SFA (Singapore)", "Quy định ASEAN"]
+  },
+  "problems": {
+    "tag": "Tại sao việc tìm nguồn hàng Ấn Độ thất bại với người mua quốc tế",
+    "h2": "Ba vấn đề cơ cấu. Chúng tôi được xây dựng để giải quyết tất cả.",
+    "items": [
+      {
+        "num": "01",
+        "title": "Đại lý tìm nguồn hàng của bạn được nhà cung cấp trả tiền.",
+        "detail": "Điều đó khiến bạn trở thành sản phẩm, không phải khách hàng.",
+        "text": "Hầu hết các đại lý tìm nguồn hàng Ấn Độ nhận hoa hồng từ nhà xuất khẩu. Điều này tạo ra xung đột lợi ích cơ cấu định hình mọi khuyến nghị họ đưa ra — và bạn không có khả năng giám sát. Khi nhà cung cấp và đại lý có mối quan hệ thương mại, lợi ích của bạn đứng thứ hai.",
+        "cost": "Ẩn cho đến khi gây thiệt hại",
+        "costUnit": "xung đột lợi ích"
+      },
+      {
+        "num": "02",
+        "title": "Tài liệu được xây dựng để xuất khẩu — không phải cho thị trường của bạn.",
+        "detail": "FSSAI thỏa mãn Ấn Độ. Nhân viên hải quan của bạn cần nhiều hơn.",
+        "text": "Những gì MHLW của Nhật Bản, MFDS của Hàn Quốc hoặc HSA của Singapore thực sự yêu cầu tại cảng là một bộ tài liệu khác với những gì các nhà xuất khẩu Ấn Độ thường sản xuất. Khoảng cách đó — giữa 'được chứng nhận để xuất khẩu' và 'tuân thủ để nhập khẩu' — là nơi các lô hàng bị giữ lại.",
+        "cost": "USD 5.000 – 20.000",
+        "costUnit": "mỗi lần giữ hải quan"
+      },
+      {
+        "num": "03",
+        "title": "Mẫu rất tốt. Lô hàng thứ ba thì không.",
+        "detail": "Chất lượng bền vững đòi hỏi xác minh liên tục.",
+        "text": "Nếu không có giám sát cấp lô hàng liên tục, chất lượng sẽ trôi dạt. Các nhà cung cấp Ấn Độ tối ưu hóa cho mẫu khi họ biết mình đang được đánh giá. Hàm lượng curcumin, độ ẩm, ngưỡng dư lượng — những điều này thay đổi theo thời gian trừ khi có người theo dõi. Liên tục.",
+        "cost": "USD 20.000 – 50.000",
+        "costUnit": "mỗi lô hàng bị từ chối"
+      }
+    ],
+    "bridge": "Không có vấn đề nào trong số này liên quan đến chất lượng Ấn Độ. Chúng liên quan đến cơ sở hạ tầng xác minh — và đó chính xác là những gì chúng tôi đã xây dựng.",
+    "bridgeCta": "Xem cách chúng tôi giải quyết"
+  },
+  "services": {
+    "tag": "Dịch vụ của chúng tôi",
+    "h2": "Ba cách chúng tôi làm việc với bạn.",
+    "h2em": "Một nguyên tắc đằng sau tất cả.",
+    "sub": "Mỗi hợp đồng được thiết kế để giảm rủi ro của bạn ở một giai đoạn cụ thể trong hành trình tìm nguồn hàng Ấn Độ — từ đánh giá một nhà cung cấp duy nhất đến quản lý toàn bộ chương trình nhập khẩu. Lợi ích của người mua luôn đặt lên hàng đầu.",
+    "popular": "Phổ biến nhất",
+    "items": [
+      {
+        "num": "01",
+        "title": "Báo cáo xác minh",
+        "desc": "Thẩm định độc lập về một nhà cung cấp nguyên liệu Ấn Độ cụ thể trước khi bạn đặt đơn hàng đầu tiên.",
+        "price": "USD 1.200 – 2.500",
+        "note": "Mỗi báo cáo · Giao hàng 3–4 tuần",
+        "items": ["Xác minh pháp nhân và cơ sở", "Điều phối kiểm tra phòng thí nghiệm bên thứ ba", "Kiểm toán hiệu lực chứng nhận", "Kiểm tra truy xuất chuỗi cung ứng", "Đánh giá rủi ro và khuyến nghị rõ ràng"]
+      },
+      {
+        "num": "02",
+        "title": "Dịch vụ tài liệu hàng tháng",
+        "desc": "Quản lý tài liệu và tuân thủ hàng tháng liên tục cho các mối quan hệ nhà cung cấp Ấn Độ đang hoạt động của bạn.",
+        "price": "USD 600 – 2.800/tháng",
+        "note": "Tối thiểu 6 tháng · 3 cấp độ",
+        "items": ["Danh sách kiểm tra tài liệu trước xuất hàng", "Theo dõi hết hạn chứng nhận", "Thông tin quy định hàng tháng", "Quản lý quan hệ nhà cung cấp", "Theo dõi giá thị trường và chất lượng"]
+      },
+      {
+        "num": "03",
+        "title": "Dự án tìm nguồn hàng toàn diện",
+        "desc": "Từ đầu đến cuối: tìm, xác minh và tạo điều kiện cho đơn hàng đầu tiên của bạn với nhà cung cấp nguyên liệu Ấn Độ mới.",
+        "price": "USD 3.500 – 12.000",
+        "note": "Phí dự án + 2–3% phí giao dịch (có giới hạn)",
+        "items": ["Thông tin thị trường và danh sách nhà cung cấp", "Xác minh 3 nhà cung cấp được chọn lọc hàng đầu", "Hỗ trợ điều phối mẫu và đàm phán", "Giám sát đơn hàng đầu tiên từ đầu đến cuối", "Gói tài liệu hoàn chỉnh"]
+      }
+    ],
+    "pilot": {
+      "title": "Hợp đồng thí điểm — 3 khách hàng quốc tế đầu tiên",
+      "desc": "Giá thí điểm ưu đãi (~50% giá tiêu chuẩn) để đổi lấy một nghiên cứu trường hợp ẩn danh và lời chứng thực. Đề cập 'thí điểm' trong yêu cầu của bạn.",
+      "cta": "Kiểm tra tính khả dụng thí điểm"
+    }
+  },
+  "cost": {
+    "tag": "Kinh tế học của xác minh",
+    "h2": "So sánh không phải là chúng tôi so với miễn phí.",
+    "h2em": "Đó là chúng tôi so với những gì xảy ra khi sai.",
+    "sub": "Người mua quốc tế không so sánh phí của chúng tôi với không có gì. Họ so sánh nó với việc giữ hải quan tại Narita, một container bị từ chối ở Busan, hoặc sáu tháng xây dựng lại chuỗi cung ứng từ đầu.",
+    "risks": [
+      { "cost": "USD 5.000 – 20.000", "label": "Giữ hải quan — lỗi tài liệu tại cảng nhập cảnh" },
+      { "cost": "USD 20.000 – 50.000", "label": "Lô hàng bị từ chối — lỗi chất lượng hoặc thông số kỹ thuật khi đến nơi" },
+      { "cost": "USD 100.000+", "label": "Thu hồi sản phẩm — tạp chất hoặc ghi nhãn sai tại phân phối" },
+      { "cost": "6+ tháng", "label": "Thời gian mất do thử nghiệm nhà cung cấp thất bại và tìm nguồn lại" }
+    ],
+    "box": {
+      "h3": "Một báo cáo xác minh. Ít hơn 10% của một lô hàng thất bại.",
+      "sub": "Kiểm tra thực tế so sánh.",
+      "row1label": "Một lần từ chối hải quan",
+      "row1val": "USD 20.000",
+      "row2label": "Một lần thất bại chất lượng",
+      "row2val": "USD 50.000",
+      "row3label": "Báo cáo xác minh Mizuron",
+      "row3val": "USD 1.200 – 2.500",
+      "quote": "\"Một lần tránh được từ chối đủ trả cho mười báo cáo. Khách hàng của chúng tôi không coi xác minh là chi phí — họ coi đó là bảo hiểm rẻ nhất trong chuỗi cung ứng của họ.\"",
+      "cta": "Yêu cầu báo giá thí điểm"
+    }
+  },
+  "howItWorks": {
+    "tag": "Quy trình hoạt động",
+    "h2": "Từ cuộc trò chuyện đầu tiên đến",
+    "h2em": "lô hàng được xác minh.",
+    "steps": [
+      { "num": "01", "title": "Cuộc gọi tư vấn", "text": "Chúng tôi tìm hiểu nguyên liệu, thông số kỹ thuật, thị trường quy định và tiến độ của bạn trong cuộc gọi 30 phút không ràng buộc." },
+      { "num": "02", "title": "Nghiên cứu và chọn lọc nhà cung cấp", "text": "Chúng tôi xác định và sàng lọc các ứng viên trên các vùng tìm nguồn hàng chính của Ấn Độ theo thông số kỹ thuật và yêu cầu khối lượng của bạn." },
+      { "num": "03", "title": "Xác minh thực địa", "text": "Chúng tôi xác minh cơ sở, chứng nhận, kết quả phòng thí nghiệm bên thứ ba và tài liệu — phù hợp với yêu cầu hải quan cụ thể của thị trường bạn." },
+      { "num": "04", "title": "Báo cáo và khuyến nghị", "text": "Một báo cáo chuyên nghiệp, có cấu trúc với khuyến nghị xếp hạng của chúng tôi và tài liệu hỗ trợ đầy đủ." },
+      { "num": "05", "title": "Giám sát liên tục", "text": "Chúng tôi tiếp tục quản lý tài liệu và chất lượng nhà cung cấp trên mỗi lô hàng — để không có gì bị bỏ sót." }
+    ],
+    "ctaBox": {
+      "tag": "Bước tiếp theo của bạn",
+      "h3": "Không chắc dịch vụ nào phù hợp?",
+      "sub": "Đặt cuộc gọi tư vấn 20 phút. Chúng tôi sẽ hiểu tình huống của bạn và đề xuất hợp đồng phù hợp — không ràng buộc, không bài thuyết trình chung chung.",
+      "cta": "Đặt cuộc gọi tư vấn"
+    }
+  },
+  "proof": {
+    "tag": "Bằng chứng, không chỉ tuyên bố",
+    "h2": "Báo cáo xác minh Mizuron thực sự bao gồm những gì",
+    "sub": "Mỗi báo cáo kết thúc với khuyến nghị rõ ràng Tiến hành, Tiến hành có điều kiện hoặc Không tiến hành — được hỗ trợ bởi bằng chứng được ghi lại trên sáu lĩnh vực xác minh.",
+    "areas": [
+      { "title": "Pháp nhân và cơ sở", "desc": "Đăng ký GST, mã IEC, thành lập công ty, cơ sở vật lý được xác nhận theo địa chỉ thực tế" },
+      { "title": "Lịch sử xuất khẩu", "desc": "Hồ sơ lô hàng đã xác minh qua DGFT và dữ liệu hải quan — không phải tuyên bố tự báo cáo" },
+      { "title": "Kiểm toán chứng nhận", "desc": "FSSAI, APEDA, Hội đồng Gia vị, chứng nhận hữu cơ được xác nhận trực tiếp với cơ quan cấp phép" },
+      { "title": "Kiểm tra phòng thí nghiệm độc lập", "desc": "Kiểm tra phòng thí nghiệm bên thứ ba trên lô hàng thực tế — MRL thuốc trừ sâu, kim loại nặng, vi sinh, hợp chất hoạt tính" },
+      { "title": "Truy xuất chuỗi cung ứng", "desc": "Khu vực nguồn gốc, tài liệu trang trại hoặc trung tâm thu mua, tiêu chuẩn cơ sở chế biến" },
+      { "title": "Xác minh thương mại", "desc": "MOQ thực tế, giá tham chiếu hiện tại, thời gian giao hàng được xác minh theo lịch sử vận chuyển thực tế" }
+    ],
+    "reportTag": "Cấu trúc báo cáo mẫu",
+    "reportH3": "Chuyên nghiệp, có cấu trúc, nộp hồ sơ với sự tự tin",
+    "reportDesc": "Báo cáo xác minh của chúng tôi là tài liệu PDF chuyên nghiệp 15–25 trang — được cấu trúc để cán bộ tuân thủ, nhóm mua sắm và môi giới hải quan của bạn có thể tìm thấy chính xác những gì họ cần.",
+    "reportCta": "Yêu cầu báo cáo mẫu",
+    "comparisonTag": "Mizuron Global so với các lựa chọn thay thế",
+    "comparisonH3": "Những gì chúng tôi xác minh so với những gì một đại lý tìm nguồn hàng thông thường làm",
+    "comparison": [
+      { "aspect": "Được trả bởi nhà cung cấp Ấn Độ?", "us": "Không bao giờ", "them": "Thường là vậy" },
+      { "aspect": "Làm việc độc quyền cho người mua?", "us": "Luôn luôn", "them": "Hiếm khi" },
+      { "aspect": "Hiện diện thực địa tại Ấn Độ?", "us": "Có — cơ sở tại Gujarat", "them": "Thường từ xa" },
+      { "aspect": "Kiểm tra phòng thí nghiệm độc lập?", "us": "Mỗi báo cáo", "them": "CoA do nhà cung cấp cung cấp" },
+      { "aspect": "Tài liệu theo thị trường cụ thể?", "us": "Tùy chỉnh cho Nhật Bản, Hàn Quốc, ĐNA", "them": "Chung chung" },
+      { "aspect": "Khuyến nghị tiến hành/không tiến hành rõ ràng?", "us": "Mỗi báo cáo", "them": "Hiếm khi" },
+      { "aspect": "Giám sát liên tục?", "us": "Có sẵn", "them": "Không cung cấp" }
+    ],
+    "caseTag": "Nghiên cứu trường hợp thí điểm",
+    "caseH3": "Nhà sản xuất thực phẩm bổ sung Singapore — xác minh chiết xuất nghệ",
+    "caseText1": "Một công ty nutraceutical vừa ở Singapore cần xác minh nhà cung cấp chiết xuất nghệ Ấn Độ mới (thông số 95% curcumin) trước khi cam kết đặt hàng định kỳ 2 MT/năm.",
+    "caseText2": "Kiểm tra phòng thí nghiệm độc lập cho thấy hàm lượng curcumin liên tục thấp hơn 12% so với thông số đã nêu trên nhiều lô — chênh lệch khoảng 10,5g/kg so với 13,0g/kg được tuyên bố.",
+    "caseOutcomeLabel": "Khuyến nghị được đưa ra",
+    "caseOutcome": "Tiến hành có điều kiện",
+    "caseSaved": "Tiết kiệm hàng năm ước tính: USD 15.000 trong chi phí vượt thông số"
+  },
+  "categories": {
+    "tag": "Danh mục nguyên liệu",
+    "h2": "Chuyên môn tập trung, không phải bao phủ rộng",
+    "sub": "Chúng tôi cố ý giữ hẹp. Hai danh mục cốt lõi, chuyên môn sâu — bởi vì kiến thức thực sự trong một lĩnh vực cụ thể có giá trị hơn bao phủ hời hợt của mọi thứ.",
+    "spicesTag": "Danh mục chính",
+    "spicesH3": "Gia vị Ấn Độ và nguyên liệu đặc biệt",
+    "spicesDesc": "Ấn Độ cung cấp hơn 70% gia vị thế giới. Thị trường toàn cầu đã chuyển sang gia vị chức năng, tính xác thực ẩm thực và nguyên liệu nhãn sạch — tất cả đều yêu cầu tài liệu đã xác minh mà hầu hết các nhà xuất khẩu Ấn Độ khó cung cấp.",
+    "spicesBuyers": ["Nhà sản xuất thực phẩm Nhật Bản", "Thương hiệu thực phẩm chức năng Hàn Quốc", "Nhà nhập khẩu nguyên liệu Đông Nam Á"],
+    "spiceItems": [
+      { "title": "Gia vị chức năng", "desc": "Nghệ (đã xác minh curcumin), hạt tiêu đen (đã xác nhận hàm lượng piperine), gừng — cho ứng dụng thực phẩm và thực phẩm bổ sung định vị sức khỏe.", "tags": ["Kiểm tra % curcumin", "Xác minh piperine", "MRL thuốc trừ sâu"] },
+      { "title": "Gia vị ẩm thực", "desc": "Thì là, rau mùi, bạch đậu khấu, ớt, cỏ cà ri — tài liệu nguồn gốc đã xác minh cho nhà sản xuất thực phẩm cần xuất xứ địa lý.", "tags": ["Tài liệu nguồn gốc", "Chứng nhận GI", "Kiểm tra vi sinh"] },
+      { "title": "Gia vị hạt", "desc": "Thì là hương, ajwain, nigella, hạt mù tạt — nguồn từ các quận trồng trọt cụ thể của Ấn Độ với đầy đủ khả năng truy xuất.", "tags": ["Truy xuất vùng", "Thông số độ ẩm", "Kiểm tra tạp chất"] },
+      { "title": "Chiết xuất gia vị và dầu nhựa", "desc": "Chiết xuất tiêu chuẩn hóa cho nhà sản xuất nutraceutical và thực phẩm — được khớp thông số với hồ sơ nhất quán theo lô.", "tags": ["% hợp chất hoạt tính", "Dư lượng dung môi", "Chuỗi CoA"] }
+    ],
+    "wellnessTag": "Danh mục phụ",
+    "wellnessH3": "Nguyên liệu sức khỏe Ayurveda và thảo dược",
+    "wellnessDesc": "Nhật Bản và Hàn Quốc là những thị trường sức khỏe tinh tế nhất thế giới — cả hai đều tích cực tìm nguồn nguyên liệu Ayurveda Ấn Độ cho sản xuất thực phẩm bổ sung, phát triển công thức nutraceutical và ứng dụng K-beauty.",
+    "wellnessBuyers": ["Nhà sản xuất thực phẩm bổ sung Nhật Bản", "Người mua nguyên liệu K-beauty", "Nhà phân phối sức khỏe Đông Nam Á"],
+    "wellnessItems": [
+      { "title": "Thảo dược thích nghi", "desc": "Ashwagandha (đã xác minh withanolide), brahmi, shatavari, triphala, tulsi — cho nhà sản xuất thực phẩm bổ sung yêu cầu tài liệu tiêu chuẩn dược phẩm.", "tags": ["% withanolide", "Bảng kim loại nặng", "Cấp độ dược phẩm"] },
+      { "title": "Thực vật làm đẹp và mỹ phẩm", "desc": "Chiết xuất neem, actives kumkumadi, bakuchi (thay thế retinol tự nhiên), gỗ đàn hương, cỏ vetiver — cho công thức K-beauty và J-wellness.", "tags": ["Kiểm tra độ tinh khiết", "Tuân thủ mỹ phẩm EU", "Xác minh tính xác thực"] },
+      { "title": "Trà thảo dược và hỗn hợp chức năng", "desc": "Tulsi, moringa, gừng-chanh, hỗn hợp sức khỏe gia vị — cho nhà bán lẻ sức khỏe và nhà sản xuất đồ uống có thương hiệu trên khắp Đông Nam Á.", "tags": ["Kiểm tra vi sinh", "Sàng lọc thuốc trừ sâu", "Tài liệu nguồn gốc"] },
+      { "title": "Chiết xuất thảo dược tiêu chuẩn hóa", "desc": "Chiết xuất thực vật cho sản xuất thực phẩm bổ sung OEM — hồ sơ thành phần hoạt tính đã xác nhận với tài liệu lô đầy đủ.", "tags": ["Thông số tiêu chuẩn hóa", "Tuân thủ HACCP", "Chuỗi CoA"] }
+    ],
+    "ctaBanner": "Không thấy nguyên liệu cụ thể của bạn?",
+    "ctaBannerSub": "Nếu bạn đang tìm nguồn gia vị Ấn Độ hoặc thực vật Ayurveda không được liệt kê ở đây, hãy liên hệ với chúng tôi. Các danh mục của chúng tôi là neo đậu, không phải giới hạn.",
+    "ctaBannerCta": "Hỏi về nguyên liệu của bạn"
+  },
+  "about": {
+    "tag": "Về Mizuron Global",
+    "h2": "Được xây dựng để giải quyết một vấn đề cụ thể trong một hành lang cụ thể.",
+    "p1": "Mọi ngành đều có khoảng trống mà mọi người chấp nhận vì chưa ai sửa chữa. Trong tìm nguồn nguyên liệu Ấn Độ, khoảng trống đó là xác minh độc lập.",
+    "p2": "Không phải chứng nhận — những cái đó đã tồn tại. Nhưng là sự xác nhận cấp độ thực địa, được người mua tài trợ về việc liệu nhà cung cấp có phải là người họ nói không, liệu chất lượng của họ có duy trì sau lô hàng thứ ba không, và liệu tài liệu của họ có thực sự thỏa mãn những gì Nhật Bản hoặc Hàn Quốc hoặc Singapore yêu cầu tại biên giới không. Cơ sở hạ tầng đó không tồn tại trong hành lang Ấn Độ-châu Á. Chúng tôi đã xây dựng nó.",
+    "p3": "Chúng tôi tập trung độc quyền vào gia vị và sức khỏe Ayurveda — hai danh mục — và bốn thị trường mục tiêu: Nhật Bản, Hàn Quốc, Singapore và Đông Nam Á. Đó không phải là hạn chế. Đó là quyết định.",
+    "quote": "\"Cơ sở cung cấp Ấn Độ thực sự đẳng cấp thế giới. Chúng tôi đã thấy những nhà cung cấp sẽ là đối tác dài hạn xuất sắc cho những người mua quốc tế nghiêm túc. Vấn đề không bao giờ là tiềm năng chất lượng — đó là cơ sở hạ tầng xác minh. Chúng tôi đã xây dựng những gì lẽ ra phải tồn tại mười năm trước.\"",
+    "quoteAttr": "Nhóm sáng lập",
+    "quoteLocation": "Mizuron Global, Ahmedabad, Gujarat",
+    "whyTag": "Tại sao Mizuron Global",
+    "whyH3": "Lợi thế cơ cấu, không phải tuyên bố tiếp thị.",
+    "advantages": [
+      { "title": "Trụ sở tại Gujarat. Hiện diện tại Ấn Độ.", "desc": "Chúng tôi hoạt động từ Ahmedabad — trung tâm thương mại gia vị lớn nhất Ấn Độ. Hiện diện thực địa có nghĩa là các cơ sở được xác minh trực tiếp, không phải từ bàn làm việc ở Singapore hay Seoul." },
+      { "title": "100% phía người mua. Luôn luôn.", "desc": "Chúng tôi không nhận tiền từ các nhà cung cấp Ấn Độ. Không có hoa hồng, không có phí giới thiệu, không có thỏa thuận song phương. Doanh thu của chúng tôi đến hoàn toàn từ người mua quốc tế." },
+      { "title": "Phương pháp luận ưu tiên tài liệu.", "desc": "Mỗi hợp đồng tạo ra tài liệu chuyên nghiệp mà nhóm tuân thủ, môi giới hải quan và cán bộ mua sắm của bạn có thể hành động. Không phải cam đoan bằng lời nói." },
+      { "title": "Chiều sâu quy định, không phải bề rộng.", "desc": "Chúng tôi hiểu những gì MHLW của Nhật Bản, MFDS của Hàn Quốc, HSA/SFA của Singapore và các khung ASEAN thực sự yêu cầu tại cảng — và chúng tôi xây dựng tài liệu phù hợp." }
+    ],
+    "marketsLabel": "Thị trường chúng tôi phục vụ",
+    "markets": [
+      { "market": "Nhật Bản", "body": "Tiêu chuẩn MHLW, JETRO" },
+      { "market": "Hàn Quốc", "body": "Tuân thủ MFDS, KFDA" },
+      { "market": "Singapore", "body": "Tài liệu HSA, SFA" },
+      { "market": "Đông Nam Á", "body": "Khung quy định ASEAN" }
+    ]
+  },
+  "faq": {
+    "tag": "Câu hỏi thường gặp",
+    "h2": "Câu hỏi chúng tôi nghe từ các nhóm mua sắm",
+    "sub": "Nếu câu hỏi của bạn không được trả lời ở đây, hãy viết cho chúng tôi — chúng tôi trả lời mọi yêu cầu trong một ngày làm việc.",
+    "categories": [
+      {
+        "label": "Về dịch vụ của chúng tôi",
+        "items": [
+          { "q": "Mizuron Global xác minh chính xác những gì trong Báo cáo xác minh nhà cung cấp?", "a": "Chúng tôi xác minh sáu lĩnh vực: (1) Pháp nhân — đăng ký GST, mã IEC, thành lập công ty, cơ sở vật lý; (2) Lịch sử xuất khẩu — hồ sơ lô hàng đã xác minh; (3) Chứng nhận — FSSAI, APEDA, Hội đồng Gia vị, chứng nhận hữu cơ; (4) Kiểm tra phòng thí nghiệm — kiểm tra bên thứ ba độc lập; (5) Truy xuất chuỗi cung ứng; (6) Thực tế thương mại — MOQ thực tế, giá tham chiếu, thời gian giao hàng." },
+          { "q": "Mizuron Global khác với đại lý tìm nguồn hàng Ấn Độ tiêu chuẩn như thế nào?", "a": "Sự khác biệt cơ bản là ai trả tiền cho chúng tôi. Các đại lý tìm nguồn hàng truyền thống nhận hoa hồng từ nhà cung cấp Ấn Độ. Mizuron Global tính phí trực tiếp cho người mua và không nhận bất kỳ khoản thanh toán nào từ nhà cung cấp." },
+          { "q": "Bạn có thể xác minh nhà cung cấp mà chúng tôi đã tự tìm không?", "a": "Có — đây là một trong những loại hợp đồng phổ biến nhất của chúng tôi. Nhiều người mua tìm thấy nhà cung cấp tiềm năng qua hội chợ thương mại, IndiaMART, hoặc giới thiệu và muốn xác minh độc lập trước khi cam kết đơn hàng đầu tiên." },
+          { "q": "Bạn có xử lý hậu cần, vận chuyển không?", "a": "Không — đây là cố ý. Mizuron Global là dịch vụ xác minh, tài liệu và thông tin. Mối quan hệ vận chuyển vẫn là giữa bạn và công ty vận chuyển bạn chọn." },
+          { "q": "Điều gì xảy ra nếu Báo cáo xác minh khuyến nghị chúng tôi không tiến hành?", "a": "Khuyến nghị Không tiến hành có nghĩa là chúng tôi tìm thấy các vấn đề trọng yếu. Bạn nhận được báo cáo đầy đủ với toàn bộ phát hiện. Trong hầu hết các trường hợp, chúng tôi xác định 1–2 nhà cung cấp thay thế trong cùng danh mục." }
+        ]
+      },
+      {
+        "label": "Giá cả và quy trình",
+        "items": [
+          { "q": "Mất bao lâu để giao Báo cáo xác minh?", "a": "Giao hàng tiêu chuẩn là 3–4 tuần kể từ khi xác nhận hợp đồng và thanh toán. Dịch vụ nhanh 2 tuần có sẵn với phụ phí 30%." },
+          { "q": "Điều khoản thanh toán của bạn là gì?", "a": "Báo cáo xác minh: 50% khi xác nhận hợp đồng, 50% khi giao hàng. Dịch vụ tài liệu hàng tháng: hàng tháng trả trước. Dự án tìm nguồn hàng: 40% khi hợp đồng, 30% khi giao danh sách rút gọn, 30% khi giao báo cáo cuối cùng." },
+          { "q": "Ưu đãi hợp đồng thí điểm là gì?", "a": "Chúng tôi đang chấp nhận ba khách hàng quốc tế với giá thí điểm ưu đãi — khoảng 50% giá Báo cáo xác minh tiêu chuẩn. Đổi lại, chúng tôi yêu cầu sử dụng hợp đồng như một nghiên cứu trường hợp ẩn danh và lời chứng thực bằng văn bản." },
+          { "q": "Bạn có cung cấp bất kỳ đảm bảo hài lòng nào không?", "a": "Đối với khách hàng lần đầu, chúng tôi cung cấp hoàn tiền 50% nếu Báo cáo xác minh không đáp ứng tiêu chuẩn được ghi lại trong thỏa thuận hợp đồng của chúng tôi." }
+        ]
+      },
+      {
+        "label": "Thị trường và quy định",
+        "items": [
+          { "q": "Mizuron Global hiện phục vụ những quốc gia nào?", "a": "Các thị trường tập trung hiện tại của chúng tôi là Singapore, Nhật Bản, Hàn Quốc và Đông Nam Á rộng hơn (Thái Lan, Việt Nam, Indonesia, Malaysia, Philippines)." },
+          { "q": "Mizuron Global có thể giúp tuân thủ Luật vệ sinh thực phẩm Nhật Bản không?", "a": "Có — tuân thủ FSA Nhật Bản cho gia vị và thực vật có nguồn gốc Ấn Độ là một trong những chuyên môn cốt lõi của chúng tôi." },
+          { "q": "Bạn kiểm tra và xác minh những chứng nhận Ấn Độ nào?", "a": "Cho mỗi hợp đồng, chúng tôi xác minh: giấy phép FSSAI, đăng ký APEDA, chứng nhận Hội đồng Gia vị Ấn Độ, chứng nhận hữu cơ NPOP, NOP và EU Organic, ISO 22000 và HACCP, và nhãn GI khi áp dụng." }
+        ]
+      },
+      {
+        "label": "Dành cho nhà xuất khẩu Ấn Độ",
+        "items": [
+          { "q": "Tôi là nhà xuất khẩu Ấn Độ. Mizuron Global có thể giúp tôi tiếp cận thị trường châu Á không?", "a": "Có — chúng tôi cung cấp các chương trình sẵn sàng xuất khẩu có cấu trúc cho các nhà xuất khẩu gia vị và nguyên liệu Ayurveda Ấn Độ muốn trở nên đáng tin cậy hơn cho các thị trường Nhật Bản, Hàn Quốc và Đông Nam Á.", "link": { "href": "/for-suppliers", "text": "Tìm hiểu thêm về Chương trình sẵn sàng xuất khẩu →" } },
+          { "q": "Mizuron Global có giới thiệu công ty tôi cho người mua quốc tế không?", "a": "Không thông qua sắp xếp ưu đãi hoặc thương mại. Các nhà cung cấp hoàn thành chương trình sẵn sàng của chúng tôi được đánh giá theo cùng tiêu chuẩn Mizuron sử dụng khi xác minh thay mặt người mua." }
+        ]
+      }
+    ],
+    "stillQuestion": "Vẫn còn câu hỏi?",
+    "stillSub": "Mỗi yêu cầu nhận được phản hồi cá nhân trong một ngày làm việc.",
+    "stillCta": "Gửi câu hỏi"
+  },
+  "contact": {
+    "tag": "Liên hệ",
+    "h2": "Bắt đầu cuộc trò chuyện tìm nguồn hàng Ấn Độ",
+    "sub": "Cho chúng tôi biết bạn đang tìm nguồn gì, bạn đang ở đâu trong quy trình và mối quan tâm chính của bạn. Chúng tôi trả lời với khuyến nghị cụ thể trong một ngày làm việc.",
+    "emailLabel": "Email",
+    "whatsappLabel": "WhatsApp",
+    "officeLabel": "Văn phòng",
+    "officeAddress": "Regus, Tầng 2, Privilon East Wing, SG Highway, Ahmedabad 380054",
+    "responseLabel": "Thời gian phản hồi",
+    "responseTime": "Trong vòng 24 giờ (ngày làm việc IST)",
+    "nextH4": "Điều gì xảy ra sau khi bạn gửi",
+    "nextSteps": [
+      "Yêu cầu của bạn được xem xét cá nhân — không phải bởi trả lời tự động",
+      "Cuộc gọi tư vấn 30 phút để hiểu sâu nhu cầu của bạn",
+      "Đề xuất bằng văn bản với phạm vi, tiến độ và giá cả — không mơ hồ",
+      "Bạn quyết định — không có áp lực theo dõi"
+    ],
+    "formSections": {
+      "aboutYou": "Về bạn",
+      "sourcingNeed": "Nhu cầu tìm nguồn hàng",
+      "serviceTimeline": "Dịch vụ và tiến độ",
+      "additionalContext": "Ngữ cảnh bổ sung"
+    },
+    "fields": {
+      "name": "Họ và tên",
+      "company": "Tên công ty",
+      "email": "Địa chỉ email",
+      "country": "Quốc gia",
+      "countryPlaceholder": "Chọn quốc gia của bạn",
+      "phone": "Điện thoại (tùy chọn)",
+      "ingredient": "Nguyên liệu bạn đang tìm nguồn",
+      "ingredientPlaceholder": "Ví dụ: Chiết xuất nghệ 95% curcumin",
+      "industry": "Ngành",
+      "industryPlaceholder": "Chọn ngành",
+      "volume": "Ước tính khối lượng hàng năm",
+      "volumePlaceholder": "Ví dụ: 5 MT/năm",
+      "stage": "Bạn đang ở đâu trong quy trình tìm nguồn hàng?",
+      "stagePlaceholder": "Chọn giai đoạn",
+      "concern": "Mối quan tâm chính",
+      "concernPlaceholder": "Chọn mối quan tâm chính của bạn",
+      "service": "Dịch vụ bạn quan tâm",
+      "servicePlaceholder": "Chọn dịch vụ",
+      "market": "Thị trường quy định để nhập khẩu",
+      "marketPlaceholder": "Chọn thị trường",
+      "timeline": "Tiến độ",
+      "timelinePlaceholder": "Chọn tiến độ",
+      "message": "Ngữ cảnh hoặc câu hỏi bổ sung",
+      "messagePlaceholder": "Cho chúng tôi biết bất cứ điều gì khác giúp chúng tôi hiểu tình huống của bạn",
+      "source": "Bạn nghe về chúng tôi như thế nào?",
+      "sourcePlaceholder": "Ví dụ: LinkedIn, Google, giới thiệu"
+    },
+    "submit": "Gửi yêu cầu",
+    "submitting": "Đang gửi...",
+    "successH3": "Đã nhận yêu cầu — cảm ơn bạn.",
+    "successP": "Chúng tôi sẽ xem xét yêu cầu của bạn cá nhân và trả lời trong một ngày làm việc (IST). Nếu nhu cầu của bạn khẩn cấp, hãy WhatsApp chúng tôi trực tiếp.",
+    "errorMsg": "Đã xảy ra lỗi. Vui lòng thử gửi email trực tiếp.",
+    "networkError": "Lỗi mạng. Vui lòng thử gửi email trực tiếp tại hello@mizuronglobal.com"
+  },
+  "finalCta": {
+    "tag": "Sẵn sàng tìm nguồn hàng với sự tự tin?",
+    "h2": "Bạn đã nghiên cứu.",
+    "h2em": "Bây giờ hãy có một cuộc trò chuyện thực sự.",
+    "sub": "Những người mua liên hệ không đoán mò — họ nghiêm túc về việc tìm nguồn hàng Ấn Độ đúng cách. Dù bạn đang đánh giá một nhà cung cấp cụ thể, xem xét mối quan hệ hiện có, hay khám phá thị trường lần đầu, chúng tôi sẽ cho bạn biết chính xác những gì chúng tôi sẽ làm và liệu chúng tôi có phù hợp không.",
+    "note": "Không ràng buộc. Không có bài thuyết trình chung chung. Chỉ là cuộc trò chuyện trực tiếp với ai đó biết hành lang này.",
+    "cta1": "Đặt cuộc gọi tư vấn",
+    "cta2": "Viết thư trực tiếp cho chúng tôi",
+    "responseTime": "Phản hồi trong 24h IST",
+    "email": "hello@mizuronglobal.com",
+    "location": "Ahmedabad, Gujarat"
+  },
+  "footer": {
+    "tagline": "Nguyên liệu Ấn Độ. Sự tự tin của bạn.",
+    "desc": "Tìm nguồn gia vị Ấn Độ và nguyên liệu Ayurveda đã xác minh cho các nhà sản xuất thực phẩm, công ty nutraceutical và nhà phân phối thực phẩm bổ sung tại Nhật Bản, Hàn Quốc và Đông Nam Á. Trụ sở tại Gujarat, Ấn Độ.",
+    "servicesLabel": "Dịch vụ",
+    "companyLabel": "Công ty",
+    "serviceLinks": ["Báo cáo xác minh", "Dịch vụ tài liệu", "Dự án tìm nguồn hàng toàn diện", "Hợp đồng thí điểm"],
+    "companyLinks": ["Về Mizuron Global", "Danh mục nguyên liệu", "FAQ", "Liên hệ"],
+    "supplierLabel": "Dành cho nhà xuất khẩu Ấn Độ",
+    "supplierDesc": "Nhà cung cấp Ấn Độ có năng lực muốn đáp ứng tiêu chuẩn quốc tế? Mizuron cung cấp các chương trình sẵn sàng có cấu trúc cho nhà xuất khẩu gia vị và nguyên liệu Ayurveda nhắm đến Nhật Bản, Hàn Quốc và Đông Nam Á.",
+    "supplierLink": "Chương trình sẵn sàng xuất khẩu →",
+    "copyright": "© 2026 Mizuron Global. Tất cả quyền được bảo lưu. Ahmedabad, Gujarat, Ấn Độ."
+  }
+}

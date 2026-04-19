@@ -1,53 +1,27 @@
-/*
- * Design: Archival Intelligence
- * Numbered steps with large faded serif numerals, verification image on right
- */
+import { useTranslation } from "react-i18next";
 
 const VERIFICATION_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663454826694/Sz2WXn73m6MgVBcMywT6dB/verification-process-nDMJAAqRw6eFbQyfPCd3Js.webp";
 
-const steps = [
-  {
-    num: "01",
-    title: "Discovery call",
-    text: "We understand your ingredient, specification, regulatory market, and timeline in a 30-minute no-obligation call.",
-  },
-  {
-    num: "02",
-    title: "Supplier research & shortlisting",
-    text: "We identify and screen candidates across India's key sourcing regions against your specification and volume requirements.",
-  },
-  {
-    num: "03",
-    title: "On-ground verification",
-    text: "We verify facilities, certifications, third-party lab results, and documentation — aligned to your specific market's customs requirements.",
-  },
-  {
-    num: "04",
-    title: "Report & recommendation",
-    text: "A professional, structured report with our ranked recommendation and complete supporting documentation.",
-  },
-  {
-    num: "05",
-    title: "Ongoing monitoring",
-    text: "We continue managing documentation and supplier quality on every shipment — so nothing slips through.",
-  },
-];
+type Step = { num: string; title: string; text: string };
 
 export default function HowItWorks() {
+  const { t } = useTranslation();
+  const steps = t("howItWorks.steps", { returnObjects: true }) as Step[];
+
   return (
     <section id="how-it-works" className="bg-paper2 py-16 md:py-24" aria-labelledby="how-heading">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Left: Steps */}
           <div>
-            <span className="tag fade-up">How It Works</span>
+            <span className="tag fade-up">{t("howItWorks.tag")}</span>
             <h2
               id="how-heading"
               className="font-serif text-[clamp(1.8rem,3vw,2.6rem)] mb-8 fade-up leading-[1.1]"
               style={{ transitionDelay: "80ms" }}
             >
-              From first conversation to{" "}
-              <em className="italic">verified shipment.</em>
+              {t("howItWorks.h2")}{" "}
+              <em className="italic">{t("howItWorks.h2em")}</em>
             </h2>
             <div className="space-y-6">
               {steps.map((s, i) => (
@@ -79,19 +53,18 @@ export default function HowItWorks() {
               />
             </div>
             <div className="bg-ink p-6 md:p-8">
-              <span className="tag !text-gold2/85">Your Next Step</span>
+              <span className="tag !text-gold2/85">{t("howItWorks.ctaBox.tag")}</span>
               <h3 className="font-serif text-[1.3rem] text-paper mb-3">
-                Not sure which service fits?
+                {t("howItWorks.ctaBox.h3")}
               </h3>
               <p className="text-[13px] text-paper/55 leading-[1.7] mb-5">
-                Book a 20-minute discovery call. We'll understand your situation and recommend
-                the right engagement — no obligation, no generic pitch.
+                {t("howItWorks.ctaBox.sub")}
               </p>
               <a
                 href="#contact"
                 className="inline-block bg-gold text-paper px-6 py-3 text-[11.5px] tracking-[0.08em] uppercase font-medium no-underline transition-all duration-200 hover:bg-teal hover:shadow-[0_4px_16px_rgba(15,74,54,0.30)]"
               >
-                Book a Discovery Call
+                {t("howItWorks.ctaBox.cta")}
               </a>
             </div>
           </div>

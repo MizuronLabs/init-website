@@ -1,27 +1,13 @@
-const risks = [
-  {
-    cost: "USD 5,000 – 20,000",
-    label: "Customs hold — documentation error at the port of entry",
-    bar: "40%",
-  },
-  {
-    cost: "USD 20,000 – 50,000",
-    label: "Rejected shipment — quality or specification failure on arrival",
-    bar: "100%",
-  },
-  {
-    cost: "USD 100,000+",
-    label: "Product recall — adulteration or mislabeling at distribution",
-    bar: "100%",
-  },
-  {
-    cost: "6+ months",
-    label: "Time lost on failed supplier trials and re-sourcing",
-    bar: null,
-  },
-];
+import { useTranslation } from "react-i18next";
+
+type RiskItem = { cost: string; label: string };
 
 export default function CostOfFailure() {
+  const { t } = useTranslation();
+  const risks = t("cost.risks", { returnObjects: true }) as RiskItem[];
+
+  const barWidths = ["40%", "100%", "100%", null];
+
   return (
     <section className="bg-ink py-16 md:py-24">
       <div className="container">
@@ -29,16 +15,14 @@ export default function CostOfFailure() {
 
           {/* Left: The argument */}
           <div className="fade-up">
-            <span className="tag !text-gold2/80">The Economics of Verification</span>
+            <span className="tag !text-gold2/80">{t("cost.tag")}</span>
             <h2 className="font-serif text-[clamp(1.6rem,3vw,2.4rem)] text-paper leading-[1.1] mb-4">
-              The comparison isn't us vs. free.
+              {t("cost.h2")}
               <br />
-              <em className="italic text-gold2">It's us vs. what goes wrong.</em>
+              <em className="italic text-gold2">{t("cost.h2em")}</em>
             </h2>
             <p className="text-[14px] text-paper/50 leading-[1.85] mb-10 max-w-[460px]">
-              International buyers don't compare our fee to nothing. They compare it to a customs
-              hold at Narita, a rejected container in Busan, or six months rebuilding a supply
-              chain from scratch. The math is straightforward once you see it clearly.
+              {t("cost.sub")}
             </p>
 
             {/* Risk data */}
@@ -57,12 +41,9 @@ export default function CostOfFailure() {
                       {r.cost}
                     </span>
                   </div>
-                  {r.bar && (
+                  {barWidths[i] && (
                     <div className="w-full h-[2px] bg-white/[0.07] overflow-hidden">
-                      <div
-                        className="h-full bg-white/20"
-                        style={{ width: r.bar }}
-                      />
+                      <div className="h-full bg-white/20" style={{ width: barWidths[i]! }} />
                     </div>
                   )}
                 </div>
@@ -74,20 +55,19 @@ export default function CostOfFailure() {
           <div className="fade-up" style={{ transitionDelay: "180ms" }}>
             <div className="bg-white/[0.05] border border-white/[0.09] p-7 md:p-9">
               <h3 className="font-serif text-[1.25rem] text-paper mb-2 leading-[1.2]">
-                One Verification Report. Less than 10% of one failed shipment.
+                {t("cost.box.h3")}
               </h3>
               <p className="text-[12.5px] text-paper/40 mb-8 leading-[1.7]">
-                A side-by-side reality check.
+                {t("cost.box.sub")}
               </p>
 
-              {/* Bar comparison */}
               <div className="space-y-6">
                 <div>
                   <div className="flex justify-between items-baseline mb-2">
                     <span className="text-[11px] tracking-[0.09em] uppercase text-paper/45 font-medium">
-                      One customs rejection
+                      {t("cost.box.row1label")}
                     </span>
-                    <span className="font-serif text-paper text-[1.05rem]">USD 20,000</span>
+                    <span className="font-serif text-paper text-[1.05rem]">{t("cost.box.row1val")}</span>
                   </div>
                   <div className="w-full h-[3px] bg-white/[0.08] overflow-hidden">
                     <div className="h-full bg-white/25 w-full" />
@@ -97,9 +77,9 @@ export default function CostOfFailure() {
                 <div>
                   <div className="flex justify-between items-baseline mb-2">
                     <span className="text-[11px] tracking-[0.09em] uppercase text-paper/45 font-medium">
-                      One quality failure
+                      {t("cost.box.row2label")}
                     </span>
-                    <span className="font-serif text-paper text-[1.05rem]">USD 50,000</span>
+                    <span className="font-serif text-paper text-[1.05rem]">{t("cost.box.row2val")}</span>
                   </div>
                   <div className="w-full h-[3px] bg-white/[0.08] overflow-hidden">
                     <div className="h-full bg-white/25 w-full" />
@@ -109,9 +89,9 @@ export default function CostOfFailure() {
                 <div className="pt-5 border-t border-white/[0.09]">
                   <div className="flex justify-between items-baseline mb-2">
                     <span className="text-[11px] tracking-[0.09em] uppercase text-gold2 font-medium">
-                      Mizuron Verification Report
+                      {t("cost.box.row3label")}
                     </span>
-                    <span className="font-serif text-gold2 text-[1.05rem]">USD 1,200 – 2,500</span>
+                    <span className="font-serif text-gold2 text-[1.05rem]">{t("cost.box.row3val")}</span>
                   </div>
                   <div className="w-full h-[3px] bg-white/[0.08] overflow-hidden">
                     <div className="h-full bg-gold w-[8%]" />
@@ -119,18 +99,15 @@ export default function CostOfFailure() {
                 </div>
               </div>
 
-              {/* The kicker line */}
               <p className="text-[12.5px] text-paper/45 mt-7 leading-[1.75] italic font-serif text-[1rem]">
-                "One avoided rejection pays for ten reports. Our clients don't see
-                verification as a cost — they see it as the cheapest insurance in
-                their supply chain."
+                {t("cost.box.quote")}
               </p>
 
               <a
                 href="#contact"
                 className="inline-block mt-6 bg-gold text-paper px-6 py-3 text-[12px] tracking-[0.07em] uppercase font-medium no-underline transition-colors duration-200 hover:bg-teal"
               >
-                Request a Pilot Quote
+                {t("cost.box.cta")}
               </a>
             </div>
           </div>
